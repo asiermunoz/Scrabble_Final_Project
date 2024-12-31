@@ -27,4 +27,11 @@ public class GameController {
         popUpselected.setCommand(command);
         StageManager.bag = popUpselected.buttonPressed();
     }
+
+    @FXML
+    protected void onStadisticsButtonClick() {
+        PopUpCommand command = new PopUpStadistics();
+        popUpselected.setCommand(command);
+        StageManager.stadistics = popUpselected.buttonPressed();
+    }
 }

@@ -8,6 +8,12 @@ import javax.swing.*;
 public class GameController {
     private final PopUpSelected popUpselected = new PopUpSelected();
 
+    public GameController() {
+        StageManager.exit = new Stage();
+        StageManager.bag = new Stage();
+        StageManager.stadistics = new Stage();
+    }
+
     @FXML
     protected void onExitToMenuButtonClick() {
         PopUpCommand command = new PopUpExit();

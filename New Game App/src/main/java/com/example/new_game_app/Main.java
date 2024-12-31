@@ -16,9 +16,9 @@ public class Main extends Application {
         stage.setTitle("Register");
         stage.setScene(scene);
         stage.setMinWidth(469);
-        stage.setMinHeight(698);
+        stage.setMinHeight(789);
         //Modificar link seleccionando con click derecho ScrabbleIcon -> Copy Path Reference -> Absolute Path.
-        stage.getIcons().add(new Image("C:\\Users\\admdiazramos\\IdeaProjects\\New Game App\\src\\main\\resources\\com\\example\\new_game_app\\Images\\ScrabbleIcon.png"));
+        stage.getIcons().add(new Image(new ImagesURL().icon));
         stage.show();
     }
 

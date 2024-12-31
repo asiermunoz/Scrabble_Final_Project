@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="734.0" prefWidth="285.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.new_game_app.BagController">
+   <children>
+      <HBox prefHeight="43.0" prefWidth="538.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="87.0" prefWidth="281.0" style="-fx-border-color: black; -fx-background-color: #edbba8;">
+               <children>
+                  <Label text="Letra">
+                     <font>
+                        <Font name="Consolas Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="87.0" prefWidth="281.0" style="-fx-border-color: black; -fx-background-color: #f2dba0;">
+               <children>
+                  <Label text="Cantidad">
+                     <font>
+                        <Font name="Consolas Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="660.0" prefWidth="538.0">
+         <children>
+            <VBox prefHeight="647.0" prefWidth="270.0" />
+            <VBox prefHeight="647.0" prefWidth="270.0" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

@@ -3,7 +3,7 @@ module com.example.new_game_app {
     requires javafx.fxml;
 
     requires com.dlsc.formsfx;
-    requires java.desktop;
+    requires jdk.jconsole;
 
     opens com.example.new_game_app to javafx.fxml;
     exports com.example.new_game_app;

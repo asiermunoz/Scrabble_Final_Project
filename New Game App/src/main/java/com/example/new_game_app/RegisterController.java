@@ -15,6 +15,9 @@ import java.io.IOException;
 import java.util.Objects;
 
 public class RegisterController {
+    private final ChangeSceneStrategy strategy = new ChangeSceneryToMenu();
+    private final ChangeSceneryToContext context = new ChangeSceneryToContext();
+
     @FXML
     private TextField User1;
 
@@ -28,19 +31,7 @@ public class RegisterController {
     private TextField Gmail2;
 
     public void onFinishButtonClick(javafx.event.ActionEvent actionEvent) {
-        try{
-            Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("MenuView.fxml")));
-            Stage stage = (Stage)((Node)actionEvent.getSource()).getScene().getWindow();
-            Scene scene = new Scene(root);
-            stage.setTitle("Menu");
-            stage.setScene(scene);
-            stage.setMinWidth(469);
-            stage.setMinHeight(698);
-            //Modificar link seleccionando con click derecho ScrabbleIcon -> Copy Path Reference -> Absolute Path.
-            stage.getIcons().add(new Image("C:\\Users\\admdiazramos\\IdeaProjects\\New Game App\\src\\main\\resources\\com\\example\\new_game_app\\Images\\ScrabbleIcon.png"));
-            stage.show();
-        }catch(IOException e){
-            e.printStackTrace();
-        }
+        context.setStrategy(strategy);
+        context.change(actionEvent);
     }
 }

@@ -1,14 +1,24 @@
 package com.example.new_game_app;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.Label;
+import javafx.stage.Stage;
+
+import javax.swing.*;
 
 public class GameController {
-    @FXML
-    private Label welcomeText;
+    private final PopUpSelected popUpselected = new PopUpSelected();
 
     @FXML
-    protected void onHelloButtonClick() {
-        welcomeText.setText("Welcome to JavaFX Application!");
+    protected void onExitToMenuButtonClick() {
+        PopUpCommand command = new PopUpExit();
+        popUpselected.setCommand(command);
+        StageManager.exit = popUpselected.buttonPressed();
+    }
+
+    @FXML
+    protected void onBagButtonClick() {
+        PopUpCommand command = new PopUpBag();
+        popUpselected.setCommand(command);
+        StageManager.bag = popUpselected.buttonPressed();
     }
 }

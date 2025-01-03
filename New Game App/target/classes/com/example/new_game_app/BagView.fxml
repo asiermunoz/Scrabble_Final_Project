@@ -1,14 +1,840 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.new_game_app.BagViewController"
-            prefHeight="400.0" prefWidth="600.0">
-
-</AnchorPane>
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="753.0" prefWidth="285.0" style="-fx-background-color: #f3dbc3;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.new_game_app.BagController">
+   <children>
+      <HBox prefHeight="43.0" prefWidth="538.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="34.0" prefWidth="165.0" style="-fx-border-color: black; -fx-border-width: 3; -fx-background-color: #edbba8;">
+               <children>
+                  <Label text="Letra">
+                     <font>
+                        <Font name="Consolas Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="34.0" prefWidth="168.0" style="-fx-border-color: black; -fx-border-width: 3; -fx-background-color: #f2dba0;">
+               <children>
+                  <Label text="Cantidad">
+                     <font>
+                        <Font name="Consolas Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="34.0" prefWidth="166.0" style="-fx-border-color: black; -fx-border-width: 3; -fx-background-color: #c2eb8d;">
+               <children>
+                  <Label text="Puntaje">
+                     <font>
+                        <Font name="Consolas Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+      <HBox prefHeight="718.0" prefWidth="286.0">
+         <children>
+            <VBox prefHeight="720.0" prefWidth="95.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="A">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="B">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="C">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="CH">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="D">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="E">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="F">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="G">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="H">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="I">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="J">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="L">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="LL">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="M">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="N">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="Ñ">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="O">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="P">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="Q">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="R">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="RR">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="S">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="T">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="U">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="V">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="X">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="Y">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="Z">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="☻">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children></VBox>
+            <VBox prefHeight="720.0" prefWidth="95.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="A">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="B">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="C">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="CH">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="D">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="E">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="F">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="G">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="H">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="I">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="J">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="L">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="LL">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="M">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="N">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="Ñ">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="O">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="P">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="Q">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="R">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="RR">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="S">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="T">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="U">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="V">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="X">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="Y">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="Z">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="☻">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <VBox prefHeight="720.0" prefWidth="95.0">
+               <children>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="A">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="B">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="C">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="CH">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="D">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="E">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="F">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="G">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="H">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="I">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="J">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="L">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="LL">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="M">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="N">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="Ñ">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="O">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="P">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="Q">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="R">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="RR">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="S">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="T">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="U">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="V">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="X">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="Y">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="Z">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
+                     <children>
+                        <Label text="☻">
+                           <font>
+                              <Font name="Consolas" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

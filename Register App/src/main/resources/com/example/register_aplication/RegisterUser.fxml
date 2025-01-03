@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.register_aplication.RegisterUserController">
+    <children>
+        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTER USERS SCRABBLE" textAlignment="CENTER" wrappingWidth="641.3366918563843">
+            <font>
+                <Font name="Arial Italic" size="54.0" />
+            </font>
+        </Text>
+        <Region prefHeight="29.0" prefWidth="642.0" />
+        <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#onButtonNewUser" prefHeight="50.0" prefWidth="100.0" text="New User" />
+                <Region prefHeight="100.0" prefWidth="35.0" />
+                <Button mnemonicParsing="false" onAction="#onButtonChangeName" prefHeight="50.0" prefWidth="100.0" text="Change Name" />
+                <Region prefHeight="100.0" prefWidth="35.0" />
+                <Button mnemonicParsing="false" onAction="#onButtonChangeEmail" prefHeight="50.0" prefWidth="100.0" text="Change Email" />
+                <Region prefHeight="100.0" prefWidth="35.0" />
+                <Button mnemonicParsing="false" onAction="#onButtonDeleteUser" prefHeight="50.0" prefWidth="100.0" text="Delete User" />
+            </children>
+        </HBox>
+      <HBox prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#exitPage" prefHeight="84.0" prefWidth="127.0" text="Button" />
+         </children>
+      </HBox>
+    </children>
+</VBox>

@@ -10,23 +10,23 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="641.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.register_aplication.ChangeEmailController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="641.0" style="-fx-background-color: #00aeff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.register_aplication.ChangeEmailController">
     <children>
         <HBox prefHeight="150.0" prefWidth="200.0">
             <children>
                 <Region prefHeight="150.0" prefWidth="33.0" />
                 <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="150.0" prefWidth="678.0" text="CHANGE EMAIL">
-                    <font>
-                        <Font name="Arial Bold Italic" size="59.0" />
-                    </font>
+               <font>
+                  <Font name="Times New Roman Bold Italic" size="70.0" />
+               </font>
                 </Label>
             </children>
         </HBox>
         <HBox alignment="CENTER" prefHeight="81.0" prefWidth="656.0">
             <children>
-                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="104.0" text="Old Email:" textAlignment="CENTER" wrapText="true">
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="114.0" text="Old Email:" textAlignment="CENTER" wrapText="true">
                     <font>
-                        <Font name="System Bold" size="14.0" />
+                        <Font name="Times New Roman Bold" size="22.0" />
                     </font>
                 </Label>
                 <TextField fx:id="oldEmailField" prefHeight="29.0" prefWidth="407.0" />
@@ -34,9 +34,9 @@
         </HBox>
         <HBox alignment="CENTER" prefHeight="81.0" prefWidth="656.0">
             <children>
-                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="104.0" text="New Email:" textAlignment="CENTER" wrapText="true">
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="116.0" text="New Email:" textAlignment="CENTER" wrapText="true">
                     <font>
-                        <Font name="System Bold" size="14.0" />
+                        <Font name="Times New Roman Bold" size="22.0" />
                     </font>
                 </Label>
                 <TextField fx:id="newEmailField" prefHeight="29.0" prefWidth="407.0" />
@@ -45,16 +45,19 @@
         <Region prefHeight="25.0" prefWidth="642.0" />
         <HBox alignment="CENTER" prefHeight="74.0" prefWidth="443.0">
             <children>
-                <Button mnemonicParsing="false" onAction="#Enter" prefHeight="62.0" prefWidth="186.0" text="ENTER" />
+                <Button mnemonicParsing="false" onAction="#Enter" prefHeight="62.0" prefWidth="186.0" text="ENTER">
+               <font>
+                  <Font name="Times New Roman Bold" size="22.0" />
+               </font></Button>
             </children>
         </HBox>
         <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
             <children>
                 <Label fx:id="messageText" alignment="CENTER" contentDisplay="CENTER" prefHeight="82.0" prefWidth="186.0" />
                 <Region prefHeight="100.0" prefWidth="117.0" />
-                <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exitPage" prefHeight="94.0" prefWidth="94.0">
+                <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exitPage" prefHeight="94.0" prefWidth="94.0" style="-fx-background-color: #00aeff;">
                     <graphic>
-                        <ImageView fitHeight="42.0" fitWidth="58.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                             <image>
                                 <Image url="@../../../Images/free-exit-logout-icon-2857-thumb.png" />
                             </image>

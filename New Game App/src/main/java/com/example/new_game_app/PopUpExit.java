@@ -19,7 +19,7 @@ public class PopUpExit implements PopUpCommand{
             Stage stage = new Stage();
             stage.setTitle("Exit");
             stage.setScene(new Scene(root));
-            stage.getIcons().add(new Image(new ImagesURL().icon));
+            stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream(new ImagesURL().icon))));
             stage.show();
             return stage;
         }catch(IOException e){

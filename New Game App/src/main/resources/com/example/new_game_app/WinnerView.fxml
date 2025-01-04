@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="315.0" prefWidth="451.0" style="-fx-background-color: #fff3c2;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.new_game_app.WinnerController">
+   <children>
+      <Label text="Fin del Juego">
+         <font>
+            <Font name="Cooper Black" size="20.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="5.0" top="20.0" />
+         </VBox.margin>
+      </Label>
+      <Label fx:id="motive" text="Motive">
+         <font>
+            <Font name="Copperplate Gothic Light" size="12.0" />
+         </font>
+         <VBox.margin>
+            <Insets bottom="10.0" />
+         </VBox.margin>
+      </Label>
+      <Separator prefWidth="200.0" style="-fx-background-color: black;" />
+      <VBox alignment="TOP_CENTER" prefHeight="163.0" prefWidth="451.0" style="-fx-background-color: White;">
+         <children>
+            <Label text="El Ganador Fue:">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Cooper Black" size="21.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0" startX="0.30303031657681323" startY="0.2575757286765359">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.550000011920929" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <Label fx:id="winnerPlayer" text="Winner Player" underline="true">
+               <VBox.margin>
+                  <Insets bottom="20.0" />
+               </VBox.margin>
+               <font>
+                  <Font name="Cooper Black" size="36.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.9015151659647624" radius="0.8944953865961197">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="1.0" green="0.8413705825805664" />
+                           </color>
+                        </Stop>
+                        <Stop offset="0.006729475100942127">
+                           <color>
+                              <Color red="1.0" green="0.8413705825805664" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="0.14814814925193787" blue="0.4462963044643402" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Label>
+            <Button mnemonicParsing="false" onAction="#onGoToMenuClick" prefHeight="34.0" prefWidth="302.0" style="-fx-border-color: black; -fx-background-color: white;" text="Volver al menú Principal" textFill="#b80000">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="14.0" />
+               </font>
+               <VBox.margin>
+                  <Insets bottom="10.0" />
+               </VBox.margin>
+               <effect>
+                  <DropShadow height="8.0" radius="3.5" width="8.0" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+      <HBox prefHeight="77.0" prefWidth="451.0">
+         <children>
+            <VBox alignment="CENTER" prefHeight="82.0" prefWidth="224.0">
+               <children>
+                  <Label fx:id="player1Name" text="Player 1">
+                     <font>
+                        <Font name="Cooper Black" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="player1Score" text="Score:" textFill="#4000ff">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+            <Region prefHeight="60.0" prefWidth="1.0" style="-fx-background-color: Black;" />
+            <VBox alignment="CENTER" prefHeight="82.0" prefWidth="224.0">
+               <children>
+                  <Label fx:id="player2Name" text="Player 2">
+                     <font>
+                        <Font name="Cooper Black" size="18.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label fx:id="player2Score" text="Score:" textFill="#4000ff">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="5.0" />
+                     </VBox.margin>
+                  </Label>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</VBox>

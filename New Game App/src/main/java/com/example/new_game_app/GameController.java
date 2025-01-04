@@ -77,7 +77,7 @@ public class GameController implements Initializable {
                 view.setImage(new Image(game.getTurn().getHolder().hold.get(i).getLink()));
                 view.setOpacity(1);
             } else {
-                view.setImage(new Image(new ImagesURL().emptySpace));
+                view.setImage(new Image(getClass().getResourceAsStream(new ImagesURL().emptySpace)));
                 view.setOpacity(0.28);
                 buttonTokens.get(i).setDisable(true);
             }

@@ -7,6 +7,7 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class PopUpStadistics implements PopUpCommand{
     @Override
@@ -17,7 +18,7 @@ public class PopUpStadistics implements PopUpCommand{
             Stage stage = new Stage();
             stage.setTitle("Stadistics");
             stage.setScene(new Scene(root));
-            stage.getIcons().add(new Image(new ImagesURL().icon));
+            stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream(new ImagesURL().icon))));
             stage.show();
             return stage;
         }catch(IOException e){

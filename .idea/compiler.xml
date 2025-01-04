@@ -7,8 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="Register_Aplication" />
-        <module name="New_Game_App" />
         <module name="Register_App" />
+        <module name="New_Game_App" />
+        <module name="Register_Users" />
       </profile>
     </annotationProcessing>
   </component>

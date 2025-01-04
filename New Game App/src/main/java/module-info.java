@@ -4,7 +4,10 @@ module com.example.new_game_app {
 
     requires com.dlsc.formsfx;
     requires jdk.jconsole;
+    requires com.google.gson;
+    requires java.logging;
 
     opens com.example.new_game_app to javafx.fxml;
+    opens com.example.new_game_app.objects.users to com.google.gson;
     exports com.example.new_game_app;
 }

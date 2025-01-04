@@ -8,8 +8,10 @@
         <outputRelativeToContentRoot value="true" />
         <module name="Register_Aplication" />
         <module name="Register_App" />
+        <module name="Register_Users (1)" />
         <module name="New_Game_App" />
         <module name="Register_Users" />
+        <module name="Register_Users (2)" />
       </profile>
     </annotationProcessing>
   </component>

@@ -1,840 +1,768 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="753.0" prefWidth="285.0" style="-fx-background-color: #f3dbc3;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.new_game_app.BagController">
+<HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="647.0" prefWidth="705.0" style="-fx-background-color: #f3dbc3;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.new_game_app.BagController">
    <children>
-      <HBox prefHeight="43.0" prefWidth="538.0">
+      <VBox alignment="TOP_CENTER" prefHeight="524.0" prefWidth="117.0">
          <children>
-            <HBox alignment="CENTER" prefHeight="34.0" prefWidth="165.0" style="-fx-border-color: black; -fx-border-width: 3; -fx-background-color: #edbba8;">
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
                <children>
-                  <Label text="Letra">
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-A.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
                      <font>
-                        <Font name="Consolas Bold" size="18.0" />
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenA" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
                      </font>
                   </Label>
                </children>
-            </HBox>
-            <HBox alignment="CENTER" prefHeight="34.0" prefWidth="168.0" style="-fx-border-color: black; -fx-border-width: 3; -fx-background-color: #f2dba0;">
-               <children>
-                  <Label text="Cantidad">
-                     <font>
-                        <Font name="Consolas Bold" size="18.0" />
-                     </font>
-                  </Label>
-               </children>
-            </HBox>
-            <HBox alignment="CENTER" prefHeight="34.0" prefWidth="166.0" style="-fx-border-color: black; -fx-border-width: 3; -fx-background-color: #c2eb8d;">
-               <children>
-                  <Label text="Puntaje">
-                     <font>
-                        <Font name="Consolas Bold" size="18.0" />
-                     </font>
-                  </Label>
-               </children>
-            </HBox>
-         </children>
-      </HBox>
-      <HBox prefHeight="718.0" prefWidth="286.0">
-         <children>
-            <VBox prefHeight="720.0" prefWidth="95.0">
-               <children>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="A">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="B">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="C">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="CH">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="D">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="E">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="F">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="G">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="H">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="I">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="J">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="L">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="LL">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="M">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="N">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="Ñ">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="O">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="P">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="Q">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="R">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="RR">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="S">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="T">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="U">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="V">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="X">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="Y">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="Z">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="☻">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-               </children></VBox>
-            <VBox prefHeight="720.0" prefWidth="95.0">
-               <children>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="A">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="B">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="C">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="CH">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="D">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="E">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="F">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="G">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="H">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="I">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="J">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="L">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="LL">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="M">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="N">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="Ñ">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="O">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="P">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="Q">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="R">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="RR">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="S">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="T">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="U">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="V">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="X">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="Y">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="Z">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="☻">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
             </VBox>
-            <VBox prefHeight="720.0" prefWidth="95.0">
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
                <children>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="A">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="B">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="C">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="CH">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="D">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="E">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="F">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="G">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="H">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="I">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="J">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="L">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="LL">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="M">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="N">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="Ñ">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="O">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="P">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="Q">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="R">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="RR">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="S">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="T">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="U">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="V">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="X">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="Y">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="Z">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
-                  <HBox alignment="CENTER" prefHeight="25.0" prefWidth="143.0" style="-fx-border-color: black;">
-                     <children>
-                        <Label text="☻">
-                           <font>
-                              <Font name="Consolas" size="18.0" />
-                           </font>
-                        </Label>
-                     </children>
-                  </HBox>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-B.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenB" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
                </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-C.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenC" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-CH.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenCH" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-D.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenD" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
             </VBox>
          </children>
-      </HBox>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="524.0" prefWidth="117.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-E.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenE" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-F.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenF" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-G.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenG" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-H.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenH" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-I.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenI" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="524.0" prefWidth="117.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-J.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenJ" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-L.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenL" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-LL.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenLL" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-M.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenM" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-N.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenN" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="524.0" prefWidth="117.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-Ñ.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenÑ" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-O.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenO" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-P.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenP" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-Q.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenQ" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-R.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenR" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="524.0" prefWidth="117.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-RR.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenRR" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-S.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenS" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-T.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenT" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-U.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenU" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-V.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenV" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+      </VBox>
+      <VBox alignment="TOP_CENTER" prefHeight="524.0" prefWidth="117.0">
+         <children>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-X.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenX" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-Y.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenY" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-Z.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenZ" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="TOP_CENTER" prefHeight="125.0" prefWidth="385.0" style="-fx-border-color: brown; -fx-border-width: 5;">
+               <children>
+                  <ImageView fitHeight="56.0" fitWidth="61.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Ficha-☻.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="10.0" top="20.0" />
+                     </VBox.margin>
+                  </ImageView>
+                  <Label text="Cantidad:">
+                     <font>
+                        <Font name="Cooper Black" size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="tokenJoker" text="Label">
+                     <font>
+                        <Font name="Consolas Bold" size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+            <VBox alignment="CENTER" prefHeight="133.0" prefWidth="118.0" style="-fx-border-color: brown; -fx-background-color: brown;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </VBox>
+         </children>
+      </VBox>
    </children>
-</VBox>
+</HBox>

@@ -8,6 +8,7 @@ import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class Main extends Application {
     @Override
@@ -23,7 +24,7 @@ public class Main extends Application {
         stage.setMinWidth(469);
         stage.setMinHeight(789);
         //Modificar link seleccionando con click derecho ScrabbleIcon -> Copy Path Reference -> Absolute Path.
-        stage.getIcons().add(new Image(new ImagesURL().icon));
+        stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream(new ImagesURL().icon))));
         stage.show();
     }
 

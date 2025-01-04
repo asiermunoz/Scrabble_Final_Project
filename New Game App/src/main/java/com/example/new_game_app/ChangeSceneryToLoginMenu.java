@@ -23,7 +23,7 @@ public class ChangeSceneryToLoginMenu implements ChangeSceneStrategy {
             stage.setMinWidth(469);
             stage.setMinHeight(698);
             //Modificar link seleccionando con click derecho ScrabbleIcon -> Copy Path Reference -> Absolute Path.
-            stage.getIcons().add(new Image(new ImagesURL().icon));
+            stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream(new ImagesURL().icon))));
             stage.show();
             return stage;
         }catch(IOException e){

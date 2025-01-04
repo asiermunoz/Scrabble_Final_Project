@@ -10,7 +10,6 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.HBox?>
-<?import javafx.scene.layout.Region?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
@@ -20,7 +19,7 @@
          <children>
             <HBox alignment="TOP_CENTER" prefHeight="70.0" prefWidth="703.0" style="-fx-background-color: #48b55b;">
                <children>
-                  <Label text="Turno de:">
+                  <Label fx:id="turnAnnouncer" text="Turno de:">
                      <font>
                         <Font name="Cooper Black" size="24.0" />
                      </font>
@@ -31,7 +30,7 @@
                <children>
                   <VBox alignment="CENTER" prefHeight="100.0" prefWidth="355.0" style="-fx-border-color: Black; -fx-background-color: White;">
                      <children>
-                        <Label text="Jugador 1">
+                        <Label fx:id="player1Name" text="Jugador 1">
                            <font>
                               <Font name="Cooper Black" size="18.0" />
                            </font>
@@ -39,16 +38,16 @@
                               <Insets bottom="5.0" />
                            </VBox.margin>
                         </Label>
-                        <Label text="Score 1">
+                        <Label fx:id="player1Score" text="Score 1" textFill="#3445ff">
                            <font>
-                              <Font name="Consolas" size="14.0" />
+                              <Font name="Consolas Bold" size="14.0" />
                            </font>
                         </Label>
                      </children>
                   </VBox>
                   <VBox alignment="CENTER" prefHeight="100.0" prefWidth="355.0" style="-fx-border-color: Black; -fx-background-color: White;">
                      <children>
-                        <Label text="Jugador 2">
+                        <Label fx:id="player2Name" text="Jugador 2">
                            <font>
                               <Font name="Cooper Black" size="21.0" />
                            </font>
@@ -56,9 +55,9 @@
                               <Insets bottom="5.0" />
                            </VBox.margin>
                         </Label>
-                        <Label text="Score 2">
+                        <Label fx:id="player2Score" text="Score 2" textFill="#3445ff">
                            <font>
-                              <Font name="Consolas" size="14.0" />
+                              <Font name="Consolas Bold" size="14.0" />
                            </font>
                         </Label>
                      </children>
@@ -2848,7 +2847,7 @@
          <children>
             <HBox alignment="CENTER" prefHeight="58.0" prefWidth="618.0" style="-fx-background-color: white;">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: none;">
+                  <Button fx:id="buttonReturn" mnemonicParsing="false" opacity="0.27" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: none;">
                      <graphic>
                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>
@@ -2860,12 +2859,19 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Region prefHeight="54.0" prefWidth="419.0" style="-fx-background-color: #edc4ac;">
+                  <VBox alignment="CENTER" prefHeight="58.0" prefWidth="440.0" style="-fx-background-color: #edc4ac;">
                      <HBox.margin>
-                        <Insets left="20.0" right="20.0" />
+                        <Insets left="10.0" right="15.0" />
                      </HBox.margin>
-                  </Region>
-                  <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="82.0" text="Jugar" textFill="#00810f">
+                     <children>
+                        <Label fx:id="exceptions" text="-------">
+                           <font>
+                              <Font name="Cooper Black" size="16.0" />
+                           </font>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <Button fx:id="buttonPlay" mnemonicParsing="false" opacity="0.28" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: #fff3c2;" text="Jugar" textFill="#00810f">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -2875,6 +2881,9 @@
                      <HBox.margin>
                         <Insets />
                      </HBox.margin>
+                     <effect>
+                        <DropShadow height="8.0" radius="3.5" width="8.0" />
+                     </effect>
                   </Button>
                </children>
                <VBox.margin>
@@ -2883,9 +2892,9 @@
             </HBox>
             <HBox alignment="CENTER" prefHeight="85.0" prefWidth="618.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="85.0" prefWidth="86.0" style="-fx-background-color: none;">
+                  <Button fx:id="buttonToken1" mnemonicParsing="false" onAction="#onSelectedTokenButtonClick" prefHeight="85.0" prefWidth="86.0" style="-fx-background-color: none;">
                      <graphic>
-                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="token1" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/EmptySpace.png" />
                            </image>
@@ -2898,9 +2907,9 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="85.0" prefWidth="85.0" style="-fx-background-color: none;">
+                  <Button fx:id="buttonToken2" mnemonicParsing="false" onAction="#onSelectedTokenButtonClick" prefHeight="85.0" prefWidth="85.0" style="-fx-background-color: none;">
                      <graphic>
-                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="token2" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/EmptySpace.png" />
                            </image>
@@ -2913,9 +2922,9 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="85.0" prefWidth="85.0" style="-fx-background-color: none;">
+                  <Button fx:id="buttonToken3" mnemonicParsing="false" onAction="#onSelectedTokenButtonClick" prefHeight="85.0" prefWidth="85.0" style="-fx-background-color: none;">
                      <graphic>
-                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="token3" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/EmptySpace.png" />
                            </image>
@@ -2928,9 +2937,9 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="85.0" prefWidth="85.0" style="-fx-background-color: none;">
+                  <Button fx:id="buttonToken4" mnemonicParsing="false" onAction="#onSelectedTokenButtonClick" prefHeight="85.0" prefWidth="85.0" style="-fx-background-color: none;">
                      <graphic>
-                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="token4" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/EmptySpace.png" />
                            </image>
@@ -2943,9 +2952,9 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="85.0" prefWidth="85.0" style="-fx-background-color: none;">
+                  <Button fx:id="buttonToken5" mnemonicParsing="false" onAction="#onSelectedTokenButtonClick" prefHeight="85.0" prefWidth="85.0" style="-fx-background-color: none;">
                      <graphic>
-                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="token5" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/EmptySpace.png" />
                            </image>
@@ -2958,9 +2967,9 @@
                         <Cursor fx:constant="HAND" />
                      </cursor>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="85.0" prefWidth="85.0" style="-fx-background-color: none;">
+                  <Button fx:id="buttonToken6" mnemonicParsing="false" onAction="#onSelectedTokenButtonClick" prefHeight="85.0" prefWidth="85.0" style="-fx-background-color: none;">
                      <graphic>
-                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="token6" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/EmptySpace.png" />
                            </image>
@@ -2970,9 +2979,9 @@
                         <Insets />
                      </HBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="85.0" prefWidth="85.0" style="-fx-background-color: none;">
+                  <Button fx:id="buttonToken7" mnemonicParsing="false" onAction="#onSelectedTokenButtonClick" prefHeight="85.0" prefWidth="85.0" style="-fx-background-color: none;">
                      <graphic>
-                        <ImageView fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fx:id="token7" fitHeight="60.0" fitWidth="60.0" pickOnBounds="true" preserveRatio="true">
                            <image>
                               <Image url="@Images/EmptySpace.png" />
                            </image>
@@ -3026,7 +3035,7 @@
             </Button>
             <VBox alignment="CENTER" prefHeight="94.0" prefWidth="375.0">
                <children>
-                  <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="288.0" style="-fx-background-color: #fff3c2;" text="Cambiar Fichas" textFill="#b40000">
+                  <Button fx:id="buttonExchange" mnemonicParsing="false" onAction="#onExchangeButtonClick" prefHeight="40.0" prefWidth="318.0" style="-fx-background-color: #fff3c2;" text="Cambiar Todas las Fichas" textFill="#b40000">
                      <font>
                         <Font name="Cooper Black" size="22.0" />
                      </font>
@@ -3040,7 +3049,7 @@
                         <Insets bottom="10.0" />
                      </VBox.margin>
                   </Button>
-                  <Button mnemonicParsing="false" prefHeight="28.0" prefWidth="196.0" text="Pasar Turno">
+                  <Button mnemonicParsing="false" onAction="#onPassTurnButtonClick" prefHeight="28.0" prefWidth="196.0" text="Pasar Turno">
                      <font>
                         <Font name="Copperplate Gothic Bold" size="15.0" />
                      </font>

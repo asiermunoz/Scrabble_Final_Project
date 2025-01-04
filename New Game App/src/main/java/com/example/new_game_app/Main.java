@@ -19,6 +19,7 @@ public class Main extends Application {
         LoginMenuController controller = fxmlLoader.getController();
         controller.setUsersLinkedList(JsonUserHandler.readFromJson());
 
+
         stage.setTitle("Register");
         stage.setScene(scene);
         stage.setMinWidth(469);

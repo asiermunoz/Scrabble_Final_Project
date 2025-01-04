@@ -1,36 +1,168 @@
 package com.example.new_game_app;
 
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
+import java.net.URL;
+import java.util.ArrayList;
+import java.util.ResourceBundle;
 
-public class GameController {
+
+public class GameController implements Initializable {
+    private Game game;
+    private Boolean doNotCountPass = false;
     private final PopUpSelected popUpselected = new PopUpSelected();
 
-    public GameController() {
+    @FXML private Label exceptions;
+    @FXML private Label turnAnnouncer;
+    @FXML private Label player1Name;
+    @FXML private Label player1Score;
+    @FXML private Label player2Name;
+    @FXML private Label player2Score;
+    private ArrayList<ImageView> playerTokens = new ArrayList<>(){
+        @FXML private Button buttonToken1;
+        @FXML private Button buttonToken2;
+        @FXML private Button buttonToken3;
+        @FXML private Button buttonToken4;
+        @FXML private Button buttonToken5;
+        @FXML private Button buttonToken6;
+        @FXML private Button buttonToken7;
+    };
+    private ArrayList<Button> buttonTokens = new ArrayList<>(){
+        @FXML private ImageView token1;
+        @FXML private ImageView token2;
+        @FXML private ImageView token3;
+        @FXML private ImageView token4;
+        @FXML private ImageView token5;
+        @FXML private ImageView token6;
+        @FXML private ImageView token7;
+    };
+    private ArrayList<Button> actionButtons = new ArrayList<>();
+    @FXML private Button buttonExchange;
+    @FXML private Button buttonReturn;
+    @FXML private Button buttonPlay;
+
+    @Override
+    public void initialize(URL url, ResourceBundle resourceBundle) {
+        game = new Game();
+        game.setGame(exceptions);
+
+        actionButtons.add(buttonExchange);
+        actionButtons.add(buttonReturn);
+        actionButtons.add(buttonPlay);
         StageManager.exit = new Stage();
         StageManager.bag = new Stage();
         StageManager.stadistics = new Stage();
+        modifyLabels();
+        showHolder();
+    }
+
+    public void modifyLabels(){
+        turnAnnouncer.setText("Es el turno de: " + game.getTurn().getAlias());
+        player1Name.setText(game.getPlayer1().getAlias());
+        player1Score.setText(String.valueOf(game.getPlayer1().getScore()));
+        player2Name.setText(game.getPlayer2().getAlias());
+        player2Score.setText(String.valueOf(game.getPlayer2().getScore()));
+    }
+
+    public void showHolder(){
+        int i = 0;
+        for(ImageView view:playerTokens){
+            if(i<game.getTurn().getHolder().getHoldSize()){
+                view.setImage(new Image(game.getTurn().getHolder().hold.get(i).getLink()));
+                view.setOpacity(1);
+            } else {
+                view.setImage(new Image(new ImagesURL().emptySpace));
+                view.setOpacity(0.28);
+                buttonTokens.get(i).setDisable(true);
+            }
+            i++;
+        }
+    }
+
+    public void nextTurn(javafx.event.ActionEvent actionEvent){
+        if(game.getSkippedTurns() == 4){
+            game.finishGame(actionEvent);
+        }
+        if(game.getTurn() == game.getOrder().getFirstPlayer()){
+            game.turnToLastPlayer();
+        }
+        else{
+            game.turnToFirstPlayer();
+        }
+        modifyLabels();
+        showHolder();
+        for(Button button:actionButtons){
+            if(button != buttonReturn || button != buttonPlay) {
+                button.setOpacity(1);
+                button.setDisable(false);
+            }
+            else{
+                button.setOpacity(0.28);
+                button.setDisable(true);
+            }
+        }
+    }
+
+    public void onPassTurnButtonClick(javafx.event.ActionEvent actionEvent) {
+        if(!doNotCountPass) {
+            game.addSkippedTurns();
+        }
+        exceptions.setText(game.getTurn().getAlias() + " paso su turno.");
+        doNotCountPass = false;
+        nextTurn(actionEvent);
+    }
+
+    public void onSelectedTokenButtonClick(javafx.event.ActionEvent actionEvent){
+        int i = 0;
+        for(Button button:buttonTokens){
+            if(actionEvent.getSource() == button){
+                if(button.getOpacity() == 1) {
+                    button.setOpacity(0.28);
+                    game.addLettersToUse(i);
+                }
+                else{
+                    button.setOpacity(1);
+                }
+            }
+            i++;
+        }
     }
 
     @FXML
-    protected void onExitToMenuButtonClick() {
+    public void onExchangeButtonClick(){
+        exceptions.setText("Se intercambiaron todas sus fichas.");
+        game.exchange();
+        game.restartSkippedTurns();
+        showHolder();
+        doNotCountPass = true;
+        for(Button button:actionButtons){
+            button.setOpacity(0.28);
+            button.setDisable(true);
+        }
+    }
+
+    @FXML
+    public void onExitToMenuButtonClick() {
         PopUpCommand command = new PopUpExit();
         popUpselected.setCommand(command);
         StageManager.exit = popUpselected.buttonPressed();
     }
 
     @FXML
-    protected void onBagButtonClick() {
+    public void onBagButtonClick() {
         PopUpCommand command = new PopUpBag();
         popUpselected.setCommand(command);
         StageManager.bag = popUpselected.buttonPressed();
     }
 
     @FXML
-    protected void onStadisticsButtonClick() {
+    public void onStadisticsButtonClick() {
         PopUpCommand command = new PopUpStadistics();
         popUpselected.setCommand(command);
         StageManager.stadistics = popUpselected.buttonPressed();

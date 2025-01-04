@@ -1,0 +1,21 @@
+.hover-button {
+    -fx-text-fill:  #89623d;
+}
+
+.hover-button:hover {
+    -fx-text-fill: #e49e65;
+}
+
+.exit-button {
+    -fx-background-image: url("../Images/Exit_Closed.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+
+.exit-button:hover {
+    -fx-background-image: url("../Images/Exit.png");
+    -fx-background-size: contain;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}

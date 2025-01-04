@@ -1,5 +1,6 @@
 package com.example.new_game_app;
 
+import com.example.new_game_app.objects.jsonHandlers.JsonUserHandler;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -11,8 +12,12 @@ import java.io.IOException;
 public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("RegisterView.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Login-menu-view.fxml"));
         Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+
+        LoginMenuController controller = fxmlLoader.getController();
+        controller.setUsersLinkedList(JsonUserHandler.readFromJson());
+
         stage.setTitle("Register");
         stage.setScene(scene);
         stage.setMinWidth(469);

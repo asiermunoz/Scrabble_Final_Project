@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" prefHeight="684.0" prefWidth="926.0" spacing="20.0" style="-fx-background-color: #e8c39e;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.new_game_app.MainMenuController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <VBox style="-fx-background-color: #f3dbc3;">
+         <children>
+            <Region prefHeight="37.0" prefWidth="886.0" />
+            <HBox alignment="TOP_CENTER" prefHeight="0.0" prefWidth="651.0">
+               <children>
+                  <ImageView fitHeight="165.0" fitWidth="532.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Images/Scrabble-logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </HBox>
+            <Region prefHeight="37.0" prefWidth="886.0" />
+            <HBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="101.0" prefWidth="886.0">
+               <children>
+                  <Button fx:id="createNewGameButton" alignment="TOP_LEFT" cache="true" mnemonicParsing="false" onAction="#onNewGameButtonClick" prefHeight="82.0" prefWidth="886.0" style="-fx-background-color: transparent;" styleClass="hover-button" stylesheets="@CSS/styles.css" text="Crear nueva partida" textFill="#89623d">
+                     <font>
+                        <Font name="Agency FB Bold" size="50.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="101.0" prefWidth="886.0">
+               <children>
+                  <Button fx:id="loadGameButton" alignment="TOP_LEFT" cache="true" mnemonicParsing="false" prefHeight="82.0" prefWidth="886.0" style="-fx-background-color: transparent;" styleClass="hover-button" stylesheets="@CSS/styles.css" text="Continuar partida anterior" textFill="#89623d">
+                     <font>
+                        <Font name="Agency FB Bold" size="50.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="101.0" prefWidth="886.0">
+               <children>
+                  <Button fx:id="showStadisticsButton" alignment="TOP_LEFT" cache="true" mnemonicParsing="false" prefHeight="82.0" prefWidth="886.0" style="-fx-background-color: transparent;" styleClass="hover-button" stylesheets="@CSS/styles.css" text="Mostrar estadisticas" textFill="#89623d">
+                     <font>
+                        <Font name="Agency FB Bold" size="50.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox alignment="BOTTOM_RIGHT" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exitMenu" prefHeight="132.0" prefWidth="153.0" style="-fx-background-color: transparent;" styleClass="exit-button" stylesheets="@CSS/styles.css" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</VBox>

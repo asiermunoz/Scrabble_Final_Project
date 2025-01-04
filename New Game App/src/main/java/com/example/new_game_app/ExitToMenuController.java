@@ -3,7 +3,7 @@ package com.example.new_game_app;
 import javafx.fxml.FXML;
 
 public class ExitToMenuController {
-    private final ChangeSceneStrategy strategy = new ChangeSceneryToMenu();
+    private final ChangeSceneStrategy strategy = new ChangeSceneryToMainMenu();
     private final ChangeSceneryToContext context = new ChangeSceneryToContext();
 
     @FXML

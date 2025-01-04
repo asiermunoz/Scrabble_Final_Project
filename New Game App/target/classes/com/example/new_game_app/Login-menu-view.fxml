@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Region?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="770.0" prefWidth="716.0" spacing="20.0" style="-fx-background-color: #e8c39e;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.new_game_app.LoginMenuController">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="776.0" prefWidth="939.0" style="-fx-background-color: #f3dbc3;">
+         <children>
+            <Label contentDisplay="TOP" text="Login menu" textFill="#89623d" underline="true">
+               <font>
+                  <Font name="Copperplate Gothic Bold" size="48.0" />
+               </font>
+            </Label>
+            <Region prefHeight="22.0" prefWidth="892.0" />
+            <VBox prefHeight="662.0" prefWidth="990.0">
+               <children>
+                  <Label text="Usuario 1" textFill="#968575">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="32.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label contentDisplay="RIGHT" prefHeight="42.0" prefWidth="472.0" text="    " textFill="#196533">
+                     <font>
+                        <Font name="Agency FB Bold" size="48.0" />
+                     </font>
+                     <graphic>
+                        <TextField fx:id="usernameField1" prefHeight="49.0" prefWidth="276.0" promptText="Alias">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </TextField>
+                     </graphic>
+                  </Label>
+                  <Label contentDisplay="RIGHT" prefHeight="99.0" prefWidth="497.0" text="    " textFill="#196533">
+                     <font>
+                        <Font name="Agency FB Bold" size="48.0" />
+                     </font>
+                     <graphic>
+                        <TextField fx:id="emailField1" prefHeight="49.0" prefWidth="276.0" promptText="Email">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </TextField>
+                     </graphic>
+                  </Label>
+                  <Region prefHeight="166.0" prefWidth="892.0" />
+                  <Label text="Usuario 2" textFill="#968575">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="32.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets left="30.0" top="20.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Label contentDisplay="RIGHT" prefHeight="99.0" prefWidth="472.0" text="    " textFill="#196533">
+                     <font>
+                        <Font name="Agency FB Bold" size="48.0" />
+                     </font>
+                     <graphic>
+                        <TextField fx:id="usernameField2" prefHeight="49.0" prefWidth="276.0" promptText="Alias">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </TextField>
+                     </graphic>
+                  </Label>
+                  <Label contentDisplay="RIGHT" prefHeight="99.0" prefWidth="497.0" text="    " textFill="#196533">
+                     <font>
+                        <Font name="Agency FB Bold" size="48.0" />
+                     </font>
+                     <graphic>
+                        <TextField fx:id="emailField2" prefHeight="49.0" prefWidth="276.0" promptText="Email">
+                           <font>
+                              <Font size="19.0" />
+                           </font>
+                        </TextField>
+                     </graphic>
+                     <VBox.margin>
+                        <Insets bottom="30.0" />
+                     </VBox.margin>
+                  </Label>
+                  <Region prefHeight="110.0" prefWidth="920.0" />
+                  <VBox alignment="CENTER" prefHeight="106.0" prefWidth="735.0">
+                     <children>
+                        <Button fx:id="loginButton" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#startLogin" prefHeight="65.0" prefWidth="221.0" style="-fx-background-color: transparent; -fx-border-color: #89623d; -fx-border-width: 5;" styleClass="hover-button" stylesheets="@CSS/styles.css" text="Login" textFill="#89623d">
+                           <font>
+                              <Font name="Copperplate Gothic Bold" size="30.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets />
+                           </VBox.margin>
+                        </Button>
+                        <Label fx:id="errorMessage" alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="6.0" prefWidth="924.0" textFill="#c40b0b">
+                           <font>
+                              <Font name="Copperplate Gothic Bold" size="24.0" />
+                           </font>
+                           <VBox.margin>
+                              <Insets top="10.0" />
+                           </VBox.margin>
+                        </Label>
+                     </children>
+                  </VBox>
+                  <HBox prefHeight="365.0" prefWidth="990.0">
+                     <children>
+                        <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                           <children>
+                              <Button fx:id="loginExit" mnemonicParsing="false" onAction="#exitLogin" prefHeight="105.0" prefWidth="98.0" style="-fx-background-color: transparent;" styleClass="exit-button" stylesheets="@CSS/styles.css">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Button>
+                              <Label text="Salir" textFill="#89623d">
+                                 <font>
+                                    <Font name="Copperplate Gothic Bold" size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                           <HBox.margin>
+                              <Insets left="20.0" />
+                           </HBox.margin>
+                        </VBox>
+                     </children>
+                     <VBox.margin>
+                        <Insets bottom="10.0" />
+                     </VBox.margin>
+                  </HBox>
+               </children>
+            </VBox>
+         </children></VBox>
+   </children>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+   <padding>
+      <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+   </padding>
+</VBox>

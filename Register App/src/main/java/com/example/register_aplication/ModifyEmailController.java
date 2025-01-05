@@ -11,6 +11,8 @@ import java.util.LinkedList;
 
 public class ModifyEmailController {
     LinkedList<User> listOfUsers = new LinkedList<User>();
+    private final ChangeSceneryToContext context = new ChangeSceneryToContext();
+    private ChangeSceneStrategy strategy;
 
 
     @FXML
@@ -85,8 +87,9 @@ public class ModifyEmailController {
     }
 
     @FXML
-    protected void exitPage (){
-        Stage stage = (Stage) exitButton.getScene().getWindow();
-        stage.close();
+    protected void exitPage (javafx.event.ActionEvent actionEvent){
+        strategy = new ChangeSceneToRegisterUser();
+        context.setStrategy(strategy);
+        context.change(actionEvent);
     }
 }

@@ -11,6 +11,8 @@ import java.util.LinkedList;
 
 public class DeleteUserController {
     LinkedList<User> listOfUsers = new LinkedList<User>();
+    private final ChangeSceneryToContext context = new ChangeSceneryToContext();
+    private ChangeSceneStrategy strategy;
 
 
     @FXML
@@ -77,9 +79,10 @@ public class DeleteUserController {
     }
 
     @FXML
-    protected void exitPage (){
-        Stage stage = (Stage) deleteExitButton.getScene().getWindow();
-        stage.close();
+    protected void exitPage (javafx.event.ActionEvent actionEvent){
+        strategy = new ChangeSceneToRegisterUser();
+        context.setStrategy(strategy);
+        context.change(actionEvent);
     }
 
 }

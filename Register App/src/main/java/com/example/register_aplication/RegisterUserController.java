@@ -23,17 +23,20 @@ public class RegisterUserController {
         strategy = new ChangeSceneToNewUser();
         context.setStrategy(strategy);
         context.change(actionEvent);
-
     }
 
     @FXML
     protected void onButtonChangeName(javafx.event.ActionEvent actionEvent) {
-
+        strategy = new ChangeSceneToModifyName();
+        context.setStrategy(strategy);
+        context.change(actionEvent);
     }
 
     @FXML
     protected void onButtonChangeEmail(javafx.event.ActionEvent actionEvent) {
-
+        strategy = new ChangeSceneToModifyEmail();
+        context.setStrategy(strategy);
+        context.change(actionEvent);
     }
 
     @FXML

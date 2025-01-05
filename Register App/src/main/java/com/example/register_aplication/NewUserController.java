@@ -5,10 +5,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.control.Label;
 import javafx.stage.Stage;
-import handler.*;
-import users.*;
-import users.exceptions.InvalidAliasException;
-import users.exceptions.InvalidEmailException;
+import com.example.register_aplication.exceptions.InvalidAliasException;
+import com.example.register_aplication.exceptions.InvalidEmailException;
 import java.util.LinkedList;
 
 public class NewUserController {

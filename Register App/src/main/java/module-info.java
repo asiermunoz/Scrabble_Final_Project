@@ -8,10 +8,10 @@ module com.example.register_aplication {
     requires java.logging;
     requires java.desktop;
 
-    opens com.example.register_aplication to javafx.fxml;
     exports com.example.register_aplication;
 
 
     opens users to com.google.gson;
+    opens com.example.register_aplication to com.google.gson, javafx.fxml;
 
 }

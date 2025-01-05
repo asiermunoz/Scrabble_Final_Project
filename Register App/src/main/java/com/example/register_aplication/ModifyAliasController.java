@@ -1,17 +1,15 @@
 package com.example.register_aplication;
 
-import handler.JsonHandler;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
-import users.User;
-import users.exceptions.InvalidAliasException;
+import com.example.register_aplication.exceptions.InvalidAliasException;
 
 import java.util.LinkedList;
 
-public class ChangeAliasController {
+public class ModifyAliasController {
     LinkedList<User> listOfUsers = new LinkedList<User>();
 
 

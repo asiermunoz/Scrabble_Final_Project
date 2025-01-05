@@ -1,7 +1,7 @@
-package users;
+package com.example.register_aplication;
 
-import users.exceptions.InvalidAliasException;
-import users.exceptions.InvalidEmailException;
+import com.example.register_aplication.exceptions.InvalidAliasException;
+import com.example.register_aplication.exceptions.InvalidEmailException;
 
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;

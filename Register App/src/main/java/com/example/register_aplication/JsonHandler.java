@@ -1,9 +1,8 @@
-package handler;
+package com.example.register_aplication;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
-import users.User;
 
 import java.io.IOException;
 import java.lang.reflect.Type;

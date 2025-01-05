@@ -1,4 +1,4 @@
-package users.exceptions;
+package com.example.register_aplication.exceptions;
 
 public class InvalidEmailException extends Exception {
 

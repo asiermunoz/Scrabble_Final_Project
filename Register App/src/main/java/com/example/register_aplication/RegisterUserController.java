@@ -15,61 +15,35 @@ public class RegisterUserController {
     @FXML
     private Button NweUserButton;
 
+    private final ChangeSceneryToContext context = new ChangeSceneryToContext();
+    private ChangeSceneStrategy strategy;
+
     @FXML
-    protected void onButtonNewUser() {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("NewUser.fxml"));
-            Parent root = fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setTitle("New User");
-            stage.setScene(new Scene(root));
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    protected void onButtonNewUser(javafx.event.ActionEvent actionEvent) {
+        strategy = new ChangeSceneToNewUser();
+        context.setStrategy(strategy);
+        context.change(actionEvent);
+
     }
 
     @FXML
-    protected void onButtonChangeName() {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ChangeName.fxml"));
-            Parent root = fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setTitle("Change Name");
-            stage.setScene(new Scene(root));
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    protected void onButtonChangeName(javafx.event.ActionEvent actionEvent) {
+
     }
 
     @FXML
-    protected void onButtonChangeEmail() {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("ChangeEmail.fxml"));
-            Parent root = fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setTitle("Change Email");
-            stage.setScene(new Scene(root));
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    protected void onButtonChangeEmail(javafx.event.ActionEvent actionEvent) {
+
     }
+
     @FXML
-    protected void onButtonDeleteUser() {
-        try {
-            FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("DeleteUser.fxml"));
-            Parent root = fxmlLoader.load();
-            Stage stage = new Stage();
-            stage.setTitle("Delete User");
-            stage.setScene(new Scene(root));
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    protected void onButtonDeleteUser(javafx.event.ActionEvent actionEvent) {
+        strategy = new ChangeSceneToDeleteUser();
+        context.setStrategy(strategy);
+        context.change(actionEvent);
     }
- // FALTA IMPLEMENTAR
+
+
     @FXML
     protected void exitPage (){
         Platform.exit();

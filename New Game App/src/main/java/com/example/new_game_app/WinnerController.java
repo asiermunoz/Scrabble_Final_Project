@@ -13,6 +13,7 @@ public class WinnerController implements Initializable {
     private final ChangeSceneryToContext context = new ChangeSceneryToContext();
     @FXML private Label winnerPlayer;
     @FXML private Label motive;
+    @FXML private Label pastTime;
 
     @FXML private Label player1Name;
     @FXML private Label player1Score;
@@ -32,7 +33,7 @@ public class WinnerController implements Initializable {
             winnerPlayer.setText("Empate");
         }
         motive.setText(EndGameInfo.motive);
-
+        pastTime.setText("Tiempo transcurrido: " + EndGameInfo.pastTime);
         player1Name.setText(EndGameInfo.player1.getAlias());
         player1Score.setText("Score: " + EndGameInfo.player1.getScore());
         player2Name.setText(EndGameInfo.player2.getAlias());

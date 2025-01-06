@@ -1,5 +1,8 @@
 package com.example.new_game_app;
 
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
@@ -7,6 +10,7 @@ import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
+import javafx.util.Duration;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -17,6 +21,8 @@ public class GameController implements Initializable {
     private Game game;
     private Boolean doNotCountPass = false;
     private final PopUpSelected popUpselected = new PopUpSelected();
+    private Timeline timeline;
+    private int secondsElapsed;
 
     @FXML
     private Label exceptions;
@@ -30,6 +36,8 @@ public class GameController implements Initializable {
     private Label player2Name;
     @FXML
     private Label player2Score;
+    @FXML
+    private Label timerLabel;
     private ArrayList<ImageView> playerTokens = new ArrayList<>() {
         @FXML
         private Button buttonToken1;
@@ -72,18 +80,41 @@ public class GameController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        //Timer:
+        timeline = new Timeline(new KeyFrame(Duration.seconds(1), event -> updateTimer()));
+        timeline.setCycleCount(Animation.INDEFINITE);
+        secondsElapsed = 0;
+        timeline.play();
+
         game = new Game();
         game.setGame(exceptions);
-
         actionButtons.add(buttonExchange);
         actionButtons.add(buttonReturn);
         actionButtons.add(buttonPlay);
         StageManager.exit = new Stage();
         StageManager.bag = new Stage();
         StageManager.stadistics = new Stage();
+        updateTimer();
         modifyLabels();
         showHolder();
     }
+
+    private void updateTimer() {
+        secondsElapsed++;
+        int hours = secondsElapsed / 3600;
+        int minutes = (secondsElapsed % 3600) / 60;
+        int seconds = secondsElapsed % 60;
+        timerLabel.setText(String.format("%02d:%02d:%02d", hours, minutes, seconds));
+    }
+
+    private String stopTimer() {
+        timeline.stop();
+        int hours = secondsElapsed / 3600;
+        int minutes = (secondsElapsed % 3600) / 60;
+        int seconds = secondsElapsed % 60;
+        return String.format("%02d:%02d:%02d", hours, minutes, seconds);
+    }
+
 
     public void modifyLabels() {
         turnAnnouncer.setText("Es el turno de: " + game.getTurn().getAlias());
@@ -110,6 +141,7 @@ public class GameController implements Initializable {
 
     public void nextTurn(javafx.event.ActionEvent actionEvent) {
         if (game.getSkippedTurns() == 4) {
+            EndGameInfo.pastTime = stopTimer();
             game.finishGame(actionEvent);
         }
         if (game.getTurn() == game.getOrder().getFirstPlayer()) {

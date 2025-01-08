@@ -2,6 +2,8 @@ package com.example.new_game_app;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+import com.example.new_game_app.ChangeSceneStrategy;
+import com.example.new_game_app.ChangeSceneryToContext;
 
 public class MainMenuController {
 
@@ -17,25 +19,25 @@ public class MainMenuController {
     private Button exitButton;
 
     //Java Variables
-
-    private final com.example.new_game_app.ChangeSceneStrategy strategy = new ChangeSceneryToGame();
-    private final com.example.new_game_app.ChangeSceneryToContext context = new com.example.new_game_app.ChangeSceneryToContext();
-
-    //Constructors and Getters y Setters
-
+    private ChangeSceneStrategy strategy = null;
+    private final ChangeSceneryToContext context = new ChangeSceneryToContext();
 
     //Methods
-
-
     @FXML
-    public void exitMenu(javafx.event.ActionEvent actionEvent) {
-        ChangeSceneStrategy strategy = new ChangeSceneryToLoginMenu();
-        ChangeSceneryToContext context = new ChangeSceneryToContext();
+    public void onExitClick() {
+        System.exit(0);
+    }
+
+
+    public void onReturnToLoginButtonClick(javafx.event.ActionEvent actionEvent){
+        this.strategy = new ChangeSceneryToLoginMenu();
         context.setStrategy(strategy);
         context.change(actionEvent);
+
     }
 
     public void onNewGameButtonClick(javafx.event.ActionEvent actionEvent) {
+        strategy = new ChangeSceneryToGame();
         context.setStrategy(strategy);
         StageManager.game = context.change(actionEvent);
     }

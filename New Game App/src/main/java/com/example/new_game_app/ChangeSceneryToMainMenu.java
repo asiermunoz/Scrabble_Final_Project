@@ -20,8 +20,8 @@ public class ChangeSceneryToMainMenu implements ChangeSceneStrategy {
             Scene scene = new Scene(root);
             stage.setTitle("Menu");
             stage.setScene(scene);
-            stage.setMinWidth(469);
-            stage.setMinHeight(698);
+            stage.setMinWidth(699);
+            stage.setMinHeight(699);
             //Modificar link seleccionando con click derecho ScrabbleIcon -> Copy Path Reference -> Absolute Path.
             stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream(new ImagesURL().icon))));
             stage.show();

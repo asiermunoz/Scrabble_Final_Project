@@ -14,6 +14,7 @@ import javafx.util.Duration;
 
 import java.net.URL;
 import java.util.ArrayList;
+import java.util.Objects;
 import java.util.ResourceBundle;
 
 
@@ -23,6 +24,8 @@ public class GameController implements Initializable {
     private final PopUpSelected popUpselected = new PopUpSelected();
     private Timeline timeline;
     private int secondsElapsed;
+    private ArrayList<ImageView> playerTokens = new ArrayList<>();
+    private ArrayList<Button> buttonTokens = new ArrayList<>();
 
     @FXML
     private Label exceptions;
@@ -38,38 +41,23 @@ public class GameController implements Initializable {
     private Label player2Score;
     @FXML
     private Label timerLabel;
-    private ArrayList<ImageView> playerTokens = new ArrayList<>() {
-        @FXML
-        private Button buttonToken1;
-        @FXML
-        private Button buttonToken2;
-        @FXML
-        private Button buttonToken3;
-        @FXML
-        private Button buttonToken4;
-        @FXML
-        private Button buttonToken5;
-        @FXML
-        private Button buttonToken6;
-        @FXML
-        private Button buttonToken7;
-    };
-    private ArrayList<Button> buttonTokens = new ArrayList<>() {
-        @FXML
-        private ImageView token1;
-        @FXML
-        private ImageView token2;
-        @FXML
-        private ImageView token3;
-        @FXML
-        private ImageView token4;
-        @FXML
-        private ImageView token5;
-        @FXML
-        private ImageView token6;
-        @FXML
-        private ImageView token7;
-    };
+
+    @FXML private ImageView token1;
+    @FXML private ImageView token2;
+    @FXML private ImageView token3;
+    @FXML private ImageView token4;
+    @FXML private ImageView token5;
+    @FXML private ImageView token6;
+    @FXML private ImageView token7;
+
+    @FXML private Button buttonToken1;
+    @FXML private Button buttonToken2;
+    @FXML private Button buttonToken3;
+    @FXML private Button buttonToken4;
+    @FXML private Button buttonToken5;
+    @FXML private Button buttonToken6;
+    @FXML private Button buttonToken7;
+
     private ArrayList<Button> actionButtons = new ArrayList<>();
     @FXML
     private Button buttonExchange;
@@ -85,9 +73,25 @@ public class GameController implements Initializable {
         timeline.setCycleCount(Animation.INDEFINITE);
         secondsElapsed = 0;
         timeline.play();
-
         game = new Game();
+
         game.setGame(exceptions);
+        playerTokens.add(token1);
+        playerTokens.add(token2);
+        playerTokens.add(token3);
+        playerTokens.add(token4);
+        playerTokens.add(token5);
+        playerTokens.add(token6);
+        playerTokens.add(token7);
+
+        buttonTokens.add(buttonToken1);
+        buttonTokens.add(buttonToken2);
+        buttonTokens.add(buttonToken3);
+        buttonTokens.add(buttonToken4);
+        buttonTokens.add(buttonToken5);
+        buttonTokens.add(buttonToken6);
+        buttonTokens.add(buttonToken7);
+
         actionButtons.add(buttonExchange);
         actionButtons.add(buttonReturn);
         actionButtons.add(buttonPlay);
@@ -128,10 +132,10 @@ public class GameController implements Initializable {
         int i = 0;
         for (ImageView view : playerTokens) {
             if (i < game.getTurn().getHolder().getHoldSize()) {
-                view.setImage(new Image(game.getTurn().getHolder().hold.get(i).getLink()));
+                view.setImage(new Image(Objects.requireNonNull(getClass().getResourceAsStream(game.getTurn().getHolder().hold.get(i).getLink()))));
                 view.setOpacity(1);
             } else {
-                view.setImage(new Image(getClass().getResourceAsStream(new ImagesURL().emptySpace)));
+                view.setImage(new Image(Objects.requireNonNull(getClass().getResourceAsStream(new ImagesURL().emptySpace))));
                 view.setOpacity(0.28);
                 buttonTokens.get(i).setDisable(true);
             }

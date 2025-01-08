@@ -6,6 +6,22 @@
     -fx-text-fill: #e49e65;
 }
 
+.red-button {
+    -fx-text-fill:  #b40000;
+}
+
+.red-button:hover {
+    -fx-text-fill: #f01313;
+}
+
+.play-button {
+    -fx-text-fill:  #00810f;
+}
+
+.play-button:hover {
+    -fx-text-fill: #0ac720;
+}
+
 .exit-button {
     -fx-background-image: url("../Images/Exit_Closed.png");
     -fx-background-size: contain;

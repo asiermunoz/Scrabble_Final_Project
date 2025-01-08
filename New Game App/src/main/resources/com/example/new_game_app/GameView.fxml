@@ -2879,7 +2879,7 @@
                         </Label>
                      </children>
                   </VBox>
-                  <Button fx:id="buttonPlay" mnemonicParsing="false" opacity="0.28" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: #fff3c2;" text="Jugar" textFill="#00810f">
+                  <Button fx:id="buttonPlay" mnemonicParsing="false" opacity="0.28" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: #fff3c2;" styleClass="play-button" stylesheets="@CSS/styles.css" text="Jugar" textFill="#00810f">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>
@@ -3046,7 +3046,7 @@
             </Button>
             <VBox alignment="CENTER" prefHeight="94.0" prefWidth="375.0">
                <children>
-                  <Button fx:id="buttonExchange" mnemonicParsing="false" onAction="#onExchangeButtonClick" prefHeight="40.0" prefWidth="318.0" style="-fx-background-color: #fff3c2;" text="Cambiar Todas las Fichas" textFill="#b40000">
+                  <Button fx:id="buttonExchange" mnemonicParsing="false" onAction="#onExchangeButtonClick" prefHeight="40.0" prefWidth="318.0" style="-fx-background-color: #fff3c2;" styleClass="red-button" stylesheets="@CSS/styles.css" text="Cambiar Todas las Fichas" textFill="#b40000">
                      <font>
                         <Font name="Cooper Black" size="22.0" />
                      </font>

@@ -1,5 +1,6 @@
 package com.example.new_game_app;
 
+import com.example.new_game_app.objects.PlayerManager;
 import com.example.new_game_app.objects.models.LoginMenuModel;
 import com.example.new_game_app.objects.users.User;
 import javafx.fxml.FXML;
@@ -64,6 +65,10 @@ public class LoginMenuController {
 
         if(model.validateUser(usersLinkedList, user1) && model.validateUser(usersLinkedList, user2)) {
             context.setStrategy(strategy);
+            Player player1 = model.userToPlayer(user1);
+            Player player2 = model.userToPlayer(user2);
+            PlayerManager.player1 = player1;
+            PlayerManager.player2 = player2;
             context.change(actionEvent);
         } else {
             errorMessage.setText("User not found");

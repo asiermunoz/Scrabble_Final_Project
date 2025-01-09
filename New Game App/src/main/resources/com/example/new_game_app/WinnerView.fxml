@@ -89,7 +89,7 @@
                   </RadialGradient>
                </textFill>
             </Label>
-            <Button mnemonicParsing="false" onAction="#onGoToMenuClick" prefHeight="34.0" prefWidth="302.0" style="-fx-border-color: black; -fx-background-color: white;" text="Volver al menú Principal" textFill="#b80000">
+            <Button mnemonicParsing="false" onAction="#onGoToMenuClick" prefHeight="34.0" prefWidth="302.0" style="-fx-border-color: black; -fx-background-color: white;" styleClass="red-button" stylesheets="@CSS/styles.css" text="Volver al menú Principal" textFill="#b80000">
                <font>
                   <Font name="Copperplate Gothic Bold" size="14.0" />
                </font>

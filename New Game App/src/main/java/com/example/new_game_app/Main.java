@@ -14,16 +14,16 @@ public class Main extends Application {
     @Override
     public void start(Stage stage) throws IOException {
         FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("Login-menu-view.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
+        Scene scene = new Scene(fxmlLoader.load(), 699, 699);
 
         LoginMenuController controller = fxmlLoader.getController();
         controller.setUsersLinkedList(JsonUserHandler.readFromJson());
 
 
-        stage.setTitle("Register");
+        stage.setTitle("LogIn");
         stage.setScene(scene);
-        stage.setMinWidth(469);
-        stage.setMinHeight(789);
+        stage.setMinWidth(699);
+        stage.setMinHeight(699);
         //Modificar link seleccionando con click derecho ScrabbleIcon -> Copy Path Reference -> Absolute Path.
         stage.getIcons().add(new Image(Objects.requireNonNull(getClass().getResourceAsStream(new ImagesURL().icon))));
         stage.show();

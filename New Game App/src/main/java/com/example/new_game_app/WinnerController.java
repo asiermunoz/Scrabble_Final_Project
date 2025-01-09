@@ -9,7 +9,7 @@ import java.net.URL;
 import java.util.ResourceBundle;
 
 public class WinnerController implements Initializable {
-    private final ChangeSceneStrategy strategy = new ChangeSceneryToMenu();
+    private final ChangeSceneStrategy strategy = new ChangeSceneryToMainMenu();
     private final ChangeSceneryToContext context = new ChangeSceneryToContext();
     @FXML private Label winnerPlayer;
     @FXML private Label motive;

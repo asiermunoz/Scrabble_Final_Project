@@ -1,6 +1,5 @@
 package com.example.new_game_app;
 
-import com.example.new_game_app.objects.PlayerManager;
 import com.example.new_game_app.objects.models.LoginMenuModel;
 import com.example.new_game_app.objects.users.User;
 import javafx.fxml.FXML;

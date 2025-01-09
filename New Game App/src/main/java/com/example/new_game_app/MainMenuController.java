@@ -1,10 +1,7 @@
 package com.example.new_game_app;
 
-import com.example.new_game_app.objects.PlayerManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import com.example.new_game_app.ChangeSceneStrategy;
-import com.example.new_game_app.ChangeSceneryToContext;
 
 public class MainMenuController {
 

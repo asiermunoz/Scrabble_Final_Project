@@ -75,7 +75,7 @@
                <children>
                   <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
                      <children>
-                        <Button fx:id="tableButton1" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: greered;">
+                        <Button fx:id="tableButton1" mnemonicParsing="false" onAction="#onPutTokenOnTable" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: greered;">
                            <graphic>
                               <ImageView fx:id="tableImage1" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -87,7 +87,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button fx:id="tableButton2" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
+                        <Button fx:id="tableButton2" mnemonicParsing="false" onAction="#onPutTokenOnTable" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
                            <graphic>
                               <ImageView fx:id="tableImage2" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -99,7 +99,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button fx:id="tableButton3" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
+                        <Button fx:id="tableButton3" mnemonicParsing="false" onAction="#onPutTokenOnTable" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
                            <graphic>
                               <ImageView fx:id="tableImage3" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -111,7 +111,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button fx:id="tableButton4" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: #99f5ff;">
+                        <Button fx:id="tableButton4" mnemonicParsing="false" onAction="#onPutTokenOnTable" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: #99f5ff;">
                            <graphic>
                               <ImageView fx:id="tableImage4" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -123,7 +123,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button fx:id="tableButton5" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
+                        <Button fx:id="tableButton5" mnemonicParsing="false" onAction="#onPutTokenOnTable" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
                            <graphic>
                               <ImageView fx:id="tableImage5" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -135,7 +135,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button fx:id="tableButton6" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
+                        <Button fx:id="tableButton6" mnemonicParsing="false" onAction="#onPutTokenOnTable" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
                            <graphic>
                               <ImageView fx:id="tableImage6" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -147,7 +147,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button fx:id="tableButton7" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
+                        <Button fx:id="tableButton7" mnemonicParsing="false" onAction="#onPutTokenOnTable" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
                            <graphic>
                               <ImageView fx:id="tableImage7" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -159,7 +159,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button fx:id="tableButton8" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: greered;">
+                        <Button fx:id="tableButton8" mnemonicParsing="false" onAction="#onPutTokenOnTable" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: greered;">
                            <graphic>
                               <ImageView fx:id="tableImage8" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -171,7 +171,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button fx:id="tableButton9" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
+                        <Button fx:id="tableButton9" mnemonicParsing="false" onAction="#onPutTokenOnTable" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
                            <graphic>
                               <ImageView fx:id="tableImage9" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -183,7 +183,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button fx:id="tableButton10" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
+                        <Button fx:id="tableButton10" mnemonicParsing="false" onAction="#onPutTokenOnTable" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
                            <graphic>
                               <ImageView fx:id="tableImage10" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -195,7 +195,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button fx:id="tableButton11" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
+                        <Button fx:id="tableButton11" mnemonicParsing="false" onAction="#onPutTokenOnTable" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
                            <graphic>
                               <ImageView fx:id="tableImage11" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -207,7 +207,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button fx:id="tableButton12" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: #99f5ff;">
+                        <Button fx:id="tableButton12" mnemonicParsing="false" onAction="#onPutTokenOnTable" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: #99f5ff;">
                            <graphic>
                               <ImageView fx:id="tableImage12" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -219,7 +219,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button fx:id="tableButton13" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
+                        <Button fx:id="tableButton13" mnemonicParsing="false" onAction="#onPutTokenOnTable" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
                            <graphic>
                               <ImageView fx:id="tableImage13" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -231,7 +231,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button fx:id="tableButton14" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
+                        <Button fx:id="tableButton14" mnemonicParsing="false" onAction="#onPutTokenOnTable" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
                            <graphic>
                               <ImageView fx:id="tableImage14" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -243,7 +243,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button fx:id="tableButton15" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: greered;">
+                        <Button fx:id="tableButton15" mnemonicParsing="false" onAction="#onPutTokenOnTable" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: greered;">
                            <graphic>
                               <ImageView fx:id="tableImage15" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -259,7 +259,7 @@
                   </HBox>
                   <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0">
                      <children>
-                        <Button fx:id="tableButton16" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
+                        <Button fx:id="tableButton16" mnemonicParsing="false" onAction="#onPutTokenOnTable" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
                            <graphic>
                               <ImageView fx:id="tableImage16" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -271,7 +271,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button fx:id="tableButton17" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: orange;">
+                        <Button fx:id="tableButton17" mnemonicParsing="false" onAction="#onPutTokenOnTable" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: orange;">
                            <graphic>
                               <ImageView fx:id="tableImage17" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -283,7 +283,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button fx:id="tableButton18" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
+                        <Button fx:id="tableButton18" mnemonicParsing="false" onAction="#onPutTokenOnTable" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
                            <graphic>
                               <ImageView fx:id="tableImage18" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -295,7 +295,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button fx:id="tableButton19" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
+                        <Button fx:id="tableButton19" mnemonicParsing="false" onAction="#onPutTokenOnTable" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
                            <graphic>
                               <ImageView fx:id="tableImage19" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -307,7 +307,7 @@
                               <Cursor fx:constant="HAND" />
                            </cursor>
                         </Button>
-                        <Button fx:id="tableButton20" mnemonicParsing="false" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
+                        <Button fx:id="tableButton20" mnemonicParsing="false" onAction="#onPutTokenOnTable" prefHeight="50.0" prefWidth="50.0" style="-fx-border-color: white; -fx-background-color: green;">
                            <graphic>
                               <ImageView fx:id="tableImage20" fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                                  <viewport>
@@ -2847,7 +2847,7 @@
          <children>
             <HBox alignment="CENTER" prefHeight="58.0" prefWidth="618.0" style="-fx-background-color: white;">
                <children>
-                  <Button fx:id="buttonReturn" mnemonicParsing="false" opacity="0.27" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: none;">
+                  <Button fx:id="buttonReturn" mnemonicParsing="false" onAction="#onReturnButton" opacity="0.27" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: none;">
                      <graphic>
                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>

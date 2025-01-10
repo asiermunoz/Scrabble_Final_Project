@@ -1,14 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane xmlns="http://javafx.com/javafx"
-            xmlns:fx="http://javafx.com/fxml"
-            fx:controller="com.example.new_game_app.StadisticsController"
-            prefHeight="400.0" prefWidth="600.0" >
-
-</AnchorPane>
+<VBox prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.new_game_app.StadisticsController">
+    <children>
+      <HBox alignment="TOP_CENTER" prefHeight="42.0" prefWidth="600.0" style="-fx-background-color: #48b55b;">
+         <children>
+            <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="600.0" text="Estadisticas">
+               <font>
+                  <Font name="Cooper Black" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox prefHeight="53.0" prefWidth="600.0">
+         <children>
+            <Label prefHeight="51.0" prefWidth="168.0" text="Nombre">
+               <font>
+                  <Font name="Cooper Black" size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="39.0" prefWidth="130.0" text="Score">
+               <font>
+                  <Font name="Cooper Black" size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="39.0" prefWidth="126.0" text="Tiempo jugado">
+               <font>
+                  <Font name="Cooper Black" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <padding>
+            <Insets bottom="7.0" left="20.0" right="7.0" top="7.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="53.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="player1Name" prefHeight="51.0" prefWidth="168.0">
+               <font>
+                  <Font name="Cooper Black" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="player1Score" prefHeight="39.0" prefWidth="130.0">
+               <font>
+                  <Font name="Cooper Black" size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="39.0" prefWidth="126.0" text="Tiempo jugado">
+               <font>
+                  <Font name="Cooper Black" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="7.0" left="20.0" right="7.0" top="7.0" />
+         </padding>
+      </HBox>
+      <HBox prefHeight="53.0" prefWidth="600.0">
+         <children>
+            <Label fx:id="player2Name" prefHeight="51.0" prefWidth="168.0">
+               <font>
+                  <Font name="Cooper Black" size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="player2Score" prefHeight="39.0" prefWidth="130.0">
+               <font>
+                  <Font name="Cooper Black" size="16.0" />
+               </font>
+            </Label>
+            <Label prefHeight="39.0" prefWidth="126.0" text="Tiempo jugado">
+               <font>
+                  <Font name="Cooper Black" size="16.0" />
+               </font>
+            </Label>
+         </children>
+         <padding>
+            <Insets bottom="7.0" left="20.0" right="7.0" top="7.0" />
+         </padding>
+      </HBox>
+    </children>
+</VBox>

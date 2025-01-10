@@ -2847,7 +2847,7 @@
          <children>
             <HBox alignment="CENTER" prefHeight="58.0" prefWidth="618.0" style="-fx-background-color: white;">
                <children>
-                  <Button fx:id="buttonReturn" mnemonicParsing="false" opacity="0.27" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: none;">
+                  <Button fx:id="buttonReturn" mnemonicParsing="false" onAction="#onReturnButton" opacity="0.27" prefHeight="38.0" prefWidth="38.0" style="-fx-background-color: none;">
                      <graphic>
                         <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
                            <image>

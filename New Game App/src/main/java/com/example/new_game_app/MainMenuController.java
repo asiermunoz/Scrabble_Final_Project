@@ -19,6 +19,7 @@ public class MainMenuController {
     //Java Variables
     private ChangeSceneStrategy strategy = null;
     private final ChangeSceneryToContext context = new ChangeSceneryToContext();
+    private final PopUpSelected popUpselected = new PopUpSelected();
 
     //Methods
     @FXML
@@ -37,5 +38,11 @@ public class MainMenuController {
         strategy = new ChangeSceneryToGame();
         context.setStrategy(strategy);
         StageManager.game = context.change(actionEvent);
+    }
+
+    public void onShowStadisticsButtonClick(javafx.event.ActionEvent actionEvent) {
+        PopUpCommand command = new PopUpStadisticsInMenu();
+        popUpselected.setCommand(command);
+        StageManager.stadistics = popUpselected.buttonPressed();
     }
 }

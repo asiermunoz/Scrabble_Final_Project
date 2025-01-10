@@ -8,6 +8,9 @@ public class Holder extends LettersHold{
         setHold(hold);
     }
 
+    public String showToken(int i){
+        return hold.get(i).getLink();
+    }
 //    public void takeEverythingBack(LettersHold lettersHold){
 //        try {
 //            if (lettersHold.getHoldSize() == 0) {

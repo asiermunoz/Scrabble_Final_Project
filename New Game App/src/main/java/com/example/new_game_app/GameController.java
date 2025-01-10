@@ -114,7 +114,7 @@ public class GameController implements Initializable {
                         button.setDisable(true);
                         buttonReturn.setOpacity(1);
                         buttonReturn.setDisable(false);
-                        game.addLettersToUse(i);
+                        game.addLetterToTokensSelected(i);
                     }
                 }
                 i++;
@@ -123,11 +123,11 @@ public class GameController implements Initializable {
     }
 
     public void onPutTokenOnTable(javafx.event.ActionEvent actionEvent){
-        if(game.getLettersToUse() != null){
+        if(!game.getTokensSelected().holdIsEmpty()){
             int i = 0;
             for(Button button: tableButtons){
                 if(actionEvent.getSource() == button){
-                    tableImages.get(i).setImage(new Image(game.getLettersToUse().getFirst().getLink()));
+                    tableImages.get(i).setImage(new Image(Objects.requireNonNull(getClass().getResourceAsStream(game.takeFirstTokenSelected()))));
                 }
                 i++;
             }
@@ -142,7 +142,7 @@ public class GameController implements Initializable {
                 button.setOpacity(1);
             }
         }
-        game.returnLettersToUse();
+        game.getTokensSelected().clearHold();
         buttonReturn.setOpacity(0.28);
         buttonReturn.setDisable(true);
     }
@@ -211,7 +211,7 @@ public class GameController implements Initializable {
         int i = 0;
         for (ImageView view : playerTokens) {
             if (i < game.getTurn().getHolder().getHoldSize()) {
-                view.setImage(new Image(Objects.requireNonNull(getClass().getResourceAsStream(game.getTurn().getHolder().hold.get(i).getLink()))));
+                view.setImage(new Image(Objects.requireNonNull(getClass().getResourceAsStream(game.getTurn().showToken(i)))));
                 view.setOpacity(1);
             } else {
                 view.setImage(new Image(Objects.requireNonNull(getClass().getResourceAsStream(new ImagesURL().emptySpace))));

@@ -11,7 +11,7 @@ public class Game {
     private final Order order = new Order();
     private Bag bag = new Bag();
     private int skippedTurns;
-    private ArrayList<Letter> lettersToUse = new ArrayList<>();
+    private LettersHold tokensSelected = new LettersHold();
     private final ChangeSceneStrategy strategy = new ChangeSceneryToWinnerScreen();
     private final ChangeSceneryToContext context = new ChangeSceneryToContext();
 
@@ -24,6 +24,31 @@ public class Game {
         player2.setHolder(bag.fillNewHolder(initialLettersNeeded, exceptions));
         order.setNewOrder(player1, player2);
         turn = order.getFirstPlayer();
+    }
+
+    public void finishGame(javafx.event.ActionEvent actionEvent){
+        StageManager.exit.close();
+        StageManager.bag.close();
+        StageManager.stadistics.close();
+        if(order.getFirstPlayer() == player1) {
+            EndGameInfo.player1 = order.getFirstPlayer();
+            EndGameInfo.player2 = order.getLastPlayer();
+        }
+        else{
+            EndGameInfo.player2 = order.getLastPlayer();
+            EndGameInfo.player1 = order.getFirstPlayer();
+        }
+        if(skippedTurns == 4) {
+            EndGameInfo.motive = "Hubieron 4 pases seguidos por ambos jugadores";
+        }
+        else if(order.getFirstPlayer().getHolder().getHoldSize() == 0){
+            EndGameInfo.motive = "El jugador " + order.getFirstPlayer().getAlias() + " se quedó sin fichas";
+        }
+        else{
+            EndGameInfo.motive = "El jugador " + order.getLastPlayer().getAlias() + " se quedó sin fichas";
+        }
+        context.setStrategy(strategy);
+        context.change(actionEvent);
     }
 
     public Player getPlayer1() {
@@ -54,45 +79,20 @@ public class Game {
         this.skippedTurns++;
     }
 
-    public ArrayList<Letter> getLettersToUse() {
-        return lettersToUse;
+    public LettersHold getTokensSelected() {
+        return tokensSelected;
     }
 
-    public void addLettersToUse(int i){
-        lettersToUse.add(turn.getHolder().hold.get(i));
+    public void addLetterToTokensSelected(int i){
+        tokensSelected.addLetter(turn.getHolder().hold.get(i));
     }
 
-    public void returnLettersToUse(){
-        lettersToUse.clear();
+    public String takeFirstTokenSelected(){
+        return tokensSelected.takeFirstLetter();
     }
 
     public void exchange(){
         turn.getHolder().exchangeAll(bag);
-    }
-
-    public void finishGame(javafx.event.ActionEvent actionEvent){
-        StageManager.exit.close();
-        StageManager.bag.close();
-        StageManager.stadistics.close();
-        if(order.getFirstPlayer() == player1) {
-            EndGameInfo.player1 = order.getFirstPlayer();
-            EndGameInfo.player2 = order.getLastPlayer();
-        }
-        else{
-            EndGameInfo.player2 = order.getLastPlayer();
-            EndGameInfo.player1 = order.getFirstPlayer();
-        }
-        if(skippedTurns == 4) {
-            EndGameInfo.motive = "Hubieron 4 pases seguidos por ambos jugadores";
-        }
-        else if(order.getFirstPlayer().getHolder().getHoldSize() == 0){
-            EndGameInfo.motive = "El jugador " + order.getFirstPlayer().getAlias() + " se quedó sin fichas";
-        }
-        else{
-            EndGameInfo.motive = "El jugador " + order.getLastPlayer().getAlias() + " se quedó sin fichas";
-        }
-        context.setStrategy(strategy);
-        context.change(actionEvent);
     }
 
     public void turnToLastPlayer(){

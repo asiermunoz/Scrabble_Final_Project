@@ -44,4 +44,8 @@ public class Player {
     public void setHolder(Holder holder) {
         this.holder = holder;
     }
+
+    public String showToken(int i){
+        return holder.showToken(i);
+    }
 }

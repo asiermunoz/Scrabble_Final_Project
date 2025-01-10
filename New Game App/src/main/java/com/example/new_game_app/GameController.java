@@ -122,16 +122,17 @@ public class GameController implements Initializable {
         }
     }
 
-//    public void onPutTokenOnTable(javafx.event.ActionEvent actionEvent){
-//        if(game.getLettersToUse() != null){
-//            int i = 0;
-//            for(Button button: tableButtons){
-//                if(actionEvent.getSource() == button){
-//
-//                }
-//            }
-//        }
-//    }
+    public void onPutTokenOnTable(javafx.event.ActionEvent actionEvent){
+        if(game.getLettersToUse() != null){
+            int i = 0;
+            for(Button button: tableButtons){
+                if(actionEvent.getSource() == button){
+                    tableImages.get(i).setImage(new Image(game.getLettersToUse().getFirst().getLink()));
+                }
+                i++;
+            }
+        }
+    }
 
     @FXML
     public void onReturnButton(){

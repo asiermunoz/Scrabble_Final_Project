@@ -267,8 +267,26 @@ public class GameController implements Initializable {
         actionButtons.add(buttonPlay);
 
         tableImages.add(tableImage1);
+        tableImages.add(tableImage2);
+        tableImages.add(tableImage3);
+        tableImages.add(tableImage4);
+        tableImages.add(tableImage5);
+        tableImages.add(tableImage6);
+        tableImages.add(tableImage7);
+        tableImages.add(tableImage8);
+        tableImages.add(tableImage9);
+        tableImages.add(tableImage10);
 
         tableButtons.add(tableButton1);
+        tableButtons.add(tableButton2);
+        tableButtons.add(tableButton3);
+        tableButtons.add(tableButton4);
+        tableButtons.add(tableButton5);
+        tableButtons.add(tableButton6);
+        tableButtons.add(tableButton7);
+        tableButtons.add(tableButton8);
+        tableButtons.add(tableButton9);
+        tableButtons.add(tableButton10);
     }
 
     //ID DE CADA CUADRO DEL TABLERO

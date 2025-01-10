@@ -2,8 +2,6 @@ package com.example.new_game_app;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import com.example.new_game_app.ChangeSceneStrategy;
-import com.example.new_game_app.ChangeSceneryToContext;
 
 public class MainMenuController {
 
@@ -21,11 +19,22 @@ public class MainMenuController {
     //Java Variables
     private ChangeSceneStrategy strategy = null;
     private final ChangeSceneryToContext context = new ChangeSceneryToContext();
+    private Player player1, player2;
 
     //Methods
     @FXML
     public void onExitClick() {
         System.exit(0);
+    }
+
+    public void setPlayers() {
+        this.player1 = PlayerManager.player1;
+        this.player2 = PlayerManager.player2;
+    }
+
+    @FXML
+    public void initialize() {
+        setPlayers();
     }
 
 

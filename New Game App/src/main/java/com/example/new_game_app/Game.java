@@ -15,11 +15,13 @@ public class Game {
     private final ChangeSceneStrategy strategy = new ChangeSceneryToWinnerScreen();
     private final ChangeSceneryToContext context = new ChangeSceneryToContext();
 
-    public void setGame(Label exceptions) {
+    public void setNewGame(Label exceptions) {
         skippedTurns = 0;
         int initialLettersNeeded = 7;
-        player1 = new Player("Test 1", 0, bag.fillNewHolder(initialLettersNeeded, exceptions), false);
-        player2 = new Player("Test 2", 0, bag.fillNewHolder(initialLettersNeeded, exceptions), false);
+        player1 = PlayerManager.player1;
+        player1.setHolder(bag.fillNewHolder(initialLettersNeeded, exceptions));
+        player2 = PlayerManager.player2;
+        player2.setHolder(bag.fillNewHolder(initialLettersNeeded, exceptions));
         order.setNewOrder(player1, player2);
         turn = order.getFirstPlayer();
     }
@@ -52,8 +54,16 @@ public class Game {
         this.skippedTurns++;
     }
 
+    public ArrayList<Letter> getLettersToUse() {
+        return lettersToUse;
+    }
+
     public void addLettersToUse(int i){
         lettersToUse.add(turn.getHolder().hold.get(i));
+    }
+
+    public void returnLettersToUse(){
+        lettersToUse.clear();
     }
 
     public void exchange(){

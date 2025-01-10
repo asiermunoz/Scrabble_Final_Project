@@ -66,7 +66,7 @@
             </HBox>
             <HBox nodeOrientation="LEFT_TO_RIGHT" prefHeight="58.0" prefWidth="886.0">
                <children>
-                  <Button fx:id="showStadisticsButton" alignment="TOP_LEFT" cache="true" mnemonicParsing="false" prefHeight="67.0" prefWidth="624.0" style="-fx-background-color: #edc4ac;" styleClass="hover-button" stylesheets="@CSS/styles.css" text="• Mostrar estadisticas" textFill="#89623d">
+                  <Button fx:id="showStadisticsButton" alignment="TOP_LEFT" cache="true" mnemonicParsing="false" onAction="#onShowStadisticsButtonClick" prefHeight="67.0" prefWidth="624.0" style="-fx-background-color: #edc4ac;" styleClass="hover-button" stylesheets="@CSS/styles.css" text="• Mostrar estadisticas" textFill="#89623d">
                      <font>
                         <Font name="Cooper Black" size="36.0" />
                      </font>

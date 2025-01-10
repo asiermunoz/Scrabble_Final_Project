@@ -2,10 +2,7 @@ package com.example.register_aplication;
 
 import com.example.register_aplication.exceptions.InvalidAliasException;
 import com.example.register_aplication.exceptions.InvalidEmailException;
-import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
-
 import java.util.LinkedList;
 
 public class NewUserModel {
@@ -14,37 +11,16 @@ public class NewUserModel {
     private final ChangeSceneryToContext context = new ChangeSceneryToContext();
     private ChangeSceneStrategy strategy;
 
-    @FXML
-    private TextField aliasField;
 
-    @FXML
-    private TextField emailField;
-
-    @FXML
-    private Label messageText;
-
-    @FXML
-    protected String obtainAlias(){
-        return aliasField.getText();
-    }
-
-    @FXML
-    protected String obtainEmail(){
-        return emailField.getText();
-    }
-
-
-
-
-    public void enter(){
+    public void enter(String obtainAlias, String obtainEmail, Label messageText) {
         listOfUsers = JsonHandler.readFromJson();
         if (listOfUsers == null) {
             listOfUsers = new LinkedList<User>();
         }
 
         //validate email
-        String email = obtainEmail();
-        String alias = obtainAlias();
+        String email = obtainEmail;
+        String alias = obtainAlias;
         User user = new User(alias, email);
         boolean isValid = true;
         try {

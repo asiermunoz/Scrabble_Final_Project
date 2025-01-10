@@ -1,10 +1,7 @@
 package com.example.register_aplication;
 
 import com.example.register_aplication.exceptions.InvalidAliasException;
-import javafx.fxml.FXML;
-import javafx.scene.control.Button;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
 import java.util.LinkedList;
 
 public class ModifyAliasModel {
@@ -13,34 +10,13 @@ public class ModifyAliasModel {
     private final ChangeSceneryToContext context = new ChangeSceneryToContext();
     private ChangeSceneStrategy strategy;
 
-    @FXML
-    private TextField oldAliasField;
 
-    @FXML
-    private TextField newAliasField;
-
-    @FXML
-    private Button exitButton;
-
-    @FXML
-    private Label messageText;
-
-    @FXML
-    protected String obtainOldAlias(){
-        return oldAliasField.getText();
-    }
-
-    @FXML
-    protected String obtainNewAlias(){
-        return newAliasField.getText();
-    }
-
-    public void enter(){
+    public void enter(String obtainOldAlias, String obtainNewAlias, Label messageText) {
         listOfUsers = JsonHandler.readFromJson();
 
         //validate email
-        String oldAlias = obtainOldAlias();
-        String newAlias = obtainNewAlias();
+        String oldAlias = obtainOldAlias;
+        String newAlias = obtainNewAlias;
         boolean isValid = true;
         boolean aliasFound = false;
 

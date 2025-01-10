@@ -2,10 +2,7 @@ package com.example.register_aplication;
 
 import com.example.register_aplication.exceptions.InvalidAliasException;
 import com.example.register_aplication.exceptions.InvalidEmailException;
-import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
-
 import java.util.LinkedList;
 
 public class DeleteUserModel {
@@ -14,30 +11,12 @@ public class DeleteUserModel {
     private final ChangeSceneryToContext context = new ChangeSceneryToContext();
     private ChangeSceneStrategy strategy;
 
-    @FXML
-    private TextField deleteAliasField;
 
-    @FXML
-    private TextField deleteEmailField;
-
-    @FXML
-    private Label deleteMessageText;
-
-    @FXML
-    protected String obtainAlias(){
-        return deleteAliasField.getText();
-    }
-
-    @FXML
-    protected String obtainEmail(){
-        return deleteEmailField.getText();
-    }
-
-    public void enter(){
+    public void enter(String obtainAlias, String obtainEmail, Label deleteMessageText) {
         listOfUsers = JsonHandler.readFromJson();
 
-        String email = obtainEmail();
-        String alias = obtainAlias();
+        String email = obtainEmail;
+        String alias = obtainAlias;
         User user = new User(alias, email);
         boolean isValid = true;
         try {

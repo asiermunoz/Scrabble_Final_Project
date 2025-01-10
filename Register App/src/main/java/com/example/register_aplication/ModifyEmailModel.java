@@ -1,43 +1,21 @@
 package com.example.register_aplication;
 
 import com.example.register_aplication.exceptions.InvalidEmailException;
-import javafx.fxml.FXML;
 import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
-
 import java.util.LinkedList;
 
 public class ModifyEmailModel {
+
     LinkedList<User> listOfUsers = new LinkedList<User>();
     private final ChangeSceneryToContext context = new ChangeSceneryToContext();
     private ChangeSceneStrategy strategy;
 
-
-    @FXML
-    private TextField oldEmailField;
-
-    @FXML
-    private TextField newEmailField;
-
-    @FXML
-    private Label messageText;
-
-    @FXML
-    protected String obtainOldEmail(){
-        return oldEmailField.getText();
-    }
-
-    @FXML
-    protected String obtainNewEmail(){
-        return newEmailField.getText();
-    }
-
-    public void enter(){
+    public void enter(String obtainOldEmail, String obtainNewEmail, Label messageText){
         listOfUsers = JsonHandler.readFromJson();
 
         //validate email
-        String oldEmail = obtainOldEmail();
-        String newEmail = obtainNewEmail();
+        String oldEmail = obtainOldEmail;
+        String newEmail = obtainNewEmail;
         boolean isValid = true;
         boolean emailFound = false;
 

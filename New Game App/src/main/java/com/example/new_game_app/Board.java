@@ -115,6 +115,7 @@ public class Board {
             for(int j = 0; j < length; j++){
                 if(table[i][j].marked){
                     tableImages.get(boardIndex).setImage(null);
+                    table[i][j].clearLetter();
                 }
                 boardIndex++;
             }
@@ -122,11 +123,11 @@ public class Board {
         return tableImages;
     }
 
-//    public void setMarkersFalse(){
-//        for (int i = 0; i < length; i++){
-//            for(int j = 0; j < length; j++){
-//                table[i][j].marked = false;
-//            }
-//        }
-//    }
+    public void setMarkersFalse(){
+        for (int i = 0; i < length; i++){
+            for(int j = 0; j < length; j++){
+                table[i][j].marked = false;
+            }
+        }
+    }
 }

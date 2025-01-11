@@ -50,9 +50,6 @@ public class Player {
     }
 
     public boolean equalsName(String name) {
-        if (this.alias.equals(name)) {
-            return true;
-        }
-        return false;
+        return this.alias.equals(name);
     }
 }

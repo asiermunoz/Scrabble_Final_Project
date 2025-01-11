@@ -218,4 +218,94 @@ public class Letter {
             Amount.joker--;
         }
     }
+
+    public void sumAmount(){
+        if(Objects.equals(link, new ImagesURL().tokenA)){
+            Amount.a++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenB)){
+            Amount.b++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenC)){
+            Amount.c++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenCH)){
+            Amount.ch++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenD)){
+            Amount.d++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenE)){
+            Amount.e++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenF)){
+            Amount.f++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenG)){
+            Amount.g++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenH)){
+            Amount.h++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenI)){
+            Amount.i++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenJ)){
+            Amount.j++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenL)){
+            Amount.l++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenLL)){
+            Amount.ll++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenM)){
+            Amount.m++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenN)){
+            Amount.n++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenÑ)){
+            Amount.ñ++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenO)){
+            Amount.o++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenP)){
+            Amount.p++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenQ)){
+            Amount.q++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenR)){
+            Amount.r++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenRR)){
+            Amount.rr++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenS)){
+            Amount.s++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenT)){
+            Amount.t++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenU)){
+            Amount.u++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenV)){
+            Amount.v++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenX)){
+            Amount.x++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenY)){
+            Amount.y++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenZ)){
+            Amount.z++;
+        }
+        if(Objects.equals(link, new ImagesURL().tokenJoker)){
+            Amount.joker++;
+        }
+    }
 }

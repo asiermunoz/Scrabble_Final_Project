@@ -1,13 +1,18 @@
 package com.example.new_game_app;
 
+import javafx.animation.Animation;
+import javafx.animation.KeyFrame;
+import javafx.animation.Timeline;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Label;
+import javafx.util.Duration;
 
 import java.net.URL;
 import java.util.ResourceBundle;
 
 public class BagController implements Initializable {
+    private Timeline timeline;
     @FXML
     private Label tokenA;
     @FXML
@@ -70,6 +75,12 @@ public class BagController implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        timeline = new Timeline(new KeyFrame(Duration.seconds(1), event -> updateBagList()));
+        timeline.setCycleCount(Animation.INDEFINITE);
+        timeline.play();
+    }
+
+    private void updateBagList(){
         tokenA.setText(String.valueOf(Amount.a));
         tokenB.setText(String.valueOf(Amount.b));
         tokenC.setText(String.valueOf(Amount.c));

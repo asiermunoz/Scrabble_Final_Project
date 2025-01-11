@@ -1,6 +1,5 @@
 package com.example.new_game_app;
 
-import com.example.new_game_app.objects.jsonHandlers.JsonGamesHandler;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import java.util.ArrayList;
@@ -13,11 +12,13 @@ public class Game {
     private final Order order = new Order();
     private Bag bag = new Bag();
     private int skippedTurns;
+    private int secondsElapsed;
     private LettersHold tokensSelected = new LettersHold();
     private final ChangeSceneStrategy strategy = new ChangeSceneryToWinnerScreen();
     private final ChangeSceneryToContext context = new ChangeSceneryToContext();
 
     public void setNewGame(Label exceptions) {
+        secondsElapsed = 0;
         skippedTurns = 0;
         int initialLettersNeeded = 7;
         player1 = PlayerManager.player1;
@@ -26,6 +27,22 @@ public class Game {
         player2.setHolder(bag.fillNewHolder(initialLettersNeeded, exceptions));
         order.setNewOrder(player1, player2);
         turn = order.getFirstPlayer();
+    }
+
+    public String returnTimer(Boolean update){
+        if(update){
+            secondsElapsed++;
+        }
+        int hours = secondsElapsed / 3600;
+        int minutes = (secondsElapsed % 3600) / 60;
+        int seconds = secondsElapsed % 60;
+        return String.format("%02d:%02d:%02d", hours, minutes, seconds);
+    }
+
+    //Revisar ↓
+    public boolean reviewBoard(){
+        board.setMarkersFalse();
+        return true;
     }
 
     public void finishGame(javafx.event.ActionEvent actionEvent){
@@ -53,22 +70,6 @@ public class Game {
         context.change(actionEvent);
     }
 
-    public Bag getBag() {
-        return bag;
-    }
-
-    public void setBag(Bag bag) {
-        this.bag = bag;
-    }
-
-    public Board getBoard() {
-        return board;
-    }
-
-    public void setBoard(Board board) {
-        this.board = board;
-    }
-
     public Player getPlayer1() {
         return player1;
     }
@@ -83,6 +84,19 @@ public class Game {
 
     public Order getOrder() {
         return order;
+    }
+
+    public Bag getBag() {
+        return bag;
+    }
+    public void setBag(Bag bag) {
+        this.bag = bag;
+    }
+    public Board getBoard() {
+        return board;
+    }
+    public void setBoard(Board board) {
+        this.board = board;
     }
 
     public int getSkippedTurns() {

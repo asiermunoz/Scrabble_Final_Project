@@ -24,6 +24,8 @@ public class Square{
         this.letter = letter;
     }
 
+    public void clearLetter(){this.letter = new Letter ("  ", 0);}
+
     public int getValue() {
         return letter.getValue();
     }

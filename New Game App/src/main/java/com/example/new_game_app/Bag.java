@@ -65,7 +65,10 @@ public class Bag {
     }
 
     public void fillBag(ArrayList<Letter> letters) {
-        this.letters.addAll(letters);
+        for(Letter letter: letters){
+            letter.sumAmount();
+            this.letters.add(letter);
+        }
     }
 
     //Sacar letra al azar

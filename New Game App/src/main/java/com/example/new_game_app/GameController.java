@@ -1,7 +1,5 @@
 package com.example.new_game_app;
 
-import com.example.new_game_app.objects.jsonHandlers.JsonGamesHandler;
-import com.example.new_game_app.objects.jsonHandlers.JsonManager;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -25,13 +23,10 @@ public class GameController implements Initializable {
     private Boolean skip = false;
     private final PopUpSelected popUpselected = new PopUpSelected();
     private Timeline timeline;
-    private int secondsElapsed;
     private ArrayList<ImageView> playerTokens = new ArrayList<>();
     private ArrayList<Button> buttonTokens = new ArrayList<>();
     private ArrayList<ImageView> tableImages = new ArrayList<>();
     private ArrayList<Button> tableButtons = new ArrayList<>();
-    private Player player1 = PlayerManager.player1;
-    private Player player2 = PlayerManager.player2;
 
     @FXML
     private Label exceptions;
@@ -77,7 +72,6 @@ public class GameController implements Initializable {
         //Timer:
         timeline = new Timeline(new KeyFrame(Duration.seconds(1), event -> updateTimer()));
         timeline.setCycleCount(Animation.INDEFINITE);
-        secondsElapsed = 0;
         timeline.play();
         game = new Game();
 
@@ -99,15 +93,6 @@ public class GameController implements Initializable {
         showHolder();
     }
 
-    public void onPassTurnButtonClick(javafx.event.ActionEvent actionEvent) {
-        if (!skip) {
-            game.addSkippedTurns();
-        }
-        exceptions.setText(game.getTurn().getAlias() + " paso su turno.");
-        skip = false;
-        nextTurn(actionEvent);
-    }
-
     public void onSelectedTokenButtonClick(javafx.event.ActionEvent actionEvent) {
         int i = 0;
         if(!skip) {
@@ -116,8 +101,10 @@ public class GameController implements Initializable {
                     if (button.getOpacity() == 1) {
                         button.setOpacity(0.28);
                         button.setDisable(true);
-                        buttonReturn.setOpacity(1);
-                        buttonReturn.setDisable(false);
+                        for(Button actionButton:actionButtons){
+                            actionButton.setOpacity(1);
+                            actionButton.setDisable(false);
+                        }
                         game.addLetterToTokensSelected(i);
                     }
                 }
@@ -138,6 +125,31 @@ public class GameController implements Initializable {
         }
     }
 
+    public void onPassTurnButtonClick(javafx.event.ActionEvent actionEvent) {
+        if (!skip) {
+            game.addSkippedTurns();
+        }
+        exceptions.setText(game.getTurn().getAlias() + " paso su turno.");
+        skip = false;
+        nextTurn(actionEvent);
+    }
+
+    public void onPlayButton(javafx.event.ActionEvent actionEvent){
+        for (Button button : actionButtons) {
+            if(button.getOpacity() == 1 && button != buttonExchange){
+                button.setDisable(true);
+                button.setOpacity(0.28);
+            }
+        }
+        if(!game.reviewBoard()){
+            onReturnButton();
+            exceptions.setText("Las palabras formadas son inexistentes. Intentelo de nuevo.");
+        }
+        else{
+            nextTurn(actionEvent);
+        }
+    }
+
     @FXML
     public void onReturnButton(){
         for (Button button : buttonTokens) {
@@ -155,6 +167,7 @@ public class GameController implements Initializable {
     @FXML
     public void onExchangeButtonClick() {
         exceptions.setText("Se intercambiaron todas sus fichas.");
+        tableImages = game.returnNotUsedTokens(tableImages);
         game.exchange();
         game.restartSkippedTurns();
         showHolder();
@@ -191,19 +204,12 @@ public class GameController implements Initializable {
     }
 
     private void updateTimer() {
-        secondsElapsed++;
-        int hours = secondsElapsed / 3600;
-        int minutes = (secondsElapsed % 3600) / 60;
-        int seconds = secondsElapsed % 60;
-        timerLabel.setText(String.format("%02d:%02d:%02d", hours, minutes, seconds));
+        timerLabel.setText(game.returnTimer(true));
     }
 
     private String stopTimer() {
         timeline.stop();
-        int hours = secondsElapsed / 3600;
-        int minutes = (secondsElapsed % 3600) / 60;
-        int seconds = secondsElapsed % 60;
-        return String.format("%02d:%02d:%02d", hours, minutes, seconds);
+        return game.returnTimer(false);
     }
 
 

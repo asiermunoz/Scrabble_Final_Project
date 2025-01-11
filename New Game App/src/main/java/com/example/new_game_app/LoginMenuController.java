@@ -1,5 +1,6 @@
 package com.example.new_game_app;
 
+import com.example.new_game_app.objects.jsonHandlers.JsonUserHandler;
 import com.example.new_game_app.objects.models.LoginMenuModel;
 import com.example.new_game_app.objects.users.User;
 import javafx.fxml.FXML;
@@ -51,6 +52,11 @@ public class LoginMenuController {
     }
 
     //Methods
+
+    @FXML
+    private void initialize() {
+        usersLinkedList = JsonUserHandler.readFromJson();
+    }
 
     @FXML
     private void startLogin(javafx.event.ActionEvent actionEvent) {

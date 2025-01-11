@@ -1,5 +1,6 @@
 package com.example.new_game_app;
 
+import com.example.new_game_app.objects.jsonHandlers.JsonGamesHandler;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import java.util.ArrayList;

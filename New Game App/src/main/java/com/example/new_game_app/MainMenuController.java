@@ -20,11 +20,19 @@ public class MainMenuController {
     private ChangeSceneStrategy strategy = null;
     private final ChangeSceneryToContext context = new ChangeSceneryToContext();
     private final PopUpSelected popUpselected = new PopUpSelected();
+    private final MainMenuModel model = new MainMenuModel();
+    private boolean gameAlreadyCreated;
+    private EndGameInfo foundedGame = null;
+    private EndGameInfo gamePlayed;
 
     //Methods
     @FXML
     public void onExitClick() {
         System.exit(0);
+    }
+
+    public void initialize(){
+
     }
 
     public void onReturnToLoginButtonClick(javafx.event.ActionEvent actionEvent){

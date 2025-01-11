@@ -53,6 +53,22 @@ public class Game {
         context.change(actionEvent);
     }
 
+    public Bag getBag() {
+        return bag;
+    }
+
+    public void setBag(Bag bag) {
+        this.bag = bag;
+    }
+
+    public Board getBoard() {
+        return board;
+    }
+
+    public void setBoard(Board board) {
+        this.board = board;
+    }
+
     public Player getPlayer1() {
         return player1;
     }

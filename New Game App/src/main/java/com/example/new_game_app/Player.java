@@ -48,4 +48,11 @@ public class Player {
     public String showToken(int i){
         return holder.showToken(i);
     }
+
+    public boolean equalsName(String name) {
+        if (this.alias.equals(name)) {
+            return true;
+        }
+        return false;
+    }
 }

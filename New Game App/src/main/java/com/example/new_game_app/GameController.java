@@ -1,5 +1,7 @@
 package com.example.new_game_app;
 
+import com.example.new_game_app.objects.jsonHandlers.JsonGamesHandler;
+import com.example.new_game_app.objects.jsonHandlers.JsonManager;
 import javafx.animation.Animation;
 import javafx.animation.KeyFrame;
 import javafx.animation.Timeline;
@@ -28,6 +30,8 @@ public class GameController implements Initializable {
     private ArrayList<Button> buttonTokens = new ArrayList<>();
     private ArrayList<ImageView> tableImages = new ArrayList<>();
     private ArrayList<Button> tableButtons = new ArrayList<>();
+    private Player player1 = PlayerManager.player1;
+    private Player player2 = PlayerManager.player2;
 
     @FXML
     private Label exceptions;
@@ -164,6 +168,9 @@ public class GameController implements Initializable {
 
     @FXML
     public void onExitToMenuButtonClick() {
+        GameInformation gameInformation = new GameInformation(game.getBag(), false, game.getPlayer1(), game.getPlayer2(), game.getBoard(), game.getOrder(), EndGameInfo.pastTime);
+        JsonManager.games.add(gameInformation);
+        JsonGamesHandler.writeToJson(JsonManager.games);
         PopUpCommand command = new PopUpExit();
         popUpselected.setCommand(command);
         StageManager.exit = popUpselected.buttonPressed();

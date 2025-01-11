@@ -1,7 +1,11 @@
 package com.example.new_game_app;
 
+import com.example.new_game_app.objects.jsonHandlers.JsonGamesHandler;
+import com.example.new_game_app.objects.jsonHandlers.JsonManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
+
+import java.util.LinkedList;
 
 public class MainMenuController {
 
@@ -22,16 +26,34 @@ public class MainMenuController {
     private final PopUpSelected popUpselected = new PopUpSelected();
     private final MainMenuModel model = new MainMenuModel();
     private boolean gameAlreadyCreated;
-    private EndGameInfo foundedGame = null;
-    private EndGameInfo gamePlayed;
+    private GameInformation foundedGame = null;
+    private GameInformation gamePlayed;
+    private Player user1 = PlayerManager.player1;
+    private Player user2 = PlayerManager.player2;
 
     //Methods
+
     @FXML
     public void onExitClick() {
         System.exit(0);
     }
 
     public void initialize(){
+        LinkedList<GameInformation> gamesInProgress = JsonGamesHandler.readFromJson();
+        if(gamesInProgress == null) {
+            gamesInProgress = new LinkedList<GameInformation>();
+        }
+        JsonManager.games = gamesInProgress;
+        try {
+            foundedGame = model.searchGame(user1, user2, gamesInProgress);
+            if(foundedGame != null) {
+                gameAlreadyCreated = true;
+            } else {
+                gameAlreadyCreated = false;
+            }
+        } catch (NoGamesInProgressException e){
+            System.out.println(e.getMessage());
+        }
 
     }
 
@@ -43,9 +65,19 @@ public class MainMenuController {
     }
 
     public void onNewGameButtonClick(javafx.event.ActionEvent actionEvent) {
-        strategy = new ChangeSceneryToGame();
-        context.setStrategy(strategy);
-        StageManager.game = context.change(actionEvent);
+        if(gameAlreadyCreated){
+            PopUpCommand command = new PopUpOverwriteGame();
+            popUpselected.setCommand(command);
+            StageManager.overwrite = popUpselected.buttonPressed();
+            if(JsonManager.overWritedGame) {
+                foundedGame = JsonManager.foundedGame;
+                gameAlreadyCreated = JsonManager.isGameFounded;
+            }
+        } else {
+            strategy = new ChangeSceneryToGame();
+            context.setStrategy(strategy);
+            StageManager.game = context.change(actionEvent);
+        }
     }
 
     public void onShowStadisticsButtonClick(javafx.event.ActionEvent actionEvent) {

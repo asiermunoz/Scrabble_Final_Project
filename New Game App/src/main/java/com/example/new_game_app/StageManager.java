@@ -7,4 +7,5 @@ public class StageManager {
     public static Stage exit;
     public static Stage bag;
     public static Stage stadistics;
+    public static Stage overwrite;
 }

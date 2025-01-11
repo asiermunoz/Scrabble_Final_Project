@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="204.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.new_game_app.OverwriteGameController">
+   <children>
+      <VBox alignment="CENTER" prefHeight="117.0" prefWidth="414.0" style="-fx-background-color: #d9d9d9;">
+         <children>
+            <Label text="Se ha encontrado una partida">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+            </Label>
+            <Label text="¿Desea Sobreescribirla?" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Consolas" size="16.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <HBox alignment="CENTER" prefHeight="139.0" prefWidth="414.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#onOverwriteButtonClick" prefHeight="35.0" prefWidth="172.0" text="Si">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#onCancelButtonClick" prefHeight="35.0" prefWidth="172.0" text="No">
+               <font>
+                  <Font name="Consolas" size="18.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </HBox>
+   </children>
+</VBox>

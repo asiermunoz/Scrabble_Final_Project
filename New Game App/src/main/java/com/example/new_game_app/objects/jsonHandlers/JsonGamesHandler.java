@@ -1,6 +1,6 @@
 package com.example.new_game_app.objects.jsonHandlers;
 
-import com.example.new_game_app.EndGameInfo;
+import com.example.new_game_app.GameInformation;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
@@ -23,7 +23,7 @@ public class JsonGamesHandler {
         gson = builder.create();
     }
 
-    public static void writeToJson(LinkedList<EndGameInfo> gamesList) {
+    public static void writeToJson(LinkedList<GameInformation> gamesList) {
         String payload = gson.toJson(gamesList);
         try {
             Files.write(Paths.get("games.json"), payload.getBytes());
@@ -33,7 +33,7 @@ public class JsonGamesHandler {
         }
     }
 
-    public static LinkedList<EndGameInfo> readFromJson() {
+    public static LinkedList<GameInformation> readFromJson() {
         String recoveryPayload = "";
         try {
             byte[] bytes = Files.readAllBytes(Paths.get("games.json"));
@@ -42,7 +42,7 @@ public class JsonGamesHandler {
             Logger.getLogger(JsonGamesHandler.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        Type userListType = new TypeToken<LinkedList<EndGameInfo>>(){}.getType();
+        Type userListType = new TypeToken<LinkedList<GameInformation>>(){}.getType();
         return gson.fromJson(recoveryPayload, userListType);
     }
 

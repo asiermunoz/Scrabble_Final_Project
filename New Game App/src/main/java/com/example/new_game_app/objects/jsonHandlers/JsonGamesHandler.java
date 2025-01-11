@@ -26,7 +26,7 @@ public class JsonGamesHandler {
     public static void writeToJson(LinkedList<GameInformation> gamesList) {
         String payload = gson.toJson(gamesList);
         try {
-            Files.write(Paths.get("games.json"), payload.getBytes());
+            Files.write(Paths.get("games.json"), payload.getBytes(), StandardOpenOption.CREATE, StandardOpenOption.TRUNCATE_EXISTING);
         }
         catch (IOException ex) {
             Logger.getLogger(JsonGamesHandler.class.getName()).log(Level.SEVERE, null, ex);

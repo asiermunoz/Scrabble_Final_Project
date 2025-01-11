@@ -70,6 +70,14 @@ public class Game {
         context.change(actionEvent);
     }
 
+    public int getSecondsElapsed() {
+        return secondsElapsed;
+    }
+
+    public void setSecondsElapsed(int secondsElapsed) {
+        this.secondsElapsed = secondsElapsed;
+    }
+
     public Player getPlayer1() {
         return player1;
     }

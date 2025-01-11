@@ -30,6 +30,7 @@ public class MainMenuController {
     private GameInformation gamePlayed;
     private Player user1 = PlayerManager.player1;
     private Player user2 = PlayerManager.player2;
+    private LinkedList<GameInformation> gamesInProgress;
 
     //Methods
 
@@ -39,7 +40,7 @@ public class MainMenuController {
     }
 
     public void initialize(){
-        LinkedList<GameInformation> gamesInProgress = JsonGamesHandler.readFromJson();
+        gamesInProgress = JsonGamesHandler.readFromJson();
         if(gamesInProgress == null) {
             gamesInProgress = new LinkedList<GameInformation>();
         }
@@ -65,14 +66,29 @@ public class MainMenuController {
     }
 
     public void onNewGameButtonClick(javafx.event.ActionEvent actionEvent) {
+
+        //verificar si el juego ha sido sobreescrito
+        //tiene que estar aqui para que de chance al pop up de sobreescribir
+        if(JsonManager.overWritedGame) {
+            gamesInProgress.remove(foundedGame);
+            foundedGame = JsonManager.foundedGame;
+            gameAlreadyCreated = JsonManager.isGameFounded;
+            if(gamesInProgress.isEmpty()) {
+                JsonGamesHandler.clearJsonFile();
+            } else {
+                JsonGamesHandler.writeToJson(gamesInProgress);
+            }
+            JsonManager.overWritedGame = false;
+        }
+
+        //verificar si ya hay un juego creado
         if(gameAlreadyCreated){
+            //se va al pop up
             PopUpCommand command = new PopUpOverwriteGame();
             popUpselected.setCommand(command);
             StageManager.overwrite = popUpselected.buttonPressed();
-            if(JsonManager.overWritedGame) {
-                foundedGame = JsonManager.foundedGame;
-                gameAlreadyCreated = JsonManager.isGameFounded;
-            }
+
+
         } else {
             strategy = new ChangeSceneryToGame();
             context.setStrategy(strategy);

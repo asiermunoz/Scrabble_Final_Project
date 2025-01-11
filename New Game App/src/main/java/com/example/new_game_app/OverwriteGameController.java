@@ -10,6 +10,9 @@ public class OverwriteGameController {
         JsonManager.foundedGame = null;
         JsonManager.isGameFounded = false;
         JsonManager.overWritedGame = true;
+
+
+
         StageManager.overwrite.close();
     }
 

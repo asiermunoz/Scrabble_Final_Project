@@ -7,9 +7,9 @@ public class GameInformation {
     private Player gamePlayer2;
     private boolean gameFinished;
     private Order gameOrder;
-    private String gameTimePlayed;
+    private int gameTimePlayed;
 
-    public GameInformation(Bag gameBag, boolean gameFinished, Player gamePlayer2, Player gamePlayer1, Board gameBoard, Order gameOrder, String gameTimePlayed) {
+    public GameInformation(Bag gameBag, boolean gameFinished, Player gamePlayer2, Player gamePlayer1, Board gameBoard, Order gameOrder, int gameTimePlayed) {
         this.gameBag = gameBag;
         this.gameFinished = gameFinished;
         this.gamePlayer2 = gamePlayer2;
@@ -63,9 +63,9 @@ public class GameInformation {
 
     public void setGameOrder(Order gameOrder) { this.gameOrder = gameOrder; }
 
-    public String getGameTimePlayed() { return gameTimePlayed; }
+    public int getGameTimePlayed() { return gameTimePlayed; }
 
-    public void setGameTimePlayed(String gameTimePlayed) { this.gameTimePlayed = gameTimePlayed; }
+    public void setGameTimePlayed(int gameTimePlayed) { this.gameTimePlayed = gameTimePlayed; }
 
     public String getPlayer1Alias() { return gamePlayer1.getAlias(); }
 

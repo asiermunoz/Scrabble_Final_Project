@@ -8,4 +8,5 @@ public class JsonManager {
     public static boolean isGameFounded = false;
     public static LinkedList<GameInformation> games = new LinkedList<GameInformation>();
     public static boolean overWritedGame = false;
+    public static GameInformation gameInProgress;
 }

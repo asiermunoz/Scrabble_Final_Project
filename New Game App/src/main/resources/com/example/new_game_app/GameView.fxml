@@ -2879,7 +2879,7 @@
                         </Label>
                      </children>
                   </VBox>
-                  <Button fx:id="buttonPlay" mnemonicParsing="false" opacity="0.28" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: #fff3c2;" styleClass="play-button" stylesheets="@CSS/styles.css" text="Jugar" textFill="#00810f">
+                  <Button fx:id="buttonPlay" mnemonicParsing="false" onAction="#onPlayButton" opacity="0.28" prefHeight="38.0" prefWidth="82.0" style="-fx-background-color: #fff3c2;" styleClass="play-button" stylesheets="@CSS/styles.css" text="Jugar" textFill="#00810f">
                      <cursor>
                         <Cursor fx:constant="HAND" />
                      </cursor>

@@ -1,10 +1,11 @@
 package com.example.new_game_app;
 
 import javafx.scene.control.Label;
-
+import javafx.scene.image.ImageView;
 import java.util.ArrayList;
 
 public class Game {
+    private Board board = new Board();
     private Player player1;
     private Player player2;
     private Player turn;
@@ -79,18 +80,6 @@ public class Game {
         this.skippedTurns++;
     }
 
-    public LettersHold getTokensSelected() {
-        return tokensSelected;
-    }
-
-    public void addLetterToTokensSelected(int i){
-        tokensSelected.addLetter(turn.getHolder().hold.get(i));
-    }
-
-    public String takeFirstTokenSelected(){
-        return tokensSelected.takeFirstLetter();
-    }
-
     public void exchange(){
         turn.getHolder().exchangeAll(bag);
     }
@@ -101,6 +90,24 @@ public class Game {
 
     public void turnToFirstPlayer(){
         turn = order.getFirstPlayer();
+    }
+
+    public LettersHold getTokensSelected() {
+        return tokensSelected;
+    }
+
+    public void addLetterToTokensSelected(int i){
+        tokensSelected.addLetter(turn.getHolder().hold.get(i));
+    }
+
+    public String takeFirstTokenSelected(int index){
+        Letter letter = tokensSelected.takeFirstLetter();
+        board.addTokenToTable(index, letter);
+        return letter.getLink();
+    }
+
+    public ArrayList<ImageView> returnNotUsedTokens(ArrayList<ImageView> tableImages){
+        return board.returnNotUsedTokens(tableImages);
     }
 
 }

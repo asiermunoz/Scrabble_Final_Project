@@ -126,8 +126,8 @@ public class GameController implements Initializable {
         if(!game.getTokensSelected().holdIsEmpty()){
             int i = 0;
             for(Button button: tableButtons){
-                if(actionEvent.getSource() == button){
-                    tableImages.get(i).setImage(new Image(Objects.requireNonNull(getClass().getResourceAsStream(game.takeFirstTokenSelected()))));
+                if(actionEvent.getSource() == button && tableImages.get(i).getImage() == null){
+                    tableImages.get(i).setImage(new Image(Objects.requireNonNull(getClass().getResourceAsStream(game.takeFirstTokenSelected(i)))));
                 }
                 i++;
             }
@@ -143,6 +143,7 @@ public class GameController implements Initializable {
             }
         }
         game.getTokensSelected().clearHold();
+        tableImages = game.returnNotUsedTokens(tableImages);
         buttonReturn.setOpacity(0.28);
         buttonReturn.setDisable(true);
     }
@@ -235,6 +236,7 @@ public class GameController implements Initializable {
         onReturnButton();
         modifyLabels();
         showHolder();
+        tableImages = game.returnNotUsedTokens(tableImages);
         for (Button button : actionButtons) {
             if (button != buttonReturn && button != buttonPlay) {
                 button.setOpacity(1);

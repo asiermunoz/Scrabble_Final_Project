@@ -7,7 +7,7 @@ public class Letter {
     private int value;
     private boolean joker;
 
-    public Letter(String link, int value, int amount) {
+    public Letter(String link, int value) {
         this.link = link;
         this.value = value;
         this.joker = false;

@@ -21,8 +21,8 @@ public class LettersHold{
         return hold.isEmpty();
     }
 
-    public String takeFirstLetter(){
-        String first = hold.getFirst().getLink();
+    public Letter takeFirstLetter(){
+        Letter first = hold.getFirst();
         hold.removeFirst();
         return first;
     }

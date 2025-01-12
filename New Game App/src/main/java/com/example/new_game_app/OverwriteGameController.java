@@ -7,7 +7,7 @@ import javafx.stage.Stage;
 public class OverwriteGameController {
     @FXML
     public void onOverwriteButtonClick() {
-        JsonManager.foundedGame = null;
+        JsonManager.gameInProgress = null;
         JsonManager.isGameFounded = false;
         JsonManager.overWritedGame = true;
 

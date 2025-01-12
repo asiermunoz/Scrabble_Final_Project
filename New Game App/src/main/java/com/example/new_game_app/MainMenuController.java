@@ -27,7 +27,6 @@ public class MainMenuController {
     private final MainMenuModel model = new MainMenuModel();
     private boolean gameAlreadyCreated;
     private GameInformation foundedGame = null;
-    private GameInformation gamePlayed;
     private Player user1 = PlayerManager.player1;
     private Player user2 = PlayerManager.player2;
     private LinkedList<GameInformation> gamesInProgress;
@@ -47,6 +46,7 @@ public class MainMenuController {
         JsonManager.games = gamesInProgress;
         try {
             foundedGame = model.searchGame(user1, user2, gamesInProgress);
+            JsonManager.gameInProgress = foundedGame;
             if(foundedGame != null) {
                 gameAlreadyCreated = true;
             } else {
@@ -70,7 +70,7 @@ public class MainMenuController {
         //tiene que estar aqui para que de chance al pop up de sobreescribir
         if(JsonManager.overWritedGame) {
             gamesInProgress.remove(foundedGame);
-            foundedGame = JsonManager.foundedGame;
+            foundedGame = JsonManager.gameInProgress;
             gameAlreadyCreated = JsonManager.isGameFounded;
             if(gamesInProgress.isEmpty()) {
                 JsonGamesHandler.clearJsonFile();
@@ -99,7 +99,10 @@ public class MainMenuController {
             popUpselected.setCommand(command);
             StageManager.noExistingGames = popUpselected.buttonPressed();
         } else {
-
+            JsonManager.newGameNeeded = false;
+            strategy = new ChangeSceneryToGame();
+            context.setStrategy(strategy);
+            StageManager.game = context.change(actionEvent);
         }
     }
 

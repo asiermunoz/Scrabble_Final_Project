@@ -77,8 +77,14 @@ public class GameController implements Initializable {
         timeline.play();
         game = new Game();
 
-        //Función que define la nueva partida.
-        game.setNewGame(exceptions);
+
+        if(JsonManager.newGameNeeded) {
+            //Función que define la nueva partida.
+            game.setNewGame(exceptions);
+        } else {
+            //Función que define la partida en progreso.
+            game.setGameInProgress(exceptions, JsonManager.gameInProgress);
+        }
 
         addToArrayList();
         for (Button button:actionButtons){

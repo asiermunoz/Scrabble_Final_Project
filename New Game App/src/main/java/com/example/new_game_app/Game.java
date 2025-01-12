@@ -9,7 +9,7 @@ public class Game {
     private Player player1;
     private Player player2;
     private Player turn;
-    private final Order order = new Order();
+    private Order order = new Order();
     private Bag bag = new Bag();
     private int skippedTurns;
     private int secondsElapsed;
@@ -26,6 +26,16 @@ public class Game {
         player2 = PlayerManager.player2;
         player2.setHolder(bag.fillNewHolder(initialLettersNeeded, exceptions));
         order.setNewOrder(player1, player2);
+        turn = order.getFirstPlayer();
+    }
+
+    public void setGameInProgress(Label exceptions, GameInformation gameInProgress) {
+        secondsElapsed = gameInProgress.getGameTimePlayed();
+        skippedTurns = 0;
+        int initialLettersNeeded = 7;
+        player1 = gameInProgress.getGamePlayer1();
+        player2 = gameInProgress.getGamePlayer2();
+        order = gameInProgress.getGameOrder();
         turn = order.getFirstPlayer();
     }
 

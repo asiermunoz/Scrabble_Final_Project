@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="204.0" prefWidth="414.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <children>
+        <VBox alignment="CENTER" prefHeight="256.0" prefWidth="414.0" style="-fx-background-color: #d9d9d9;">
+            <children>
+                <Label prefHeight="48.0" prefWidth="302.0" text="No hay partida existente">
+                    <font>
+                        <Font name="Consolas" size="22.0" />
+                    </font>
+                </Label>
+                <Label alignment="CENTER" prefHeight="36.0" prefWidth="367.0" text="no se ha encontrado partida para cargar" textAlignment="CENTER" wrapText="true">
+                    <font>
+                        <Font name="Consolas" size="17.0" />
+                    </font>
+                </Label>
+            </children>
+        </VBox>
+    </children>
+</VBox>

@@ -11,7 +11,6 @@ module com.example.register_aplication {
     exports com.example.register_aplication;
 
 
-    opens users to com.google.gson;
     opens com.example.register_aplication to com.google.gson, javafx.fxml;
 
 }

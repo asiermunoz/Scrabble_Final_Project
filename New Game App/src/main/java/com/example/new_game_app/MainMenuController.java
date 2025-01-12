@@ -62,7 +62,6 @@ public class MainMenuController {
         this.strategy = new ChangeSceneryToLoginMenu();
         context.setStrategy(strategy);
         context.change(actionEvent);
-
     }
 
     public void onNewGameButtonClick(javafx.event.ActionEvent actionEvent) {
@@ -87,12 +86,20 @@ public class MainMenuController {
             PopUpCommand command = new PopUpOverwriteGame();
             popUpselected.setCommand(command);
             StageManager.overwrite = popUpselected.buttonPressed();
-
-
         } else {
             strategy = new ChangeSceneryToGame();
             context.setStrategy(strategy);
             StageManager.game = context.change(actionEvent);
+        }
+    }
+
+    public void onContinueGameButtonClick(javafx.event.ActionEvent actionEvent) {
+        if(!gameAlreadyCreated) {
+            PopUpCommand command = new PopUpNoExistingGame();
+            popUpselected.setCommand(command);
+            StageManager.noExistingGames = popUpselected.buttonPressed();
+        } else {
+
         }
     }
 

@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="641.0" style="-fx-background-color: #00aeff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.register_aplication.DeleteUserController">
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="641.0" style="-fx-background-color: #f3dbc3;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.register_aplication.DeleteUserController">
     <children>
         <HBox prefHeight="100.0" prefWidth="200.0">
             <children>
@@ -19,9 +19,9 @@
                   <Image url="@../../../Images/deleteuser.png" />
                </image></ImageView>
                 <Region prefHeight="150.0" prefWidth="33.0" />
-                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="152.0" prefWidth="452.0" text="DELETE USER">
+                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="152.0" prefWidth="452.0" text="DELETE USER" textFill="#ac3535" underline="true">
                     <font>
-                        <Font name="Times New Roman Bold Italic" size="62.0" />
+                        <Font name="Copperplate Gothic Bold" size="55.0" />
                     </font>
                 </Label>
             </children>
@@ -49,7 +49,7 @@
         <Region prefHeight="25.0" prefWidth="642.0" />
         <HBox alignment="CENTER" prefHeight="74.0" prefWidth="443.0">
             <children>
-                <Button mnemonicParsing="false" onAction="#Enter" prefHeight="62.0" prefWidth="186.0" text="ENTER">
+                <Button mnemonicParsing="false" onAction="#Enter" prefHeight="62.0" prefWidth="186.0" style="-fx-background-color: #f3dbc3; -fx-border-color: #ac3535; -fx-border-width: 4;" text="ENTER">
                <font>
                   <Font name="Times New Roman Bold" size="22.0" />
                </font></Button>
@@ -59,7 +59,7 @@
          <children>
             <Label fx:id="deleteMessageText" alignment="CENTER" contentDisplay="CENTER" prefHeight="82.0" prefWidth="186.0" />
             <Region prefHeight="100.0" prefWidth="117.0" />
-            <Button fx:id="deleteExitButton" mnemonicParsing="false" onAction="#exitPage" prefHeight="94.0" prefWidth="94.0" style="-fx-background-color: #00aeff;">
+            <Button fx:id="deleteExitButton" mnemonicParsing="false" onAction="#exitPage" prefHeight="94.0" prefWidth="94.0" style="-fx-background-color: #f3dbc3;">
                <graphic>
                   <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
                      <image>

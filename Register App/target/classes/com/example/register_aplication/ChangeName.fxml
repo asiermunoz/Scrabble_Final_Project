@@ -10,62 +10,67 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="641.0" style="-fx-background-color: #00aeff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.register_aplication.ModifyAliasController">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="640.0" style="-fx-background-color: #e89361;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.register_aplication.ModifyAliasController">
     <children>
-        <HBox prefHeight="150.0" prefWidth="200.0">
-            <children>
-                <Region prefHeight="150.0" prefWidth="33.0" />
-                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="150.0" prefWidth="678.0" text="CHANGE ALIAS">
-                    <font>
-                        <Font name="Times New Roman Bold Italic" size="70.0" />
-                    </font>
-                </Label>
-            </children>
-        </HBox>
-        <HBox alignment="CENTER" prefHeight="81.0" prefWidth="656.0">
-            <children>
-                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="104.0" text="Old Alias:" textAlignment="CENTER" wrapText="true">
-                    <font>
-                        <Font name="Times New Roman Bold" size="22.0" />
-                    </font>
-                </Label>
-                <TextField fx:id="oldAliasField" prefHeight="29.0" prefWidth="407.0" />
-            </children>
-        </HBox>
-        <HBox alignment="CENTER" prefHeight="81.0" prefWidth="656.0">
-            <children>
-                <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="104.0" text="New Alias:" textAlignment="CENTER" wrapText="true">
-                    <font>
-                        <Font name="Times New Roman Bold" size="22.0" />
-                    </font>
-                </Label>
-                <TextField fx:id="newAliasField" prefHeight="29.0" prefWidth="407.0" />
-            </children>
-        </HBox>
-        <Region prefHeight="25.0" prefWidth="642.0" />
-        <HBox alignment="CENTER" prefHeight="74.0" prefWidth="443.0">
-            <children>
-                <Button mnemonicParsing="false" onAction="#Enter" prefHeight="62.0" prefWidth="186.0" text="ENTER">
-               <font>
-                  <Font name="Times New Roman Bold" size="22.0" />
-               </font></Button>
-            </children>
-        </HBox>
-        <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
-            <children>
-                <Label fx:id="messageText" alignment="CENTER" contentDisplay="CENTER" prefHeight="82.0" prefWidth="186.0" />
-                <Region prefHeight="100.0" prefWidth="117.0" />
-                <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exitPage" prefHeight="94.0" prefWidth="94.0" style="-fx-background-color: #00aeff;">
-                    <graphic>
-                        <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
-                            <image>
-                                <Image url="@../../../Images/free-exit-logout-icon-2857-thumb.png" />
-                            </image>
-                        </ImageView>
-                    </graphic>
-                </Button>
-                <Region prefHeight="100.0" prefWidth="12.0" />
-            </children>
-        </HBox>
+      <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="600.0" style="-fx-background-color: #f3dbc3;">
+         <children>
+              <HBox prefHeight="150.0" prefWidth="200.0">
+                  <children>
+                      <Region prefHeight="150.0" prefWidth="33.0" />
+                      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="145.0" prefWidth="622.0" text="CHANGE ALIAS" textFill="#ac3535" underline="true">
+                          <font>
+                              <Font name="Copperplate Gothic Bold" size="63.0" />
+                          </font>
+                      </Label>
+                  </children>
+              </HBox>
+              <HBox alignment="CENTER" prefHeight="81.0" prefWidth="656.0">
+                  <children>
+                      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="104.0" text="Old Alias:" textAlignment="CENTER" wrapText="true">
+                          <font>
+                              <Font name="Copperplate Gothic Bold" size="22.0" />
+                          </font>
+                      </Label>
+                      <TextField fx:id="oldAliasField" prefHeight="29.0" prefWidth="407.0" />
+                  </children>
+              </HBox>
+              <HBox alignment="CENTER" prefHeight="81.0" prefWidth="656.0">
+                  <children>
+                      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="78.0" prefWidth="104.0" text="New Alias:" textAlignment="CENTER" wrapText="true">
+                          <font>
+                              <Font name="Copperplate Gothic Bold" size="22.0" />
+                          </font>
+                      </Label>
+                      <TextField fx:id="newAliasField" prefHeight="29.0" prefWidth="407.0" />
+                  </children>
+              </HBox>
+              <Region prefHeight="25.0" prefWidth="642.0" />
+              <HBox alignment="CENTER" prefHeight="74.0" prefWidth="443.0">
+                  <children>
+                      <Button mnemonicParsing="false" onAction="#Enter" prefHeight="62.0" prefWidth="186.0" style="-fx-background-color: #f3dbc3; -fx-border-color: #ac3535; -fx-border-width: 4;" text="ENTER">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  </children>
+              </HBox>
+              <HBox alignment="CENTER_RIGHT" prefHeight="100.0" prefWidth="200.0">
+                  <children>
+                      <Label fx:id="messageText" alignment="CENTER" contentDisplay="CENTER" prefHeight="82.0" prefWidth="186.0" />
+                      <Region prefHeight="100.0" prefWidth="117.0" />
+                      <Button fx:id="exitButton" mnemonicParsing="false" onAction="#exitPage" prefHeight="80.0" prefWidth="94.0" style="-fx-background-color: #f3dbc3;">
+                          <graphic>
+                              <ImageView fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true">
+                                  <image>
+                                      <Image url="@../../../Images/free-exit-logout-icon-2857-thumb.png" />
+                                  </image>
+                              </ImageView>
+                          </graphic>
+                      </Button>
+                      <Region prefHeight="100.0" prefWidth="12.0" />
+                  </children>
+              </HBox>
+         </children>
+      </VBox>
     </children>
 </VBox>

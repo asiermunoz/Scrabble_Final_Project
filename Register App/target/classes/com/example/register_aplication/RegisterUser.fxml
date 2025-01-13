@@ -8,44 +8,53 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<VBox alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="641.0" style="-fx-background-color: #00aeff;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.register_aplication.RegisterUserController">
+<VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="640.0" style="-fx-background-color: #e89361;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.register_aplication.RegisterUserController">
     <children>
-        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTER USERS SCRABBLE" textAlignment="CENTER" wrappingWidth="641.3366918563843">
-            <font>
-                <Font name="Times New Roman Italic" size="54.0" />
-            </font>
-        </Text>
-        <Region prefHeight="29.0" prefWidth="642.0" />
-      <VBox alignment="CENTER" prefHeight="374.0" prefWidth="642.0">
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="600.0" style="-fx-background-color: #f3dbc3;">
          <children>
-                <Button mnemonicParsing="false" onAction="#onButtonNewUser" prefHeight="50.0" prefWidth="250.0" text="New User">
-               <font>
-                  <Font name="Times New Roman" size="22.0" />
-               </font></Button>
-            <Region prefHeight="10.0" prefWidth="642.0" />
-                <Button mnemonicParsing="false" onAction="#onButtonChangeName" prefHeight="50.0" prefWidth="250.0" text="Change Name">
-               <font>
-                  <Font name="Times New Roman" size="22.0" />
-               </font></Button>
-            <Region prefHeight="10.0" prefWidth="642.0" />
-                <Button mnemonicParsing="false" onAction="#onButtonChangeEmail" prefHeight="50.0" prefWidth="250.0" text="Change Email">
-               <font>
-                  <Font name="Times New Roman" size="22.0" />
-               </font></Button>
-            <Region prefHeight="10.0" prefWidth="642.0" />
-                <Button mnemonicParsing="false" onAction="#onButtonDeleteUser" prefHeight="50.0" prefWidth="250.0" text="Delete User">
-               <font>
-                  <Font name="Times New Roman" size="22.0" />
-               </font></Button>
-            <Region prefHeight="22.0" prefWidth="642.0" />
-            <Button mnemonicParsing="false" onAction="#exitPage" prefHeight="50.0" prefWidth="148.0" style="-fx-background-color: #00aeff;" textAlignment="CENTER">
-               <graphic>
-                  <ImageView fitHeight="94.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../../../Images/free-exit-logout-icon-2857-thumb.png" />
-                     </image>
-                  </ImageView>
-               </graphic></Button>
+              <Text fill="#ac3535" strokeType="OUTSIDE" strokeWidth="0.0" text="REGISTER USERS SCRABBLE" textAlignment="CENTER" underline="true" wrappingWidth="641.3366918563843">
+                  <font>
+                      <Font name="Copperplate Gothic Bold" size="54.0" />
+                  </font>
+              </Text>
+              <Region prefHeight="29.0" prefWidth="642.0" />
+            <VBox alignment="CENTER" prefHeight="410.0" prefWidth="619.0">
+               <children>
+                      <Button mnemonicParsing="false" onAction="#onButtonNewUser" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #f3dbc3; -fx-border-color: #ac3535; -fx-border-width: 4;" text="New User">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Region prefHeight="10.0" prefWidth="642.0" />
+                      <Button mnemonicParsing="false" onAction="#onButtonChangeName" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #f3dbc3; -fx-border-color: #ac3535; -fx-border-width: 4;" text="Change Name">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Region prefHeight="10.0" prefWidth="642.0" />
+                      <Button mnemonicParsing="false" onAction="#onButtonChangeEmail" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #f3dbc3; -fx-border-color: #ac3535; -fx-border-width: 4;" text="Change Email">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Region prefHeight="10.0" prefWidth="642.0" />
+                      <Button mnemonicParsing="false" onAction="#onButtonDeleteUser" prefHeight="50.0" prefWidth="250.0" style="-fx-background-color: #f3dbc3; -fx-border-color: #ac3535; -fx-border-width: 4;" text="Delete User">
+                     <font>
+                        <Font name="Copperplate Gothic Bold" size="22.0" />
+                     </font>
+                  </Button>
+                  <Region prefHeight="22.0" prefWidth="642.0" />
+                  <Button mnemonicParsing="false" onAction="#exitPage" prefHeight="50.0" prefWidth="148.0" style="-fx-background-color: #f3dbc3;" textAlignment="CENTER">
+                     <graphic>
+                        <ImageView fitHeight="94.0" fitWidth="88.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../../../Images/free-exit-logout-icon-2857-thumb.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+               </children>
+            </VBox>
          </children>
       </VBox>
     </children>

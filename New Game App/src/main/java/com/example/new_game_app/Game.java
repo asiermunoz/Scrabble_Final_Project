@@ -35,6 +35,8 @@ public class Game {
     public void setGameInProgress(GameInformation gameInProgress) {
         secondsElapsed = gameInProgress.getGameTimePlayed();
         skippedTurns = 0;
+        board = gameInProgress.getGameBoard();
+        bag = gameInProgress.getGameBag();
         player1 = gameInProgress.getGamePlayer1();
         player2 = gameInProgress.getGamePlayer2();
         order = gameInProgress.getGameOrder();

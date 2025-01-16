@@ -3,14 +3,24 @@ package com.example.new_game_app;
 import java.util.Objects;
 
 public class Letter {
+    private String letter;
     private String link;
     private int value;
     private boolean joker;
 
-    public Letter(String link, int value) {
+    public Letter(String letter, String link, int value) {
+        this.letter = letter;
         this.link = link;
         this.value = value;
         this.joker = false;
+    }
+
+    public String getLetter() {
+        return letter;
+    }
+
+    public void setLetter(String letter) {
+        this.letter = letter;
     }
 
     public String getLink() {

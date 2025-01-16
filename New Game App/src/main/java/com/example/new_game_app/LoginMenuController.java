@@ -4,11 +4,14 @@ import com.example.new_game_app.objects.jsonHandlers.JsonUserHandler;
 import com.example.new_game_app.objects.models.LoginMenuModel;
 import com.example.new_game_app.objects.users.User;
 import javafx.fxml.FXML;
+import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
+import java.net.URL;
 import java.util.LinkedList;
+import java.util.ResourceBundle;
 
 public class LoginMenuController {
 
@@ -42,7 +45,6 @@ public class LoginMenuController {
 
 
     //Constructors and Getters y Setters
-
     public LoginMenuController() {
         this.model = new LoginMenuModel();
     }
@@ -52,7 +54,6 @@ public class LoginMenuController {
     }
 
     //Methods
-
     @FXML
     private void initialize() {
         usersLinkedList = JsonUserHandler.readFromJson();
@@ -74,7 +75,7 @@ public class LoginMenuController {
             Player player2 = model.userToPlayer(user2);
             PlayerManager.player1 = player1;
             PlayerManager.player2 = player2;
-            context.change(actionEvent);
+            StageManager.menu = context.change(actionEvent);
         } else {
             errorMessage.setText("User not found");
             usernameField1.clear();
@@ -88,5 +89,4 @@ public class LoginMenuController {
     private void exitLogin() {
         System.exit(0);
     }
-
 }

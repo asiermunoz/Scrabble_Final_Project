@@ -33,7 +33,11 @@ public class WinnerController implements Initializable {
             winnerPlayer.setText("Empate");
         }
         motive.setText(EndGameInfo.motive);
-        pastTime.setText("Tiempo transcurrido: " + EndGameInfo.pastTime);
+        int secondsElapsed = EndGameInfo.pastTime;
+        int hours = secondsElapsed / 3600;
+        int minutes = (secondsElapsed % 3600) / 60;
+        int seconds = secondsElapsed % 60;
+        pastTime.setText("Tiempo transcurrido: " + String.format("%02d:%02d:%02d", hours, minutes, seconds));
         player1Name.setText(EndGameInfo.player1.getAlias());
         player1Score.setText("Score: " + EndGameInfo.player1.getScore());
         player2Name.setText(EndGameInfo.player2.getAlias());

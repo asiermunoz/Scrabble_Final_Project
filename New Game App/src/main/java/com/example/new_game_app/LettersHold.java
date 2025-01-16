@@ -16,18 +16,4 @@ public class LettersHold{
     public void addLetter(Letter letter){
         this.hold.addLast(letter);
     }
-
-    public boolean holdIsEmpty(){
-        return hold.isEmpty();
-    }
-
-    public Letter takeFirstLetter(){
-        Letter first = hold.getFirst();
-        hold.removeFirst();
-        return first;
-    }
-
-    public void clearHold(){
-        hold.clear();
-    }
 }

@@ -77,14 +77,14 @@ public class GameController implements Initializable {
         timeline.play();
         game = new Game();
 
-
         if(JsonManager.newGameNeeded) {
             //Función que define la nueva partida.
-            game.setNewGame(exceptions);
+            game.setNewGame();
         } else {
             //Función que define la partida en progreso.
-            game.setGameInProgress(exceptions, JsonManager.gameInProgress);
+            game.setGameInProgress(JsonManager.gameInProgress);
         }
+        exceptions.setText(game.getBag().getException());
 
         addToArrayList();
         for (Button button:actionButtons){
@@ -149,9 +149,8 @@ public class GameController implements Initializable {
                 button.setOpacity(0.28);
             }
         }
-        if(!game.reviewBoard()){
+        if(!game.reviewBoard(exceptions)){
             onReturnButton();
-            exceptions.setText("Las palabras formadas son inexistentes. Intentelo de nuevo.");
         }
         else{
             nextTurn(actionEvent);
@@ -168,8 +167,12 @@ public class GameController implements Initializable {
         }
         game.getTokensSelected().clearHold();
         tableImages = game.returnNotUsedTokens(tableImages);
-        buttonReturn.setOpacity(0.28);
-        buttonReturn.setDisable(true);
+        for(Button button : actionButtons){
+            if(button != buttonExchange){
+                button.setOpacity(0.28);
+                button.setDisable(true);
+            }
+        }
     }
 
     @FXML
@@ -189,6 +192,9 @@ public class GameController implements Initializable {
 
     @FXML
     public void onExitToMenuButtonClick() {
+        GameInformation gameInformation = new GameInformation(game.getBag(), false, game.getPlayer1(), game.getPlayer2(), game.getBoard(), game.getOrder(), EndGameInfo.pastTime);
+        JsonManager.games.add(gameInformation);
+        JsonGamesHandler.writeToJson(JsonManager.games);
         PopUpCommand command = new PopUpExit();
         popUpselected.setCommand(command);
         StageManager.exit = popUpselected.buttonPressed();
@@ -212,9 +218,9 @@ public class GameController implements Initializable {
         timerLabel.setText(game.returnTimer(true));
     }
 
-    private String stopTimer() {
+    private void stopTimer() {
         timeline.stop();
-        return game.returnTimer(false);
+        game.returnTimer(false);
     }
 
 
@@ -242,23 +248,9 @@ public class GameController implements Initializable {
     }
 
     private void nextTurn(javafx.event.ActionEvent actionEvent) {
-        //Eliminar partida anterior
-        if (JsonManager.gameInProgress != null) {
-            JsonManager.games.remove(JsonManager.gameInProgress);
-        }
-
-        //Crear nueva partida con los datos
-        GameInformation gameInformation = new GameInformation(game.getBag(), false, game.getPlayer1(), game.getPlayer2(), game.getBoard(), game.getOrder(), game.getSecondsElapsed());
-
-        //Agregar nueva partida y escribir json
-        JsonManager.games.add(gameInformation);
-
-        //Colocar gameInProgress
-        JsonManager.gameInProgress = gameInformation;
-
-        JsonGamesHandler.writeToJson(JsonManager.games);
+        EndGameInfo.pastTime = game.getSecondsElapsed();
         if (game.getSkippedTurns() == 4) {
-            EndGameInfo.pastTime = stopTimer();
+            stopTimer();
             game.finishGame(actionEvent);
         }
         if (game.getTurn() == game.getOrder().getFirstPlayer()) {

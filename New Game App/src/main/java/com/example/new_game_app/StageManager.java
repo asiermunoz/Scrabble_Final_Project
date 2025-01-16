@@ -8,5 +8,6 @@ public class StageManager {
     public static Stage bag;
     public static Stage stadistics;
     public static Stage overwrite;
+    public static Stage menu;
     public static Stage noExistingGames;
 }

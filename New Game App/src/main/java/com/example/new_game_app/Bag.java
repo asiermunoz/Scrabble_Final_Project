@@ -6,6 +6,7 @@ import java.util.ArrayList;
 
 public class Bag {
     private int total = 0;
+    private String exception;
     private ArrayList<Letter> letters = new ArrayList<>();
 
     //Rellenar bolsa inicial
@@ -16,13 +17,14 @@ public class Bag {
                 total++;
             }
         }
+        exception = "";
     }
 
     public int getTotal() {
         return total;
     }
 
-    public Holder fillNewHolder(int lettersNeeded, Label exception){
+    public Holder fillNewHolder(int lettersNeeded){
         ArrayList <Letter> letters = new ArrayList<>();
         for(int i = 0; i < lettersNeeded; i++){
             if(total!=0){
@@ -30,7 +32,7 @@ public class Bag {
                 reduceTotal();
             }
             else{
-                exception.setText("Bolsa vacía");
+                exception = "Bolsa vacía";
             }
         }
         return new Holder(letters);
@@ -51,7 +53,7 @@ public class Bag {
                 }
             }
         }catch(EmptyBagException e){
-            System.out.println(e.getMessage());
+            exception = e.getMessage();
         }
         return letters;
     }
@@ -80,6 +82,7 @@ public class Bag {
         return letter;
     }
 
-
-
+    public String getException() {
+        return exception;
+    }
 }

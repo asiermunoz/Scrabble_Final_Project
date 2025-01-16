@@ -5,15 +5,18 @@ import javafx.fxml.FXML;
 import javafx.stage.Stage;
 
 public class OverwriteGameController {
+    private ChangeSceneStrategy strategy = null;
+    private final ChangeSceneryToContext context = new ChangeSceneryToContext();
+
     @FXML
-    public void onOverwriteButtonClick() {
+    public void onOverwriteButtonClick(javafx.event.ActionEvent actionEvent) {
         JsonManager.gameInProgress = null;
         JsonManager.isGameFounded = false;
         JsonManager.overWritedGame = true;
-
-
-
-        StageManager.overwrite.close();
+        strategy = new ChangeSceneryToGame();
+        StageManager.menu.close();
+        context.setStrategy(strategy);
+        StageManager.game = context.change(actionEvent);
     }
 
     public void onCancelButtonClick() {

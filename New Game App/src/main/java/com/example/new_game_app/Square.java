@@ -10,7 +10,7 @@ public class Square{
     protected int y;
 
     public Square(int y, int x){
-        this.letter = new Letter ("  ", 0);
+        this.letter = new Letter ("  ", "  ", 0);
         this.x = x;
         this.y = y;
         this. marked = false;
@@ -24,7 +24,9 @@ public class Square{
         this.letter = letter;
     }
 
-    public void clearLetter(){this.letter = new Letter ("  ", 0);}
+    public void clearLetter(){
+        this.letter = new Letter ("  ", "  ", 0);
+    }
 
     public int getValue() {
         return letter.getValue();

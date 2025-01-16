@@ -66,6 +66,16 @@ public class Holder extends LettersHold{
         int size = getHoldSize();
         this.hold = bag.changeHolder(size);
     }
+
+    public void removeLettersUsed(LettersToPut tokensSelected){
+        for(Letter letter: tokensSelected.lettersUsed){
+            hold.remove(letter);
+        }
+    }
+
+    public void refillHolder(Bag bag, int lettersNeeded){
+        hold.addAll(bag.reFill(lettersNeeded));
+    }
 //
 //    public void backtrack(LettersHold lettersHold) {
 //        try {

@@ -13,26 +13,27 @@ public class Game {
     private Bag bag = new Bag();
     private int skippedTurns;
     private int secondsElapsed;
-    private LettersHold tokensSelected = new LettersHold();
+    private int wordsPut;
+    private final int initialLettersNeeded = 7;
+    private LettersToPut tokensSelected = new LettersToPut();
     private final ChangeSceneStrategy strategy = new ChangeSceneryToWinnerScreen();
     private final ChangeSceneryToContext context = new ChangeSceneryToContext();
 
-    public void setNewGame(Label exceptions) {
+    public void setNewGame() {
         secondsElapsed = 0;
         skippedTurns = 0;
-        int initialLettersNeeded = 7;
+        wordsPut = 0;
         player1 = PlayerManager.player1;
-        player1.setHolder(bag.fillNewHolder(initialLettersNeeded, exceptions));
+        player1.setHolder(bag.fillNewHolder(initialLettersNeeded));
         player2 = PlayerManager.player2;
-        player2.setHolder(bag.fillNewHolder(initialLettersNeeded, exceptions));
+        player2.setHolder(bag.fillNewHolder(initialLettersNeeded));
         order.setNewOrder(player1, player2);
         turn = order.getFirstPlayer();
     }
 
-    public void setGameInProgress(Label exceptions, GameInformation gameInProgress) {
+    public void setGameInProgress(GameInformation gameInProgress) {
         secondsElapsed = gameInProgress.getGameTimePlayed();
         skippedTurns = 0;
-        int initialLettersNeeded = 7;
         player1 = gameInProgress.getGamePlayer1();
         player2 = gameInProgress.getGamePlayer2();
         order = gameInProgress.getGameOrder();
@@ -50,9 +51,23 @@ public class Game {
     }
 
     //Revisar ↓
-    public boolean reviewBoard(){
-        board.setMarkersFalse();
-        return true;
+    public boolean reviewBoard(Label exception){
+        CheckBoard verify = new CheckBoard(board);
+        if(verify.check()){
+            board.setMarkersFalse();
+            turn.sumScore(verify.getScore());
+            exception.setText(verify.getMessage());
+            wordsPut = wordsPut + verify.getWordsFound();
+            if(bag.getTotal() != 0) {
+                turn.eraseAndRefillHolder(tokensSelected, bag, initialLettersNeeded);
+                exception.setText(exception.getText() + bag.getException());
+            }
+            return true;
+        }
+        else{
+            exception.setText(verify.getMessage());
+            return false;
+        }
     }
 
     public void finishGame(javafx.event.ActionEvent actionEvent){
@@ -80,14 +95,6 @@ public class Game {
         context.change(actionEvent);
     }
 
-    public int getSecondsElapsed() {
-        return secondsElapsed;
-    }
-
-    public void setSecondsElapsed(int secondsElapsed) {
-        this.secondsElapsed = secondsElapsed;
-    }
-
     public Player getPlayer1() {
         return player1;
     }
@@ -107,12 +114,15 @@ public class Game {
     public Bag getBag() {
         return bag;
     }
+
     public void setBag(Bag bag) {
         this.bag = bag;
     }
+
     public Board getBoard() {
         return board;
     }
+
     public void setBoard(Board board) {
         this.board = board;
     }
@@ -141,7 +151,7 @@ public class Game {
         turn = order.getFirstPlayer();
     }
 
-    public LettersHold getTokensSelected() {
+    public LettersToPut getTokensSelected() {
         return tokensSelected;
     }
 
@@ -159,4 +169,11 @@ public class Game {
         return board.returnNotUsedTokens(tableImages);
     }
 
+    public int getSecondsElapsed() {
+        return secondsElapsed;
+    }
+
+    public void setSecondsElapsed(int secondsElapsed) {
+        this.secondsElapsed = secondsElapsed;
+    }
 }

@@ -1,5 +1,7 @@
 package com.example.new_game_app;
 
+import javafx.scene.control.Label;
+
 public class Player {
     private String alias;
     private int score;
@@ -29,6 +31,10 @@ public class Player {
         this.score = score;
     }
 
+    public void sumScore(int sum){
+        this.score = (this.score + sum);
+    }
+
     public boolean isWinner() {
         return winner;
     }
@@ -39,6 +45,11 @@ public class Player {
 
     public Holder getHolder() {
         return holder;
+    }
+
+    public void eraseAndRefillHolder(LettersToPut lettersToPut, Bag bag, int lettersNeeded){
+        this.holder.removeLettersUsed(lettersToPut);
+        this.holder.refillHolder(bag, lettersNeeded - this.holder.getHoldSize());
     }
 
     public void setHolder(Holder holder) {

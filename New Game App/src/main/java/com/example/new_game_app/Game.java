@@ -5,7 +5,7 @@ import javafx.scene.image.ImageView;
 import java.util.ArrayList;
 
 public class Game {
-    private Board board = new Board();
+    private Board board;
     private Player player1;
     private Player player2;
     private Player turn;
@@ -21,6 +21,7 @@ public class Game {
 
     public void setNewGame() {
         secondsElapsed = 0;
+        board  = new Board();
         skippedTurns = 0;
         wordsPut = 0;
         player1 = PlayerManager.player1;

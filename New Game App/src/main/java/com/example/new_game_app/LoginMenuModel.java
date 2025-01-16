@@ -1,4 +1,4 @@
-package com.example.new_game_app.objects.models;
+package com.example.new_game_app;
 
 import com.example.new_game_app.Player;
 import com.example.new_game_app.objects.users.User;

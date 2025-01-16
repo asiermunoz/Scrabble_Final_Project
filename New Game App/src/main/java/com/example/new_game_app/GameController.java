@@ -192,9 +192,6 @@ public class GameController implements Initializable {
 
     @FXML
     public void onExitToMenuButtonClick() {
-        GameInformation gameInformation = new GameInformation(game.getBag(), false, game.getPlayer1(), game.getPlayer2(), game.getBoard(), game.getOrder(), EndGameInfo.pastTime);
-        JsonManager.games.add(gameInformation);
-        JsonGamesHandler.writeToJson(JsonManager.games);
         PopUpCommand command = new PopUpExit();
         popUpselected.setCommand(command);
         StageManager.exit = popUpselected.buttonPressed();
@@ -248,6 +245,21 @@ public class GameController implements Initializable {
     }
 
     private void nextTurn(javafx.event.ActionEvent actionEvent) {
+        //Eliminar partida anterior
+        if (JsonManager.gameInProgress != null) {
+            JsonManager.games.remove(JsonManager.gameInProgress);
+        }
+
+        //Crear nueva partida con los datos
+        GameInformation gameInformation = new GameInformation(game.getBag(), false, game.getPlayer1(), game.getPlayer2(), game.getBoard(), game.getOrder(), game.getSecondsElapsed());
+
+        //Agregar nueva partida y escribir json
+        JsonManager.games.add(gameInformation);
+
+        //Colocar gameInProgress
+        JsonManager.gameInProgress = gameInformation;
+
+        JsonGamesHandler.writeToJson(JsonManager.games);
         EndGameInfo.pastTime = game.getSecondsElapsed();
         if (game.getSkippedTurns() == 4) {
             stopTimer();

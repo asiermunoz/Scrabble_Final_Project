@@ -1,506 +1,553 @@
 [
   {
     "gameBag": {
-      "total": 100,
+      "total": 91,
+      "exception": "",
       "letters": [
         {
+          "letter": "a",
           "link": "/com/example/new_game_app/Images/Ficha-A.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "a",
           "link": "/com/example/new_game_app/Images/Ficha-A.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "a",
           "link": "/com/example/new_game_app/Images/Ficha-A.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "a",
           "link": "/com/example/new_game_app/Images/Ficha-A.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "a",
           "link": "/com/example/new_game_app/Images/Ficha-A.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "a",
           "link": "/com/example/new_game_app/Images/Ficha-A.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "a",
           "link": "/com/example/new_game_app/Images/Ficha-A.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "a",
           "link": "/com/example/new_game_app/Images/Ficha-A.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "a",
           "link": "/com/example/new_game_app/Images/Ficha-A.png",
           "value": 1,
           "joker": false
         },
         {
-          "link": "/com/example/new_game_app/Images/Ficha-A.png",
-          "value": 1,
-          "joker": false
-        },
-        {
-          "link": "/com/example/new_game_app/Images/Ficha-A.png",
-          "value": 1,
-          "joker": false
-        },
-        {
-          "link": "/com/example/new_game_app/Images/Ficha-A.png",
-          "value": 1,
-          "joker": false
-        },
-        {
+          "letter": "b",
           "link": "/com/example/new_game_app/Images/Ficha-B.png",
           "value": 4,
           "joker": false
         },
         {
+          "letter": "b",
           "link": "/com/example/new_game_app/Images/Ficha-B.png",
           "value": 4,
           "joker": false
         },
         {
+          "letter": "c",
           "link": "/com/example/new_game_app/Images/Ficha-C.png",
           "value": 3,
           "joker": false
         },
         {
-          "link": "/com/example/new_game_app/Images/Ficha-C.png",
-          "value": 3,
-          "joker": false
-        },
-        {
-          "link": "/com/example/new_game_app/Images/Ficha-C.png",
-          "value": 3,
-          "joker": false
-        },
-        {
-          "link": "/com/example/new_game_app/Images/Ficha-C.png",
-          "value": 3,
-          "joker": false
-        },
-        {
+          "letter": "ch",
           "link": "/com/example/new_game_app/Images/Ficha-CH.png",
           "value": 8,
           "joker": false
         },
         {
+          "letter": "d",
           "link": "/com/example/new_game_app/Images/Ficha-D.png",
           "value": 3,
           "joker": false
         },
         {
+          "letter": "d",
           "link": "/com/example/new_game_app/Images/Ficha-D.png",
           "value": 3,
           "joker": false
         },
         {
+          "letter": "d",
           "link": "/com/example/new_game_app/Images/Ficha-D.png",
           "value": 3,
           "joker": false
         },
         {
-          "link": "/com/example/new_game_app/Images/Ficha-D.png",
-          "value": 3,
-          "joker": false
-        },
-        {
-          "link": "/com/example/new_game_app/Images/Ficha-D.png",
-          "value": 3,
-          "joker": false
-        },
-        {
+          "letter": "e",
           "link": "/com/example/new_game_app/Images/Ficha-E.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "e",
           "link": "/com/example/new_game_app/Images/Ficha-E.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "e",
           "link": "/com/example/new_game_app/Images/Ficha-E.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "e",
           "link": "/com/example/new_game_app/Images/Ficha-E.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "e",
           "link": "/com/example/new_game_app/Images/Ficha-E.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "e",
           "link": "/com/example/new_game_app/Images/Ficha-E.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "e",
           "link": "/com/example/new_game_app/Images/Ficha-E.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "e",
           "link": "/com/example/new_game_app/Images/Ficha-E.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "e",
           "link": "/com/example/new_game_app/Images/Ficha-E.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "e",
           "link": "/com/example/new_game_app/Images/Ficha-E.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "e",
           "link": "/com/example/new_game_app/Images/Ficha-E.png",
           "value": 1,
           "joker": false
         },
         {
-          "link": "/com/example/new_game_app/Images/Ficha-E.png",
-          "value": 1,
-          "joker": false
-        },
-        {
-          "link": "/com/example/new_game_app/Images/Ficha-F.png",
-          "value": 5,
-          "joker": false
-        },
-        {
+          "letter": "g",
           "link": "/com/example/new_game_app/Images/Ficha-G.png",
           "value": 3,
           "joker": false
         },
         {
+          "letter": "g",
           "link": "/com/example/new_game_app/Images/Ficha-G.png",
           "value": 3,
           "joker": false
         },
         {
+          "letter": "h",
           "link": "/com/example/new_game_app/Images/Ficha-H.png",
           "value": 5,
           "joker": false
         },
         {
+          "letter": "h",
           "link": "/com/example/new_game_app/Images/Ficha-H.png",
           "value": 5,
           "joker": false
         },
         {
+          "letter": "i",
           "link": "/com/example/new_game_app/Images/Ficha-I.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "i",
           "link": "/com/example/new_game_app/Images/Ficha-I.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "i",
           "link": "/com/example/new_game_app/Images/Ficha-I.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "i",
           "link": "/com/example/new_game_app/Images/Ficha-I.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "i",
           "link": "/com/example/new_game_app/Images/Ficha-I.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "i",
           "link": "/com/example/new_game_app/Images/Ficha-I.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "j",
           "link": "/com/example/new_game_app/Images/Ficha-J.png",
           "value": 10,
           "joker": false
         },
         {
+          "letter": "l",
           "link": "/com/example/new_game_app/Images/Ficha-L.png",
           "value": 2,
           "joker": false
         },
         {
+          "letter": "l",
           "link": "/com/example/new_game_app/Images/Ficha-L.png",
           "value": 2,
           "joker": false
         },
         {
+          "letter": "l",
           "link": "/com/example/new_game_app/Images/Ficha-L.png",
           "value": 2,
           "joker": false
         },
         {
-          "link": "/com/example/new_game_app/Images/Ficha-L.png",
-          "value": 2,
-          "joker": false
-        },
-        {
+          "letter": "ll",
           "link": "/com/example/new_game_app/Images/Ficha-LL.png",
           "value": 8,
           "joker": false
         },
         {
+          "letter": "m",
           "link": "/com/example/new_game_app/Images/Ficha-M.png",
           "value": 3,
           "joker": false
         },
         {
-          "link": "/com/example/new_game_app/Images/Ficha-M.png",
-          "value": 3,
-          "joker": false
-        },
-        {
+          "letter": "n",
           "link": "/com/example/new_game_app/Images/Ficha-N.png",
           "value": 2,
           "joker": false
         },
         {
+          "letter": "n",
           "link": "/com/example/new_game_app/Images/Ficha-N.png",
           "value": 2,
           "joker": false
         },
         {
+          "letter": "n",
           "link": "/com/example/new_game_app/Images/Ficha-N.png",
           "value": 2,
           "joker": false
         },
         {
+          "letter": "n",
           "link": "/com/example/new_game_app/Images/Ficha-N.png",
           "value": 2,
           "joker": false
         },
         {
+          "letter": "n",
           "link": "/com/example/new_game_app/Images/Ficha-N.png",
           "value": 2,
           "joker": false
         },
         {
+          "letter": "ñ",
           "link": "/com/example/new_game_app/Images/Ficha-Ñ.png",
           "value": 10,
           "joker": false
         },
         {
+          "letter": "o",
           "link": "/com/example/new_game_app/Images/Ficha-O.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "o",
           "link": "/com/example/new_game_app/Images/Ficha-O.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "o",
           "link": "/com/example/new_game_app/Images/Ficha-O.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "o",
           "link": "/com/example/new_game_app/Images/Ficha-O.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "o",
           "link": "/com/example/new_game_app/Images/Ficha-O.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "o",
           "link": "/com/example/new_game_app/Images/Ficha-O.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "o",
           "link": "/com/example/new_game_app/Images/Ficha-O.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "o",
           "link": "/com/example/new_game_app/Images/Ficha-O.png",
           "value": 1,
           "joker": false
         },
         {
-          "link": "/com/example/new_game_app/Images/Ficha-O.png",
-          "value": 1,
-          "joker": false
-        },
-        {
+          "letter": "p",
           "link": "/com/example/new_game_app/Images/Ficha-P.png",
           "value": 4,
           "joker": false
         },
         {
+          "letter": "p",
           "link": "/com/example/new_game_app/Images/Ficha-P.png",
           "value": 4,
           "joker": false
         },
         {
+          "letter": "q",
           "link": "/com/example/new_game_app/Images/Ficha-Q.png",
           "value": 8,
           "joker": false
         },
         {
+          "letter": "r",
           "link": "/com/example/new_game_app/Images/Ficha-R.png",
           "value": 2,
           "joker": false
         },
         {
+          "letter": "r",
           "link": "/com/example/new_game_app/Images/Ficha-R.png",
           "value": 2,
           "joker": false
         },
         {
+          "letter": "r",
           "link": "/com/example/new_game_app/Images/Ficha-R.png",
           "value": 2,
           "joker": false
         },
         {
+          "letter": "r",
           "link": "/com/example/new_game_app/Images/Ficha-R.png",
           "value": 2,
           "joker": false
         },
         {
-          "link": "/com/example/new_game_app/Images/Ficha-R.png",
-          "value": 2,
-          "joker": false
-        },
-        {
+          "letter": "rr",
           "link": "/com/example/new_game_app/Images/Ficha-RR.png",
           "value": 8,
           "joker": false
         },
         {
+          "letter": "s",
           "link": "/com/example/new_game_app/Images/Ficha-S.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "s",
           "link": "/com/example/new_game_app/Images/Ficha-S.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "s",
           "link": "/com/example/new_game_app/Images/Ficha-S.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "s",
           "link": "/com/example/new_game_app/Images/Ficha-S.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "s",
           "link": "/com/example/new_game_app/Images/Ficha-S.png",
           "value": 1,
           "joker": false
         },
         {
-          "link": "/com/example/new_game_app/Images/Ficha-S.png",
-          "value": 1,
-          "joker": false
-        },
-        {
+          "letter": "t",
           "link": "/com/example/new_game_app/Images/Ficha-T.png",
           "value": 2,
           "joker": false
         },
         {
+          "letter": "t",
           "link": "/com/example/new_game_app/Images/Ficha-T.png",
           "value": 2,
           "joker": false
         },
         {
+          "letter": "t",
           "link": "/com/example/new_game_app/Images/Ficha-T.png",
           "value": 2,
           "joker": false
         },
         {
+          "letter": "t",
           "link": "/com/example/new_game_app/Images/Ficha-T.png",
           "value": 2,
           "joker": false
         },
         {
+          "letter": "u",
           "link": "/com/example/new_game_app/Images/Ficha-U.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "u",
           "link": "/com/example/new_game_app/Images/Ficha-U.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "u",
           "link": "/com/example/new_game_app/Images/Ficha-U.png",
           "value": 1,
           "joker": false
         },
         {
+          "letter": "u",
           "link": "/com/example/new_game_app/Images/Ficha-U.png",
           "value": 1,
           "joker": false
         },
         {
-          "link": "/com/example/new_game_app/Images/Ficha-U.png",
-          "value": 1,
-          "joker": false
-        },
-        {
+          "letter": "v",
           "link": "/com/example/new_game_app/Images/Ficha-V.png",
           "value": 4,
           "joker": false
         },
         {
+          "letter": "x",
           "link": "/com/example/new_game_app/Images/Ficha-X.png",
           "value": 10,
           "joker": false
         },
         {
+          "letter": "y",
           "link": "/com/example/new_game_app/Images/Ficha-Y.png",
           "value": 5,
           "joker": false
         },
         {
+          "letter": "z",
           "link": "/com/example/new_game_app/Images/Ficha-Z.png",
           "value": 10,
           "joker": false
         },
         {
+          "letter": "☻",
           "link": "/com/example/new_game_app/Images/Ficha-☻.png",
           "value": 0,
           "joker": false
         },
         {
+          "letter": "☻",
           "link": "/com/example/new_game_app/Images/Ficha-☻.png",
           "value": 0,
+          "joker": false
+        },
+        {
+          "letter": "e",
+          "link": "/com/example/new_game_app/Images/Ficha-E.png",
+          "value": 1,
+          "joker": false
+        },
+        {
+          "letter": "e",
+          "link": "/com/example/new_game_app/Images/Ficha-E.png",
+          "value": 1,
+          "joker": false
+        },
+        {
+          "letter": "n",
+          "link": "/com/example/new_game_app/Images/Ficha-N.png",
+          "value": 2,
+          "joker": false
+        },
+        {
+          "letter": "c",
+          "link": "/com/example/new_game_app/Images/Ficha-C.png",
+          "value": 3,
+          "joker": false
+        },
+        {
+          "letter": "d",
+          "link": "/com/example/new_game_app/Images/Ficha-D.png",
+          "value": 3,
+          "joker": false
+        },
+        {
+          "letter": "a",
+          "link": "/com/example/new_game_app/Images/Ficha-A.png",
+          "value": 1,
+          "joker": false
+        },
+        {
+          "letter": "a",
+          "link": "/com/example/new_game_app/Images/Ficha-A.png",
+          "value": 1,
           "joker": false
         }
       ]
@@ -511,6 +558,7 @@
         [
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -521,6 +569,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -531,6 +580,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -541,6 +591,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -551,6 +602,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -561,6 +613,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -571,6 +624,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -581,6 +635,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -591,6 +646,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -601,6 +657,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -611,6 +668,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -621,6 +679,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -631,6 +690,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -641,6 +701,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -651,6 +712,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -663,6 +725,7 @@
         [
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -673,6 +736,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -683,6 +747,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -693,6 +758,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -703,6 +769,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -713,6 +780,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -723,6 +791,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -733,6 +802,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -743,6 +813,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -753,6 +824,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -763,6 +835,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -773,6 +846,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -783,6 +857,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -793,6 +868,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -803,6 +879,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -815,6 +892,7 @@
         [
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -825,6 +903,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -835,6 +914,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -845,6 +925,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -855,6 +936,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -865,6 +947,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -875,6 +958,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -885,6 +969,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -895,6 +980,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -905,6 +991,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -915,6 +1002,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -925,6 +1013,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -935,6 +1024,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -945,6 +1035,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -955,6 +1046,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -967,6 +1059,7 @@
         [
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -977,6 +1070,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -987,6 +1081,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -997,6 +1092,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1007,6 +1103,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1017,6 +1114,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1027,6 +1125,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1037,6 +1136,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1047,6 +1147,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1057,6 +1158,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1067,6 +1169,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1077,6 +1180,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1087,6 +1191,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1097,6 +1202,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1107,6 +1213,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1119,6 +1226,7 @@
         [
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1129,6 +1237,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1139,6 +1248,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1149,6 +1259,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1159,6 +1270,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1169,6 +1281,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1179,6 +1292,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1189,6 +1303,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1199,6 +1314,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1209,6 +1325,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1219,6 +1336,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1229,6 +1347,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1239,6 +1358,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1249,6 +1369,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1259,6 +1380,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1271,6 +1393,7 @@
         [
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1281,6 +1404,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1291,6 +1415,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1301,6 +1426,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1311,6 +1437,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1321,6 +1448,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1331,6 +1459,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1341,6 +1470,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1351,6 +1481,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1361,6 +1492,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1371,6 +1503,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1381,6 +1514,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1391,6 +1525,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1401,6 +1536,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1411,6 +1547,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1423,6 +1560,7 @@
         [
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1433,6 +1571,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1443,6 +1582,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1453,6 +1593,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1463,6 +1604,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1473,6 +1615,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1483,6 +1626,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1493,6 +1637,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1503,6 +1648,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1513,6 +1659,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1523,6 +1670,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1533,6 +1681,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1543,6 +1692,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1553,6 +1703,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1563,6 +1714,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1575,6 +1727,7 @@
         [
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1585,6 +1738,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1595,6 +1749,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1605,6 +1760,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1615,6 +1771,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1625,6 +1782,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1635,6 +1793,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1645,8 +1804,9 @@
           },
           {
             "letter": {
-              "link": "  ",
-              "value": 0,
+              "letter": "m",
+              "link": "/com/example/new_game_app/Images/Ficha-M.png",
+              "value": 3,
               "joker": false
             },
             "marked": false,
@@ -1655,8 +1815,9 @@
           },
           {
             "letter": {
-              "link": "  ",
-              "value": 0,
+              "letter": "e",
+              "link": "/com/example/new_game_app/Images/Ficha-E.png",
+              "value": 1,
               "joker": false
             },
             "marked": false,
@@ -1665,8 +1826,9 @@
           },
           {
             "letter": {
-              "link": "  ",
-              "value": 0,
+              "letter": "a",
+              "link": "/com/example/new_game_app/Images/Ficha-A.png",
+              "value": 1,
               "joker": false
             },
             "marked": false,
@@ -1675,8 +1837,9 @@
           },
           {
             "letter": {
-              "link": "  ",
-              "value": 0,
+              "letter": "d",
+              "link": "/com/example/new_game_app/Images/Ficha-D.png",
+              "value": 3,
               "joker": false
             },
             "marked": false,
@@ -1685,8 +1848,9 @@
           },
           {
             "letter": {
-              "link": "  ",
-              "value": 0,
+              "letter": "o",
+              "link": "/com/example/new_game_app/Images/Ficha-O.png",
+              "value": 1,
               "joker": false
             },
             "marked": false,
@@ -1695,6 +1859,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1705,6 +1870,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1715,6 +1881,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1727,6 +1894,7 @@
         [
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1737,6 +1905,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1747,6 +1916,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1757,6 +1927,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1767,6 +1938,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1777,6 +1949,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1787,6 +1960,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1797,6 +1971,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1807,6 +1982,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1817,6 +1993,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1827,6 +2004,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1837,6 +2015,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1847,6 +2026,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1857,6 +2037,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1867,6 +2048,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1879,6 +2061,7 @@
         [
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1889,6 +2072,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1899,6 +2083,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1909,6 +2094,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1919,6 +2105,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1929,6 +2116,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1939,6 +2127,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1949,6 +2138,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1959,6 +2149,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1969,6 +2160,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1979,6 +2171,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1989,6 +2182,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -1999,6 +2193,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2009,6 +2204,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2019,6 +2215,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2031,6 +2228,7 @@
         [
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2041,6 +2239,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2051,6 +2250,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2061,6 +2261,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2071,6 +2272,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2081,6 +2283,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2091,6 +2294,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2101,6 +2305,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2111,6 +2316,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2121,6 +2327,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2131,6 +2338,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2141,6 +2349,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2151,6 +2360,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2161,6 +2371,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2171,6 +2382,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2183,6 +2395,7 @@
         [
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2193,6 +2406,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2203,6 +2417,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2213,6 +2428,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2223,6 +2439,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2233,6 +2450,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2243,6 +2461,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2253,6 +2472,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2263,6 +2483,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2273,6 +2494,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2283,6 +2505,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2293,6 +2516,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2303,6 +2527,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2313,6 +2538,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2323,6 +2549,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2335,6 +2562,7 @@
         [
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2345,6 +2573,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2355,6 +2584,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2365,6 +2595,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2375,6 +2606,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2385,6 +2617,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2395,6 +2628,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2405,6 +2639,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2415,6 +2650,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2425,6 +2661,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2435,6 +2672,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2445,6 +2683,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2455,6 +2694,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2465,6 +2705,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2475,6 +2716,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2487,6 +2729,7 @@
         [
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2497,6 +2740,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2507,6 +2751,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2517,6 +2762,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2527,6 +2773,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2537,6 +2784,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2547,6 +2795,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2557,6 +2806,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2567,6 +2817,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2577,6 +2828,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2587,6 +2839,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2597,6 +2850,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2607,6 +2861,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2617,6 +2872,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2627,6 +2883,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2639,6 +2896,7 @@
         [
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2649,6 +2907,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2659,6 +2918,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2669,6 +2929,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2679,6 +2940,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2689,6 +2951,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2699,6 +2962,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2709,6 +2973,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2719,6 +2984,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2729,6 +2995,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2739,6 +3006,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2749,6 +3017,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2759,6 +3028,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2769,6 +3039,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2779,6 +3050,7 @@
           },
           {
             "letter": {
+              "letter": "  ",
               "link": "  ",
               "value": 0,
               "joker": false
@@ -2792,42 +3064,49 @@
     },
     "gamePlayer1": {
       "alias": "fernando",
-      "score": 0,
+      "score": 8,
       "holder": {
         "hold": [
           {
-            "link": "/com/example/new_game_app/Images/Ficha-F.png",
-            "value": 5,
-            "joker": false
-          },
-          {
-            "link": "/com/example/new_game_app/Images/Ficha-O.png",
+            "letter": "s",
+            "link": "/com/example/new_game_app/Images/Ficha-S.png",
             "value": 1,
             "joker": false
           },
           {
-            "link": "/com/example/new_game_app/Images/Ficha-N.png",
-            "value": 2,
-            "joker": false
-          },
-          {
+            "letter": "e",
             "link": "/com/example/new_game_app/Images/Ficha-E.png",
             "value": 1,
             "joker": false
           },
           {
-            "link": "/com/example/new_game_app/Images/Ficha-I.png",
+            "letter": "n",
+            "link": "/com/example/new_game_app/Images/Ficha-N.png",
+            "value": 2,
+            "joker": false
+          },
+          {
+            "letter": "d",
+            "link": "/com/example/new_game_app/Images/Ficha-D.png",
+            "value": 3,
+            "joker": false
+          },
+          {
+            "letter": "e",
+            "link": "/com/example/new_game_app/Images/Ficha-E.png",
             "value": 1,
             "joker": false
           },
           {
-            "link": "/com/example/new_game_app/Images/Ficha-C.png",
-            "value": 3,
+            "letter": "e",
+            "link": "/com/example/new_game_app/Images/Ficha-E.png",
+            "value": 1,
             "joker": false
           },
           {
-            "link": "/com/example/new_game_app/Images/Ficha-D.png",
-            "value": 3,
+            "letter": "n",
+            "link": "/com/example/new_game_app/Images/Ficha-N.png",
+            "value": 2,
             "joker": false
           }
         ]
@@ -2840,38 +3119,45 @@
       "holder": {
         "hold": [
           {
-            "link": "/com/example/new_game_app/Images/Ficha-R.png",
+            "letter": "t",
+            "link": "/com/example/new_game_app/Images/Ficha-T.png",
             "value": 2,
             "joker": false
           },
           {
-            "link": "/com/example/new_game_app/Images/Ficha-A.png",
-            "value": 1,
-            "joker": false
-          },
-          {
-            "link": "/com/example/new_game_app/Images/Ficha-Z.png",
-            "value": 10,
-            "joker": false
-          },
-          {
+            "letter": "e",
             "link": "/com/example/new_game_app/Images/Ficha-E.png",
             "value": 1,
             "joker": false
           },
           {
-            "link": "/com/example/new_game_app/Images/Ficha-R.png",
-            "value": 2,
+            "letter": "e",
+            "link": "/com/example/new_game_app/Images/Ficha-E.png",
+            "value": 1,
             "joker": false
           },
           {
-            "link": "/com/example/new_game_app/Images/Ficha-CH.png",
-            "value": 8,
+            "letter": "y",
+            "link": "/com/example/new_game_app/Images/Ficha-Y.png",
+            "value": 5,
             "joker": false
           },
           {
-            "link": "/com/example/new_game_app/Images/Ficha-☻.png",
-            "value": 0,
+            "letter": "e",
+            "link": "/com/example/new_game_app/Images/Ficha-E.png",
+            "value": 1,
+            "joker": false
+          },
+          {
+            "letter": "e",
+            "link": "/com/example/new_game_app/Images/Ficha-E.png",
+            "value": 1,
+            "joker": false
+          },
+          {
+            "letter": "p",
+            "link": "/com/example/new_game_app/Images/Ficha-P.png",
+            "value": 4,
             "joker": false
           }
         ]
@@ -2887,38 +3173,45 @@
           "holder": {
             "hold": [
               {
-                "link": "/com/example/new_game_app/Images/Ficha-R.png",
+                "letter": "t",
+                "link": "/com/example/new_game_app/Images/Ficha-T.png",
                 "value": 2,
                 "joker": false
               },
               {
-                "link": "/com/example/new_game_app/Images/Ficha-A.png",
-                "value": 1,
-                "joker": false
-              },
-              {
-                "link": "/com/example/new_game_app/Images/Ficha-Z.png",
-                "value": 10,
-                "joker": false
-              },
-              {
+                "letter": "e",
                 "link": "/com/example/new_game_app/Images/Ficha-E.png",
                 "value": 1,
                 "joker": false
               },
               {
-                "link": "/com/example/new_game_app/Images/Ficha-R.png",
-                "value": 2,
+                "letter": "e",
+                "link": "/com/example/new_game_app/Images/Ficha-E.png",
+                "value": 1,
                 "joker": false
               },
               {
-                "link": "/com/example/new_game_app/Images/Ficha-CH.png",
-                "value": 8,
+                "letter": "y",
+                "link": "/com/example/new_game_app/Images/Ficha-Y.png",
+                "value": 5,
                 "joker": false
               },
               {
-                "link": "/com/example/new_game_app/Images/Ficha-☻.png",
-                "value": 0,
+                "letter": "e",
+                "link": "/com/example/new_game_app/Images/Ficha-E.png",
+                "value": 1,
+                "joker": false
+              },
+              {
+                "letter": "e",
+                "link": "/com/example/new_game_app/Images/Ficha-E.png",
+                "value": 1,
+                "joker": false
+              },
+              {
+                "letter": "p",
+                "link": "/com/example/new_game_app/Images/Ficha-P.png",
+                "value": 4,
                 "joker": false
               }
             ]
@@ -2927,42 +3220,49 @@
         },
         {
           "alias": "fernando",
-          "score": 0,
+          "score": 42,
           "holder": {
             "hold": [
               {
+                "letter": "f",
                 "link": "/com/example/new_game_app/Images/Ficha-F.png",
                 "value": 5,
                 "joker": false
               },
               {
-                "link": "/com/example/new_game_app/Images/Ficha-O.png",
-                "value": 1,
-                "joker": false
-              },
-              {
-                "link": "/com/example/new_game_app/Images/Ficha-N.png",
-                "value": 2,
-                "joker": false
-              },
-              {
-                "link": "/com/example/new_game_app/Images/Ficha-E.png",
-                "value": 1,
-                "joker": false
-              },
-              {
-                "link": "/com/example/new_game_app/Images/Ficha-I.png",
-                "value": 1,
-                "joker": false
-              },
-              {
+                "letter": "c",
                 "link": "/com/example/new_game_app/Images/Ficha-C.png",
                 "value": 3,
                 "joker": false
               },
               {
-                "link": "/com/example/new_game_app/Images/Ficha-D.png",
+                "letter": "c",
+                "link": "/com/example/new_game_app/Images/Ficha-C.png",
                 "value": 3,
+                "joker": false
+              },
+              {
+                "letter": "r",
+                "link": "/com/example/new_game_app/Images/Ficha-R.png",
+                "value": 2,
+                "joker": false
+              },
+              {
+                "letter": "s",
+                "link": "/com/example/new_game_app/Images/Ficha-S.png",
+                "value": 1,
+                "joker": false
+              },
+              {
+                "letter": "l",
+                "link": "/com/example/new_game_app/Images/Ficha-L.png",
+                "value": 2,
+                "joker": false
+              },
+              {
+                "letter": "u",
+                "link": "/com/example/new_game_app/Images/Ficha-U.png",
+                "value": 1,
                 "joker": false
               }
             ]
@@ -2971,6 +3271,6 @@
         }
       ]
     },
-    "gameTimePlayed": 39
+    "gameTimePlayed": 142
   }
 ]

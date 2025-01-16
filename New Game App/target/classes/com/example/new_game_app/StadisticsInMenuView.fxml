@@ -6,18 +6,18 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #f3dbc3;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.new_game_app.StadisticsInMenuController">
+<VBox prefHeight="330.0" prefWidth="789.0" style="-fx-background-color: #f3dbc3;" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.new_game_app.StadisticsInMenuController">
     <children>
         <HBox alignment="TOP_CENTER" prefHeight="42.0" prefWidth="600.0" style="-fx-background-color: #48b55b;">
             <children>
-                <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="46.0" prefWidth="600.0" style="-fx-background-color: #ed6e5a;" text="Estadisticas" textFill="#9e0000">
+                <Label alignment="TOP_CENTER" contentDisplay="CENTER" prefHeight="42.0" prefWidth="814.0" style="-fx-background-color: #ed6e5a;" text="Estadisticas" textFill="#9e0000">
                     <font>
                         <Font name="Cooper Black" size="28.0" />
                     </font>
                 </Label>
             </children>
         </HBox>
-        <HBox prefHeight="53.0" prefWidth="600.0">
+        <HBox alignment="CENTER" prefHeight="53.0" prefWidth="600.0">
             <children>
                 <Label prefHeight="51.0" prefWidth="168.0" text="Nombre" textFill="#89623d">
                     <font>
@@ -34,6 +34,22 @@
                         <Font name="Cooper Black" size="16.0" />
                     </font>
                 </Label>
+            <Label prefHeight="39.0" prefWidth="160.0" text="Palabras colocadas" textFill="#89623d">
+               <font>
+                  <Font name="Cooper Black" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="7.0" />
+               </padding>
+            </Label>
+            <Label contentDisplay="CENTER" prefHeight="39.0" prefWidth="160.0" text="gano o perdio" textFill="#89623d">
+               <font>
+                  <Font name="Cooper Black" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="13.0" />
+               </padding>
+            </Label>
             </children>
             <VBox.margin>
                 <Insets />
@@ -42,7 +58,7 @@
                 <Insets bottom="7.0" left="20.0" right="7.0" top="7.0" />
             </padding>
         </HBox>
-        <HBox prefHeight="53.0" prefWidth="600.0">
+        <HBox alignment="CENTER" prefHeight="53.0" prefWidth="600.0">
             <children>
                 <Label fx:id="player1Name" prefHeight="51.0" prefWidth="168.0" textFill="#89623d">
                     <font>
@@ -54,17 +70,33 @@
                         <Font name="Cooper Black" size="16.0" />
                     </font>
                 </Label>
-                <Label prefHeight="39.0" prefWidth="126.0" text="Tiempo jugado" textFill="#89623d">
+                <Label fx:id="timePlayed1" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="126.0" textFill="#89623d">
                     <font>
                         <Font name="Cooper Black" size="16.0" />
                     </font>
                 </Label>
+            <Label prefHeight="39.0" prefWidth="160.0" text="Palabras colocadas" textFill="#89623d">
+               <font>
+                  <Font name="Cooper Black" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="7.0" />
+               </padding>
+            </Label>
+            <Label fx:id="player1Win" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="160.0" textFill="#89623d">
+               <font>
+                  <Font name="Cooper Black" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="13.0" />
+               </padding>
+            </Label>
             </children>
             <padding>
                 <Insets bottom="7.0" left="20.0" right="7.0" top="7.0" />
             </padding>
         </HBox>
-        <HBox prefHeight="53.0" prefWidth="600.0">
+        <HBox alignment="CENTER" prefHeight="53.0" prefWidth="600.0">
             <children>
                 <Label fx:id="player2Name" prefHeight="51.0" prefWidth="168.0" textFill="#89623d">
                     <font>
@@ -76,11 +108,27 @@
                         <Font name="Cooper Black" size="16.0" />
                     </font>
                 </Label>
-                <Label prefHeight="39.0" prefWidth="126.0" text="Tiempo jugado" textFill="#89623d">
+                <Label fx:id="timePlayed2" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="126.0" textFill="#89623d">
                     <font>
                         <Font name="Cooper Black" size="16.0" />
                     </font>
                 </Label>
+            <Label prefHeight="39.0" prefWidth="160.0" text="Palabras colocadas" textFill="#89623d">
+               <font>
+                  <Font name="Cooper Black" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="7.0" />
+               </padding>
+            </Label>
+            <Label fx:id="player2Win" alignment="CENTER" contentDisplay="CENTER" prefHeight="39.0" prefWidth="160.0" textFill="#89623d">
+               <font>
+                  <Font name="Cooper Black" size="16.0" />
+               </font>
+               <padding>
+                  <Insets left="13.0" />
+               </padding>
+            </Label>
             </children>
             <padding>
                 <Insets bottom="7.0" left="20.0" right="7.0" top="7.0" />

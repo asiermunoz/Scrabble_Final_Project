@@ -19,6 +19,8 @@ public class Game {
     private final ChangeSceneStrategy strategy = new ChangeSceneryToWinnerScreen();
     private final ChangeSceneryToContext context = new ChangeSceneryToContext();
 
+
+
     public void setNewGame() {
         secondsElapsed = 0;
         board  = new Board();

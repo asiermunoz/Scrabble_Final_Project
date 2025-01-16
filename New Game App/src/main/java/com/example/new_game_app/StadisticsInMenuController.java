@@ -32,17 +32,23 @@ public class StadisticsInMenuController implements Initializable {
     private Label timePlayed1;
     @FXML
     private Label timePlayed2;
+    @FXML
+    private Label wordsPut1;
+    @FXML
+    private Label wordsPut2;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
         player1 = JsonManager.gameInProgress.getGamePlayer1();
         player2 = JsonManager.gameInProgress.getGamePlayer2();
 
+        //GET SCORE
         player1Name.setText(player1.getAlias());
         player1Score.setText(String.valueOf(player1.getScore()));
         player2Name.setText(player2.getAlias());
         player2Score.setText(String.valueOf(player2.getScore()));
 
+        //WINNER?
         if(player1.isWinner()) {
             player1Win.setText("Gano");
             player2Win.setText("Perdio");
@@ -54,10 +60,16 @@ public class StadisticsInMenuController implements Initializable {
             player2Win.setText("?");
         }
 
+        //TIME PLAYED
         int hours = JsonManager.gameInProgress.getGameTimePlayed() / 3600;
         int minutes = (JsonManager.gameInProgress.getGameTimePlayed() % 3600) / 60;
         int seconds = JsonManager.gameInProgress.getGameTimePlayed() % 60;
         timePlayed1.setText(String.format("%02d:%02d:%02d", hours, minutes, seconds));
         timePlayed2.setText(String.format("%02d:%02d:%02d", hours, minutes, seconds));
+
+        //WORDS PUT
+        //wordsPut1.setText();
+        //wordsPut1.setText();
+
     }
 }

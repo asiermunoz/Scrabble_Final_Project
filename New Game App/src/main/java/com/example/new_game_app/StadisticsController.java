@@ -5,6 +5,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.chart.BarChart;
 import javafx.scene.chart.CategoryAxis;
+import javafx.scene.chart.NumberAxis;
 import javafx.scene.chart.XYChart;
 
 import java.net.URL;
@@ -16,10 +17,10 @@ public class StadisticsController implements Initializable {
     private Player player2;
 
     @FXML
-    private BarChart<String, Integer> barChart;
+    private BarChart<Number, String> barChart;
 
     @FXML
-    private CategoryAxis xAxis;
+    private CategoryAxis yAxis;
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
@@ -27,14 +28,22 @@ public class StadisticsController implements Initializable {
         player2 = JsonManager.gameInProgress.getGamePlayer2();
 
         // Create a series for player scores
-        XYChart.Series<String, Integer> series = new XYChart.Series<>();
+        XYChart.Series<Number, String> series = new XYChart.Series<>();
         series.setName("Player Scores");
 
         // Add data to the series
-        series.getData().add(new XYChart.Data<>(player1.getAlias(), player1.getScore()));
-        series.getData().add(new XYChart.Data<>(player2.getAlias(), player2.getScore()));
+        series.getData().add(new XYChart.Data<>(player1.getScore(), player1.getAlias()));
+        series.getData().add(new XYChart.Data<>(player2.getScore(), player2.getAlias()));
+
+        // Set the axes
+        NumberAxis xAxis = new NumberAxis();
+        yAxis = new CategoryAxis();
+        xAxis.setLabel("Score");
+        yAxis.setLabel("Player");
 
         // Add the series to the bar chart
         barChart.getData().add(series);
     }
+
+
 }

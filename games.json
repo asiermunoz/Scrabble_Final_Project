@@ -1,7 +1,7 @@
 [
   {
     "gameBag": {
-      "total": 76,
+      "total": 70,
       "exception": "",
       "letters": [
         {
@@ -74,24 +74,6 @@
           "letter": "d",
           "link": "/com/example/new_game_app/Images/Ficha-D.png",
           "value": 3,
-          "joker": false
-        },
-        {
-          "letter": "d",
-          "link": "/com/example/new_game_app/Images/Ficha-D.png",
-          "value": 3,
-          "joker": false
-        },
-        {
-          "letter": "d",
-          "link": "/com/example/new_game_app/Images/Ficha-D.png",
-          "value": 3,
-          "joker": false
-        },
-        {
-          "letter": "e",
-          "link": "/com/example/new_game_app/Images/Ficha-E.png",
-          "value": 1,
           "joker": false
         },
         {
@@ -197,12 +179,6 @@
           "joker": false
         },
         {
-          "letter": "m",
-          "link": "/com/example/new_game_app/Images/Ficha-M.png",
-          "value": 3,
-          "joker": false
-        },
-        {
           "letter": "n",
           "link": "/com/example/new_game_app/Images/Ficha-N.png",
           "value": 2,
@@ -260,12 +236,6 @@
           "letter": "o",
           "link": "/com/example/new_game_app/Images/Ficha-O.png",
           "value": 1,
-          "joker": false
-        },
-        {
-          "letter": "q",
-          "link": "/com/example/new_game_app/Images/Ficha-Q.png",
-          "value": 8,
           "joker": false
         },
         {
@@ -356,12 +326,6 @@
           "letter": "x",
           "link": "/com/example/new_game_app/Images/Ficha-X.png",
           "value": 10,
-          "joker": false
-        },
-        {
-          "letter": "☻",
-          "link": "/com/example/new_game_app/Images/Ficha-☻.png",
-          "value": 0,
           "joker": false
         },
         {
@@ -1246,9 +1210,9 @@
           },
           {
             "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
+              "letter": "e",
+              "link": "/com/example/new_game_app/Images/Ficha-E.png",
+              "value": 1,
               "joker": false
             },
             "marked": false,
@@ -1257,9 +1221,9 @@
           },
           {
             "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
+              "letter": "i",
+              "link": "/com/example/new_game_app/Images/Ficha-I.png",
+              "value": 1,
               "joker": false
             },
             "marked": false,
@@ -1268,9 +1232,9 @@
           },
           {
             "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
+              "letter": "s",
+              "link": "/com/example/new_game_app/Images/Ficha-S.png",
+              "value": 1,
               "joker": false
             },
             "marked": false,
@@ -1435,9 +1399,9 @@
           },
           {
             "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
+              "letter": "e",
+              "link": "/com/example/new_game_app/Images/Ficha-E.png",
+              "value": 1,
               "joker": false
             },
             "marked": false,
@@ -1602,9 +1566,9 @@
           },
           {
             "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
+              "letter": "d",
+              "link": "/com/example/new_game_app/Images/Ficha-D.png",
+              "value": 3,
               "joker": false
             },
             "marked": false,
@@ -1747,9 +1711,9 @@
           },
           {
             "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
+              "letter": "z",
+              "link": "/com/example/new_game_app/Images/Ficha-Z.png",
+              "value": 10,
               "joker": false
             },
             "marked": false,
@@ -2974,58 +2938,6 @@
       "oldBoardLetters": []
     },
     "gamePlayer1": {
-      "alias": "fernando",
-      "score": 18,
-      "holder": {
-        "hold": [
-          {
-            "letter": "e",
-            "link": "/com/example/new_game_app/Images/Ficha-E.png",
-            "value": 1,
-            "joker": false
-          },
-          {
-            "letter": "r",
-            "link": "/com/example/new_game_app/Images/Ficha-R.png",
-            "value": 2,
-            "joker": false
-          },
-          {
-            "letter": "h",
-            "link": "/com/example/new_game_app/Images/Ficha-H.png",
-            "value": 5,
-            "joker": false
-          },
-          {
-            "letter": "e",
-            "link": "/com/example/new_game_app/Images/Ficha-E.png",
-            "value": 1,
-            "joker": false
-          },
-          {
-            "letter": "t",
-            "link": "/com/example/new_game_app/Images/Ficha-T.png",
-            "value": 2,
-            "joker": false
-          },
-          {
-            "letter": "d",
-            "link": "/com/example/new_game_app/Images/Ficha-D.png",
-            "value": 3,
-            "joker": false
-          },
-          {
-            "letter": "y",
-            "link": "/com/example/new_game_app/Images/Ficha-Y.png",
-            "value": 5,
-            "joker": false
-          }
-        ]
-      },
-      "winner": false,
-      "wordsPut": 1
-    },
-    "gamePlayer2": {
       "alias": "asier",
       "score": 7,
       "holder": {
@@ -3077,12 +2989,64 @@
       "winner": false,
       "wordsPut": 1
     },
+    "gamePlayer2": {
+      "alias": "fernando",
+      "score": 18,
+      "holder": {
+        "hold": [
+          {
+            "letter": "e",
+            "link": "/com/example/new_game_app/Images/Ficha-E.png",
+            "value": 1,
+            "joker": false
+          },
+          {
+            "letter": "r",
+            "link": "/com/example/new_game_app/Images/Ficha-R.png",
+            "value": 2,
+            "joker": false
+          },
+          {
+            "letter": "h",
+            "link": "/com/example/new_game_app/Images/Ficha-H.png",
+            "value": 5,
+            "joker": false
+          },
+          {
+            "letter": "e",
+            "link": "/com/example/new_game_app/Images/Ficha-E.png",
+            "value": 1,
+            "joker": false
+          },
+          {
+            "letter": "t",
+            "link": "/com/example/new_game_app/Images/Ficha-T.png",
+            "value": 2,
+            "joker": false
+          },
+          {
+            "letter": "d",
+            "link": "/com/example/new_game_app/Images/Ficha-D.png",
+            "value": 3,
+            "joker": false
+          },
+          {
+            "letter": "y",
+            "link": "/com/example/new_game_app/Images/Ficha-Y.png",
+            "value": 5,
+            "joker": false
+          }
+        ]
+      },
+      "winner": false,
+      "wordsPut": 1
+    },
     "gameFinished": false,
     "gameOrder": {
       "players": [
         {
           "alias": "fernando",
-          "score": 24,
+          "score": 35,
           "holder": {
             "hold": [
               {
@@ -3092,9 +3056,15 @@
                 "joker": false
               },
               {
-                "letter": "e",
-                "link": "/com/example/new_game_app/Images/Ficha-E.png",
-                "value": 1,
+                "letter": "y",
+                "link": "/com/example/new_game_app/Images/Ficha-Y.png",
+                "value": 5,
+                "joker": false
+              },
+              {
+                "letter": "b",
+                "link": "/com/example/new_game_app/Images/Ficha-B.png",
+                "value": 4,
                 "joker": false
               },
               {
@@ -3104,15 +3074,15 @@
                 "joker": false
               },
               {
-                "letter": "y",
-                "link": "/com/example/new_game_app/Images/Ficha-Y.png",
-                "value": 5,
+                "letter": "q",
+                "link": "/com/example/new_game_app/Images/Ficha-Q.png",
+                "value": 8,
                 "joker": false
               },
               {
-                "letter": "s",
-                "link": "/com/example/new_game_app/Images/Ficha-S.png",
-                "value": 1,
+                "letter": "m",
+                "link": "/com/example/new_game_app/Images/Ficha-M.png",
+                "value": 3,
                 "joker": false
               },
               {
@@ -3120,39 +3090,21 @@
                 "link": "/com/example/new_game_app/Images/Ficha-E.png",
                 "value": 1,
                 "joker": false
-              },
-              {
-                "letter": "b",
-                "link": "/com/example/new_game_app/Images/Ficha-B.png",
-                "value": 4,
-                "joker": false
               }
             ]
           },
           "winner": false,
-          "wordsPut": 2
+          "wordsPut": 5
         },
         {
           "alias": "asier",
-          "score": 7,
+          "score": 29,
           "holder": {
             "hold": [
-              {
-                "letter": "i",
-                "link": "/com/example/new_game_app/Images/Ficha-I.png",
-                "value": 1,
-                "joker": false
-              },
               {
                 "letter": "u",
                 "link": "/com/example/new_game_app/Images/Ficha-U.png",
                 "value": 1,
-                "joker": false
-              },
-              {
-                "letter": "z",
-                "link": "/com/example/new_game_app/Images/Ficha-Z.png",
-                "value": 10,
                 "joker": false
               },
               {
@@ -3178,14 +3130,26 @@
                 "link": "/com/example/new_game_app/Images/Ficha-B.png",
                 "value": 4,
                 "joker": false
+              },
+              {
+                "letter": "☻",
+                "link": "/com/example/new_game_app/Images/Ficha-☻.png",
+                "value": 0,
+                "joker": false
+              },
+              {
+                "letter": "d",
+                "link": "/com/example/new_game_app/Images/Ficha-D.png",
+                "value": 3,
+                "joker": false
               }
             ]
           },
           "winner": false,
-          "wordsPut": 1
+          "wordsPut": 3
         }
       ]
     },
-    "gameTimePlayed": 137
+    "gameTimePlayed": 242
   }
 ]

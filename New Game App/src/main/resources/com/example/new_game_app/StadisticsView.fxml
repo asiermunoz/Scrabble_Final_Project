@@ -19,16 +19,16 @@
                 </Label>
             </children>
         </HBox>
-      <HBox prefHeight="286.0" prefWidth="790.0">
+      <HBox alignment="CENTER" prefHeight="286.0" prefWidth="790.0">
          <children>
-            <BarChart fx:id="barChart">
-              <xAxis>
-                <CategoryAxis side="BOTTOM" />
-              </xAxis>
-              <yAxis>
-                <NumberAxis side="LEFT" />
-              </yAxis>
-            </BarChart>
+             <BarChart fx:id="barChart" prefHeight="286.0" prefWidth="567.0">
+                 <xAxis>
+                     <NumberAxis side="BOTTOM" />
+                 </xAxis>
+                 <yAxis>
+                     <CategoryAxis side="LEFT" />
+                 </yAxis>
+             </BarChart>
          </children>
       </HBox>
     </children>

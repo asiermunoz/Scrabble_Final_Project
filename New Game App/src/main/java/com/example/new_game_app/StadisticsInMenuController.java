@@ -68,8 +68,8 @@ public class StadisticsInMenuController implements Initializable {
         timePlayed2.setText(String.format("%02d:%02d:%02d", hours, minutes, seconds));
 
         //WORDS PUT
-        //wordsPut1.setText();
-        //wordsPut1.setText();
+        wordsPut1.setText(String.valueOf(player1.getWordsPut()));
+        wordsPut2.setText(String.valueOf(player2.getWordsPut()));
 
     }
 }

@@ -75,7 +75,7 @@
                         <Font name="Cooper Black" size="16.0" />
                     </font>
                 </Label>
-            <Label prefHeight="39.0" prefWidth="160.0" text="Palabras colocadas" textFill="#89623d">
+            <Label fx:id="wordsPut1" contentDisplay="CENTER" prefHeight="39.0" prefWidth="160.0" textFill="#89623d">
                <font>
                   <Font name="Cooper Black" size="16.0" />
                </font>
@@ -113,7 +113,7 @@
                         <Font name="Cooper Black" size="16.0" />
                     </font>
                 </Label>
-            <Label prefHeight="39.0" prefWidth="160.0" text="Palabras colocadas" textFill="#89623d">
+            <Label fx:id="wordsPut2" contentDisplay="CENTER" prefHeight="39.0" prefWidth="160.0" textFill="#89623d">
                <font>
                   <Font name="Cooper Black" size="16.0" />
                </font>

@@ -62,6 +62,7 @@ public class Game {
             board.setMarkersFalse();
             turn.sumScore(verify.getScore());
             exception.setText(verify.getMessage());
+            turn.setWordsPut(turn.getWordsPut() + verify.getWordsFound());
             wordsPut = wordsPut + verify.getWordsFound();
             if(bag.getTotal() != 0) {
                 turn.eraseAndRefillHolder(tokensSelected, bag, initialLettersNeeded);

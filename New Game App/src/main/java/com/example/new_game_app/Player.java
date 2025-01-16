@@ -7,12 +7,14 @@ public class Player {
     private int score;
     private Holder holder;
     private boolean winner;
+    private int wordsPut;
 
-    public Player(String alias, int score, Holder holder, boolean winner) {
+    public Player(String alias, int score, Holder holder, boolean winner, int wordsPut) {
         this.alias = alias;
         this.score = score;
         this.holder = holder;
         this.winner = winner;
+        this.wordsPut = wordsPut;
     }
 
     public String getAlias() {
@@ -45,6 +47,14 @@ public class Player {
 
     public Holder getHolder() {
         return holder;
+    }
+
+    public int getWordsPut() {
+        return wordsPut;
+    }
+
+    public void setWordsPut(int wordsPut) {
+        this.wordsPut = wordsPut;
     }
 
     public void eraseAndRefillHolder(LettersToPut lettersToPut, Bag bag, int lettersNeeded){

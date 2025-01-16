@@ -108,8 +108,15 @@ public class MainMenuController {
     }
 
     public void onShowStadisticsButtonClick(javafx.event.ActionEvent actionEvent) {
-        PopUpCommand command = new PopUpStadisticsInMenu();
-        popUpselected.setCommand(command);
-        StageManager.stadistics = popUpselected.buttonPressed();
+        if(!gameAlreadyCreated){
+            //se va al pop up
+            PopUpCommand command = new PopUpNoExistingGame();
+            popUpselected.setCommand(command);
+            StageManager.noExistingGames = popUpselected.buttonPressed();
+        } else {
+            PopUpCommand command = new PopUpStadisticsInMenu();
+            popUpselected.setCommand(command);
+            StageManager.stadistics = popUpselected.buttonPressed();
+        }
     }
 }

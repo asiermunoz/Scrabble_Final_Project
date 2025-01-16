@@ -76,6 +76,7 @@ public class GameController implements Initializable {
         timeline.setCycleCount(Animation.INDEFINITE);
         timeline.play();
         game = new Game();
+        addToArrayList();
 
         if(JsonManager.newGameNeeded) {
             //Función que define la nueva partida.
@@ -83,10 +84,10 @@ public class GameController implements Initializable {
         } else {
             //Función que define la partida en progreso.
             game.setGameInProgress(JsonManager.gameInProgress);
+            fillOldBoard();
+
         }
         exceptions.setText(game.getBag().getException());
-
-        addToArrayList();
         for (Button button:actionButtons){
             if(button != buttonExchange) {
                 button.setOpacity(0.28);
@@ -282,6 +283,13 @@ public class GameController implements Initializable {
                 button.setOpacity(0.28);
                 button.setDisable(true);
             }
+        }
+    }
+
+    private void fillOldBoard(){
+        ArrayList<Integer> oldBoard = game.getBoard().fillOldBoard();
+        for(int i : oldBoard){
+            tableImages.get(i).setImage(new Image(Objects.requireNonNull(getClass().getResourceAsStream(game.getBoard().getOldBoardFirstLink()))));
         }
     }
 

@@ -2,10 +2,12 @@ package com.example.new_game_app;
 
 import javafx.scene.image.ImageView;
 import java.util.ArrayList;
+import java.util.Objects;
 
 public class Board {
     private final int length = 15;
     private final Square[][] table = new Square[length][length];
+    private ArrayList<Letter> oldBoardLetters = new ArrayList<>();
 
     public Board(){
         int central = length/2;
@@ -129,5 +131,26 @@ public class Board {
                 table[i][j].marked = false;
             }
         }
+    }
+
+    public ArrayList<Integer> fillOldBoard(){
+        ArrayList<Integer> oldBoard = new ArrayList<>();
+        int index = 0;
+        for(int i = 0; i < length; i++){
+            for(int j = 0; j < length; j++){
+                if(!Objects.equals(table[i][j].getLink(), "  ")){
+                    oldBoard.add(index);
+                    oldBoardLetters.add(table[i][j].letter);
+                }
+                index++;
+            }
+        }
+        return oldBoard;
+    }
+
+    public String getOldBoardFirstLink() {
+        Letter letter = oldBoardLetters.getFirst();
+        oldBoardLetters.removeFirst();
+        return letter.getLink();
     }
 }

@@ -16,7 +16,7 @@ public class Square{
         this. marked = false;
     }
 
-    public String getLetter() {
+    public String getLink() {
         return letter.getLink();
     }
 

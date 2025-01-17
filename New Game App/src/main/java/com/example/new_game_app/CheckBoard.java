@@ -80,7 +80,7 @@ public class CheckBoard {
                 score = score + bonus.doubleLetterBonus(doubleLetterBoost);
             }
             if(tripleLetterBoost != 0){
-                score = score + bonus.tripleLetterBonus(doubleLetterBoost);
+                score = score + bonus.tripleLetterBonus(tripleLetterBoost);
             }
             if(doubleWordBoost != 0){
                 score = bonus.doubleWordBonus(score, doubleWordBoost);
@@ -116,13 +116,11 @@ public class CheckBoard {
 
     public boolean readHorizontal(){
         boolean enter = false;
-        int copyScore = 0;
         ArrayList<Letter> letters = new ArrayList<>();
         for (int i = 0; i < board.getLength(); i++){
             for(int j = 0; j < board.getLength(); j++){
                 if (!Objects.equals(board.getTable()[i][j].letter.getLink(), "  ")) {
                     letters.add(board.getTable()[i][j].letter);
-                    copyScore = copyScore + board.getTable()[i][j].getValue();
                     if(board.getTable()[i][j].marked){
                         enter = true;
                         lettersMarked++;
@@ -131,9 +129,7 @@ public class CheckBoard {
                 else{
                     if((letters.size() > 1 && enter)){
                         if(readWord(letters)){
-                            this.score = this.score + copyScore;
                             letters = new ArrayList<>();
-                            copyScore = 0;
                             completeWord = true;
                         }
                         else{
@@ -141,7 +137,6 @@ public class CheckBoard {
                         }
                     }
                     else{
-                        copyScore = 0;
                         letters = new ArrayList<>();
                         enter = false;
                     }
@@ -153,13 +148,11 @@ public class CheckBoard {
 
     public boolean readVertical(){
         boolean enter = false;
-        int copyScore = 0;
         ArrayList<Letter> letters = new ArrayList<>();
         for (int i = 0; i < board.getLength(); i++){
             for(int j = 0; j < board.getLength(); j++){
                 if (!Objects.equals(board.getTable()[j][i].letter.getLink(), "  ")) {
                     letters.add(board.getTable()[j][i].letter);
-                    copyScore = copyScore + board.getTable()[j][i].getValue();
                     if(board.getTable()[j][i].marked){
                         enter = true;
                         lettersMarked++;
@@ -168,9 +161,7 @@ public class CheckBoard {
                 else{
                     if((letters.size() > 1 && enter)){
                         if(readWord(letters)){
-                            this.score = this.score + copyScore;
                             letters = new ArrayList<>();
-                            copyScore = 0;
                             completeWord = true;
                         }
                         else{
@@ -178,7 +169,6 @@ public class CheckBoard {
                         }
                     }
                     else{
-                        copyScore = 0;
                         letters = new ArrayList<>();
                         enter = false;
                     }
@@ -189,9 +179,20 @@ public class CheckBoard {
     }
 
     public boolean readWord(ArrayList<Letter> letters){
+        PopUpSelected popUpselected = new PopUpSelected();
+        PopUpCommand command = new PopUpJoker();
+        popUpselected.setCommand(command);
+
         StringBuilder word = new StringBuilder();
         for (Letter letter : letters) {
-            word.append(letter.getLetter().toLowerCase());
+            this.score = score + letter.getValue();
+            if(Objects.equals(letter.getLetter(), "☻")){
+                popUpselected.buttonPressed();
+                word.append(JokerController.joker.toLowerCase());
+            }
+            else {
+                word.append(letter.getLetter().toLowerCase());
+            }
         }
         wordsFound++;
         return new WordChecker().checkWord(String.valueOf(word));

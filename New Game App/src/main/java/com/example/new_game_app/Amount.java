@@ -1,6 +1,9 @@
 package com.example.new_game_app;
 
+import java.util.ArrayList;
+
 public class Amount {
+    public ArrayList<Integer> amounts = new ArrayList<>();
     static int a = 12;
     static int b = 2;
     static int c = 4;
@@ -30,4 +33,44 @@ public class Amount {
     static int y = 1;
     static int z = 1;
     static int joker = 2;
+
+    public Amount() {
+        amounts.add(a);
+        amounts.add(b);
+        amounts.add(c);
+        amounts.add(ch);
+        amounts.add(d);
+        amounts.add(e);
+        amounts.add(f);
+        amounts.add(g);
+        amounts.add(h);
+        amounts.add(i);
+        amounts.add(j);
+        amounts.add(l);
+        amounts.add(ll);
+        amounts.add(m);
+        amounts.add(n);
+        amounts.add(ñ);
+        amounts.add(o);
+        amounts.add(p);
+        amounts.add(q);
+        amounts.add(r);
+        amounts.add(rr);
+        amounts.add(s);
+        amounts.add(t);
+        amounts.add(u);
+        amounts.add(v);
+        amounts.add(x);
+        amounts.add(y);
+        amounts.add(z);
+        amounts.add(joker);
+    }
+
+    public ArrayList<Integer> getAmounts() {
+        return amounts;
+    }
+
+    public void setAmounts(ArrayList<Integer> amounts) {
+        this.amounts = amounts;
+    }
 }

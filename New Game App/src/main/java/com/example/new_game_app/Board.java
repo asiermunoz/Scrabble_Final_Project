@@ -21,7 +21,6 @@ public class Board {
                 }
             }
         }
-
         for(int i = 0; i < length; i++){
             if(i == 0 || i == length - 1) {
                 table[i][i] = new TripleWordSquare(i, i);
@@ -53,41 +52,43 @@ public class Board {
             }
             i++;
         }
-        if(length > 11) {
-            table[0][3] = new DoubleLetterSquare(0, 3);
-            table[3][0] = new DoubleLetterSquare(3, 0);
-            table[3][length - 1] = new DoubleLetterSquare(3, 14);
-            table[length - 1][3] = new DoubleLetterSquare(14, 3);
-            table[0][11] = new DoubleLetterSquare(0, 11);
-            table[11][0] = new DoubleLetterSquare(11, 0);
-            table[11][length - 1] = new DoubleLetterSquare(11, 14);
-            table[length - 1][11] = new DoubleLetterSquare(14, 11);
-            table[1][5] = new TripleLetterSquare(1, 5);
-            table[5][1] = new TripleLetterSquare(5, 1);
-            table[1][9] = new TripleLetterSquare(1, 9);
-            table[9][1] = new TripleLetterSquare(9, 1);
-            table[5][length - 2] = new TripleLetterSquare(5, 13);
-            table[length - 2][5] = new TripleLetterSquare(13, 5);
-            table[9][length - 2] = new TripleLetterSquare(9, 13);
-            table[13][9] = new TripleLetterSquare(13, 9);
-            table[6][12] = new DoubleLetterSquare(6, 12);
-            table[12][6] = new DoubleLetterSquare(12, 6);
-            table[6][2] = new DoubleLetterSquare(6, 2);
-            table[2][6] = new DoubleLetterSquare(2, 6);
-            table[8][2] = new DoubleLetterSquare(8, 2);
-            table[2][8] = new DoubleLetterSquare(2, 8);
-            table[8][12] = new DoubleLetterSquare(8, 12);
-            table[12][8] = new DoubleLetterSquare(12, 8);
-            table[central][3] = new DoubleLetterSquare(central, 3);
-            table[3][central] = new DoubleLetterSquare(3, central);
-            table[central][11] = new DoubleLetterSquare(central, 11);
-            table[11][central] = new DoubleLetterSquare(11, central);
-        }
-        table[0][central] = new TripleWordSquare(0, central);
+        table[0][0] = new TripleWordSquare(0, 0);
+        table[0][14] = new TripleWordSquare(0, 14);
+        table[14][0] = new TripleWordSquare(14, 0);
+        table[14][14] = new TripleWordSquare(14, 14);
 
-        table[length-1][central] = new TripleWordSquare(length-1,central);
+        table[0][3] = new DoubleLetterSquare(0, 3);
+        table[3][0] = new DoubleLetterSquare(3, 0);
+        table[3][14] = new DoubleLetterSquare(3, 14);
+        table[14][3] = new DoubleLetterSquare(14, 3);
+        table[0][11] = new DoubleLetterSquare(0, 11);
+        table[11][0] = new DoubleLetterSquare(11, 0);
+        table[11][14] = new DoubleLetterSquare(11, 14);
+        table[14][11] = new DoubleLetterSquare(14, 11);
+        table[1][5] = new TripleLetterSquare(1, 5);
+        table[5][1] = new TripleLetterSquare(5, 1);
+        table[1][9] = new TripleLetterSquare(1, 9);
+        table[9][1] = new TripleLetterSquare(9, 1);
+        table[5][13] = new TripleLetterSquare(5, 13);
+        table[13][5] = new TripleLetterSquare(13, 5);
+        table[9][13] = new TripleLetterSquare(9, 13);
+        table[13][9] = new TripleLetterSquare(13, 9);
+        table[6][12] = new DoubleLetterSquare(6, 12);
+        table[12][6] = new DoubleLetterSquare(12, 6);
+        table[6][2] = new DoubleLetterSquare(6, 2);
+        table[2][6] = new DoubleLetterSquare(2, 6);
+        table[8][2] = new DoubleLetterSquare(8, 2);
+        table[2][8] = new DoubleLetterSquare(2, 8);
+        table[8][12] = new DoubleLetterSquare(8, 12);
+        table[12][8] = new DoubleLetterSquare(12, 8);
+        table[central][3] = new DoubleLetterSquare(central, 3);
+        table[3][central] = new DoubleLetterSquare(3, central);
+        table[central][11] = new DoubleLetterSquare(central, 11);
+        table[11][central] = new DoubleLetterSquare(11, central);
+        table[0][central] = new TripleWordSquare(0, central);
+        table[14][central] = new TripleWordSquare(14,central);
         table[central][0] = new TripleWordSquare(central, 0);
-        table[central][length-1] = new TripleWordSquare(central, 0);
+        table[central][14] = new TripleWordSquare(central, 0);
     }
 
     public int getLength() {

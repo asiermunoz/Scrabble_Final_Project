@@ -10,4 +10,5 @@ public class StageManager {
     public static Stage overwrite;
     public static Stage menu;
     public static Stage noExistingGames;
+    public static Stage joker;
 }

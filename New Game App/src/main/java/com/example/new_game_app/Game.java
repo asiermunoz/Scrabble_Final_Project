@@ -21,15 +21,16 @@ public class Game {
     private LettersToPut tokensSelected = new LettersToPut();
     private final ChangeSceneStrategy strategy = new ChangeSceneryToWinnerScreen();
     private final ChangeSceneryToContext context = new ChangeSceneryToContext();
+    private Amount amount;
 
 
 
     public void setNewGame() {
         secondsElapsed = 0;
         board  = new Board();
+        bag = new Bag();
         skippedTurns = 0;
         wordsPut = 0;
-        bag  = new Bag();
         player1 = PlayerManager.player1;
         player1.setHolder(bag.fillNewHolder(initialLettersNeeded));
         player2 = PlayerManager.player2;
@@ -123,22 +124,17 @@ public class Game {
         if (JsonManager.gameInProgress != null) {
             JsonManager.games.remove(JsonManager.gameInProgress);
         }
-
         //Eliminar partida anterior
         if (JsonManager.gameInProgress != null) {
             JsonManager.games.remove(JsonManager.gameInProgress);
             JsonGamesHandler.writeToJson(JsonManager.games);
         }
-
         //Crear nueva partida con los datos
         GameInformation gameInformation = new GameInformation(bag, true, player1, player2, board, order, secondsElapsed);
-
         //Agregar nueva partida y escribir json
         JsonManager.finishedGames.add(gameInformation);
-
         //Colocar gameInProgress
         JsonManager.gameInProgress = gameInformation;
-
         JsonFinishedGamesHandler.writeToJson(JsonManager.finishedGames);
 
         context.setStrategy(strategy);
@@ -208,7 +204,7 @@ public class Game {
 
 
     public void addLetterToTokensSelected(int i){
-        tokensSelected.addLetter(turn.getHolder().hold.get(i));
+            tokensSelected.addLetter(turn.getHolder().hold.get(i));
     }
 
     public String takeFirstTokenSelected(int index){

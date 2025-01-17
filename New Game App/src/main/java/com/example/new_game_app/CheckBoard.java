@@ -142,6 +142,15 @@ public class CheckBoard {
                     }
                 }
             }
+            if((letters.size() > 1 && enter)){
+                if(readWord(letters)){
+                    letters = new ArrayList<>();
+                    completeWord = true;
+                }
+                else{
+                    return false;
+                }
+            }
         }
         return true;
     }
@@ -172,6 +181,15 @@ public class CheckBoard {
                         letters = new ArrayList<>();
                         enter = false;
                     }
+                }
+            }
+            if((letters.size() > 1 && enter)){
+                if(readWord(letters)){
+                    letters = new ArrayList<>();
+                    completeWord = true;
+                }
+                else{
+                    return false;
                 }
             }
         }

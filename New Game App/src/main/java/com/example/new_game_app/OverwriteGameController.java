@@ -9,9 +9,7 @@ public class OverwriteGameController {
         JsonManager.gameInProgress = null;
         JsonManager.isGameFounded = false;
         JsonManager.overWritedGame = true;
-
-
-
+        JsonManager.newGameNeeded = true;
         StageManager.overwrite.close();
     }
 

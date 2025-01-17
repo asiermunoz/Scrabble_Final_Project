@@ -3,6 +3,7 @@ package com.example.new_game_app;
 import java.util.ArrayList;
 
 public class Amount {
+    private static Amount instance;
     public ArrayList<Integer> amounts = new ArrayList<>();
     static int a = 12;
     static int b = 2;
@@ -34,7 +35,7 @@ public class Amount {
     static int z = 1;
     static int joker = 2;
 
-    public Amount() {
+    private Amount() {
         amounts.add(a);
         amounts.add(b);
         amounts.add(c);
@@ -66,11 +67,52 @@ public class Amount {
         amounts.add(joker);
     }
 
+    public static Amount getInstance() {
+        if (instance == null) {
+            instance = new Amount();
+        }
+        return instance;
+    }
+
     public ArrayList<Integer> getAmounts() {
         return amounts;
     }
 
     public void setAmounts(ArrayList<Integer> amounts) {
         this.amounts = amounts;
+    }
+
+    public void updateAmount(String letter, int value) {
+        switch (letter) {
+            case "a": a = value; break;
+            case "b": b = value; break;
+            case "c": c = value; break;
+            case "ch": ch = value; break;
+            case "d": d = value; break;
+            case "e": e = value; break;
+            case "f": f = value; break;
+            case "g": g = value; break;
+            case "h": h = value; break;
+            case "i": i = value; break;
+            case "j": j = value; break;
+            case "l": l = value; break;
+            case "ll": ll = value; break;
+            case "m": m = value; break;
+            case "n": n = value; break;
+            case "ñ": ñ = value; break;
+            case "o": o = value; break;
+            case "p": p = value; break;
+            case "q": q = value; break;
+            case "r": r = value; break;
+            case "rr": rr = value; break;
+            case "s": s = value; break;
+            case "t": t = value; break;
+            case "u": u = value; break;
+            case "v": v = value; break;
+            case "x": x = value; break;
+            case "y": y = value; break;
+            case "z": z = value; break;
+            case "joker": joker = value; break;
+        }
     }
 }

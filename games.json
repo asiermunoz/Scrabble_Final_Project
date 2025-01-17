@@ -1,7 +1,7 @@
 [
   {
     "gameBag": {
-      "total": 82,
+      "total": 79,
       "exception": "",
       "letters": [
         {
@@ -47,39 +47,9 @@
           "joker": false
         },
         {
-          "letter": "a",
-          "link": "/com/example/new_game_app/Images/Ficha-A.png",
-          "value": 1,
-          "joker": false
-        },
-        {
-          "letter": "a",
-          "link": "/com/example/new_game_app/Images/Ficha-A.png",
-          "value": 1,
-          "joker": false
-        },
-        {
           "letter": "b",
           "link": "/com/example/new_game_app/Images/Ficha-B.png",
           "value": 4,
-          "joker": false
-        },
-        {
-          "letter": "b",
-          "link": "/com/example/new_game_app/Images/Ficha-B.png",
-          "value": 4,
-          "joker": false
-        },
-        {
-          "letter": "c",
-          "link": "/com/example/new_game_app/Images/Ficha-C.png",
-          "value": 3,
-          "joker": false
-        },
-        {
-          "letter": "c",
-          "link": "/com/example/new_game_app/Images/Ficha-C.png",
-          "value": 3,
           "joker": false
         },
         {
@@ -110,30 +80,6 @@
           "letter": "d",
           "link": "/com/example/new_game_app/Images/Ficha-D.png",
           "value": 3,
-          "joker": false
-        },
-        {
-          "letter": "d",
-          "link": "/com/example/new_game_app/Images/Ficha-D.png",
-          "value": 3,
-          "joker": false
-        },
-        {
-          "letter": "d",
-          "link": "/com/example/new_game_app/Images/Ficha-D.png",
-          "value": 3,
-          "joker": false
-        },
-        {
-          "letter": "e",
-          "link": "/com/example/new_game_app/Images/Ficha-E.png",
-          "value": 1,
-          "joker": false
-        },
-        {
-          "letter": "e",
-          "link": "/com/example/new_game_app/Images/Ficha-E.png",
-          "value": 1,
           "joker": false
         },
         {
@@ -203,9 +149,9 @@
           "joker": false
         },
         {
-          "letter": "h",
-          "link": "/com/example/new_game_app/Images/Ficha-H.png",
-          "value": 5,
+          "letter": "g",
+          "link": "/com/example/new_game_app/Images/Ficha-G.png",
+          "value": 3,
           "joker": false
         },
         {
@@ -236,18 +182,6 @@
           "letter": "i",
           "link": "/com/example/new_game_app/Images/Ficha-I.png",
           "value": 1,
-          "joker": false
-        },
-        {
-          "letter": "i",
-          "link": "/com/example/new_game_app/Images/Ficha-I.png",
-          "value": 1,
-          "joker": false
-        },
-        {
-          "letter": "j",
-          "link": "/com/example/new_game_app/Images/Ficha-J.png",
-          "value": 10,
           "joker": false
         },
         {
@@ -305,9 +239,9 @@
           "joker": false
         },
         {
-          "letter": "o",
-          "link": "/com/example/new_game_app/Images/Ficha-O.png",
-          "value": 1,
+          "letter": "n",
+          "link": "/com/example/new_game_app/Images/Ficha-N.png",
+          "value": 2,
           "joker": false
         },
         {
@@ -356,12 +290,6 @@
           "letter": "p",
           "link": "/com/example/new_game_app/Images/Ficha-P.png",
           "value": 4,
-          "joker": false
-        },
-        {
-          "letter": "q",
-          "link": "/com/example/new_game_app/Images/Ficha-Q.png",
-          "value": 8,
           "joker": false
         },
         {
@@ -437,12 +365,6 @@
           "joker": false
         },
         {
-          "letter": "t",
-          "link": "/com/example/new_game_app/Images/Ficha-T.png",
-          "value": 2,
-          "joker": false
-        },
-        {
           "letter": "u",
           "link": "/com/example/new_game_app/Images/Ficha-U.png",
           "value": 1,
@@ -458,18 +380,6 @@
           "letter": "u",
           "link": "/com/example/new_game_app/Images/Ficha-U.png",
           "value": 1,
-          "joker": false
-        },
-        {
-          "letter": "u",
-          "link": "/com/example/new_game_app/Images/Ficha-U.png",
-          "value": 1,
-          "joker": false
-        },
-        {
-          "letter": "v",
-          "link": "/com/example/new_game_app/Images/Ficha-V.png",
-          "value": 4,
           "joker": false
         },
         {
@@ -485,9 +395,9 @@
           "joker": false
         },
         {
-          "letter": "z",
-          "link": "/com/example/new_game_app/Images/Ficha-Z.png",
-          "value": 10,
+          "letter": "☻",
+          "link": "/com/example/new_game_app/Images/Ficha-☻.png",
+          "value": 0,
           "joker": false
         },
         {
@@ -495,8 +405,113 @@
           "link": "/com/example/new_game_app/Images/Ficha-☻.png",
           "value": 0,
           "joker": false
+        },
+        {
+          "letter": "z",
+          "link": "/com/example/new_game_app/Images/Ficha-Z.png",
+          "value": 10,
+          "joker": false
+        },
+        {
+          "letter": "u",
+          "link": "/com/example/new_game_app/Images/Ficha-U.png",
+          "value": 1,
+          "joker": false
+        },
+        {
+          "letter": "o",
+          "link": "/com/example/new_game_app/Images/Ficha-O.png",
+          "value": 1,
+          "joker": false
+        },
+        {
+          "letter": "o",
+          "link": "/com/example/new_game_app/Images/Ficha-O.png",
+          "value": 1,
+          "joker": false
+        },
+        {
+          "letter": "i",
+          "link": "/com/example/new_game_app/Images/Ficha-I.png",
+          "value": 1,
+          "joker": false
+        },
+        {
+          "letter": "a",
+          "link": "/com/example/new_game_app/Images/Ficha-A.png",
+          "value": 1,
+          "joker": false
+        },
+        {
+          "letter": "o",
+          "link": "/com/example/new_game_app/Images/Ficha-O.png",
+          "value": 1,
+          "joker": false
+        },
+        {
+          "letter": "e",
+          "link": "/com/example/new_game_app/Images/Ficha-E.png",
+          "value": 1,
+          "joker": false
+        },
+        {
+          "letter": "u",
+          "link": "/com/example/new_game_app/Images/Ficha-U.png",
+          "value": 1,
+          "joker": false
+        },
+        {
+          "letter": "a",
+          "link": "/com/example/new_game_app/Images/Ficha-A.png",
+          "value": 1,
+          "joker": false
+        },
+        {
+          "letter": "ñ",
+          "link": "/com/example/new_game_app/Images/Ficha-Ñ.png",
+          "value": 10,
+          "joker": false
+        },
+        {
+          "letter": "e",
+          "link": "/com/example/new_game_app/Images/Ficha-E.png",
+          "value": 1,
+          "joker": false
         }
-      ]
+      ],
+      "amount": {
+        "amounts": [
+          12,
+          2,
+          4,
+          1,
+          5,
+          12,
+          1,
+          2,
+          2,
+          6,
+          1,
+          4,
+          1,
+          2,
+          5,
+          1,
+          9,
+          2,
+          1,
+          5,
+          1,
+          6,
+          4,
+          5,
+          1,
+          1,
+          1,
+          1,
+          2
+        ]
+      }
     },
     "gameBoard": {
       "length": 15,
@@ -1271,493 +1286,170 @@
           },
           {
             "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 9,
-            "y": 4
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 10,
-            "y": 4
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 11,
-            "y": 4
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 12,
-            "y": 4
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 13,
-            "y": 4
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 14,
-            "y": 4
-          }
-        ],
-        [
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 0,
-            "y": 5
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 1,
-            "y": 5
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 2,
-            "y": 5
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 3,
-            "y": 5
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 4,
-            "y": 5
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 5,
-            "y": 5
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 6,
-            "y": 5
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 7,
-            "y": 5
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 8,
-            "y": 5
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 9,
-            "y": 5
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 10,
-            "y": 5
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 11,
-            "y": 5
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 12,
-            "y": 5
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 13,
-            "y": 5
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 14,
-            "y": 5
-          }
-        ],
-        [
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 0,
-            "y": 6
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 1,
-            "y": 6
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 2,
-            "y": 6
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 3,
-            "y": 6
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 4,
-            "y": 6
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 5,
-            "y": 6
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 6,
-            "y": 6
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 7,
-            "y": 6
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 8,
-            "y": 6
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 9,
-            "y": 6
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 10,
-            "y": 6
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 11,
-            "y": 6
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 12,
-            "y": 6
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 13,
-            "y": 6
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 14,
-            "y": 6
-          }
-        ],
-        [
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 0,
-            "y": 7
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 1,
-            "y": 7
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 2,
-            "y": 7
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 3,
-            "y": 7
-          },
-          {
-            "letter": {
-              "letter": "  ",
-              "link": "  ",
-              "value": 0,
-              "joker": false
-            },
-            "marked": false,
-            "x": 4,
-            "y": 7
-          },
-          {
-            "letter": {
               "letter": "l",
               "link": "/com/example/new_game_app/Images/Ficha-L.png",
               "value": 2,
               "joker": false
             },
             "marked": false,
-            "x": 5,
-            "y": 7
+            "x": 9,
+            "y": 4
           },
           {
             "letter": {
-              "letter": "e",
-              "link": "/com/example/new_game_app/Images/Ficha-E.png",
-              "value": 1,
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 10,
+            "y": 4
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 11,
+            "y": 4
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 12,
+            "y": 4
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 13,
+            "y": 4
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 14,
+            "y": 4
+          }
+        ],
+        [
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 0,
+            "y": 5
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 1,
+            "y": 5
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 2,
+            "y": 5
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 3,
+            "y": 5
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 4,
+            "y": 5
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 5,
+            "y": 5
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
               "joker": false
             },
             "marked": false,
             "x": 6,
-            "y": 7
+            "y": 5
           },
           {
             "letter": {
-              "letter": "ñ",
-              "link": "/com/example/new_game_app/Images/Ficha-Ñ.png",
-              "value": 10,
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
               "joker": false
             },
             "marked": false,
             "x": 7,
-            "y": 7
+            "y": 5
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 8,
+            "y": 5
           },
           {
             "letter": {
@@ -1767,7 +1459,242 @@
               "joker": false
             },
             "marked": false,
+            "x": 9,
+            "y": 5
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 10,
+            "y": 5
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 11,
+            "y": 5
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 12,
+            "y": 5
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 13,
+            "y": 5
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 14,
+            "y": 5
+          }
+        ],
+        [
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 0,
+            "y": 6
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 1,
+            "y": 6
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 2,
+            "y": 6
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 3,
+            "y": 6
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 4,
+            "y": 6
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 5,
+            "y": 6
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 6,
+            "y": 6
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 7,
+            "y": 6
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
             "x": 8,
+            "y": 6
+          },
+          {
+            "letter": {
+              "letter": "t",
+              "link": "/com/example/new_game_app/Images/Ficha-T.png",
+              "value": 2,
+              "joker": false
+            },
+            "marked": false,
+            "x": 9,
+            "y": 6
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 10,
+            "y": 6
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 11,
+            "y": 6
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 12,
+            "y": 6
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 13,
+            "y": 6
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 14,
+            "y": 6
+          }
+        ],
+        [
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 0,
             "y": 7
           },
           {
@@ -1775,6 +1702,94 @@
               "letter": "  ",
               "link": "  ",
               "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 1,
+            "y": 7
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 2,
+            "y": 7
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 3,
+            "y": 7
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 4,
+            "y": 7
+          },
+          {
+            "letter": {
+              "letter": "  ",
+              "link": "  ",
+              "value": 0,
+              "joker": false
+            },
+            "marked": false,
+            "x": 5,
+            "y": 7
+          },
+          {
+            "letter": {
+              "letter": "d",
+              "link": "/com/example/new_game_app/Images/Ficha-D.png",
+              "value": 3,
+              "joker": false
+            },
+            "marked": false,
+            "x": 6,
+            "y": 7
+          },
+          {
+            "letter": {
+              "letter": "i",
+              "link": "/com/example/new_game_app/Images/Ficha-I.png",
+              "value": 1,
+              "joker": false
+            },
+            "marked": false,
+            "x": 7,
+            "y": 7
+          },
+          {
+            "letter": {
+              "letter": "v",
+              "link": "/com/example/new_game_app/Images/Ficha-V.png",
+              "value": 4,
+              "joker": false
+            },
+            "marked": false,
+            "x": 8,
+            "y": 7
+          },
+          {
+            "letter": {
+              "letter": "a",
+              "link": "/com/example/new_game_app/Images/Ficha-A.png",
+              "value": 1,
               "joker": false
             },
             "marked": false,
@@ -3010,14 +3025,14 @@
       "oldBoardLetters": []
     },
     "gamePlayer1": {
-      "alias": "asier",
-      "score": 56,
+      "alias": "fernando",
+      "score": 42,
       "holder": {
         "hold": [
           {
-            "letter": "g",
-            "link": "/com/example/new_game_app/Images/Ficha-G.png",
-            "value": 3,
+            "letter": "h",
+            "link": "/com/example/new_game_app/Images/Ficha-H.png",
+            "value": 5,
             "joker": false
           },
           {
@@ -3027,33 +3042,33 @@
             "joker": false
           },
           {
-            "letter": "☻",
-            "link": "/com/example/new_game_app/Images/Ficha-☻.png",
-            "value": 0,
-            "joker": false
-          },
-          {
-            "letter": "r",
-            "link": "/com/example/new_game_app/Images/Ficha-R.png",
-            "value": 2,
-            "joker": false
-          },
-          {
-            "letter": "r",
-            "link": "/com/example/new_game_app/Images/Ficha-R.png",
-            "value": 2,
-            "joker": false
-          },
-          {
-            "letter": "m",
-            "link": "/com/example/new_game_app/Images/Ficha-M.png",
-            "value": 3,
+            "letter": "e",
+            "link": "/com/example/new_game_app/Images/Ficha-E.png",
+            "value": 1,
             "joker": false
           },
           {
             "letter": "a",
             "link": "/com/example/new_game_app/Images/Ficha-A.png",
             "value": 1,
+            "joker": false
+          },
+          {
+            "letter": "l",
+            "link": "/com/example/new_game_app/Images/Ficha-L.png",
+            "value": 2,
+            "joker": false
+          },
+          {
+            "letter": "t",
+            "link": "/com/example/new_game_app/Images/Ficha-T.png",
+            "value": 2,
+            "joker": false
+          },
+          {
+            "letter": "c",
+            "link": "/com/example/new_game_app/Images/Ficha-C.png",
+            "value": 3,
             "joker": false
           }
         ]
@@ -3062,49 +3077,49 @@
       "wordsPut": 1
     },
     "gamePlayer2": {
-      "alias": "fernando",
+      "alias": "asier",
       "score": 0,
       "holder": {
         "hold": [
           {
-            "letter": "s",
-            "link": "/com/example/new_game_app/Images/Ficha-S.png",
-            "value": 1,
-            "joker": false
-          },
-          {
-            "letter": "o",
-            "link": "/com/example/new_game_app/Images/Ficha-O.png",
-            "value": 1,
-            "joker": false
-          },
-          {
-            "letter": "n",
-            "link": "/com/example/new_game_app/Images/Ficha-N.png",
+            "letter": "r",
+            "link": "/com/example/new_game_app/Images/Ficha-R.png",
             "value": 2,
             "joker": false
           },
           {
-            "letter": "u",
-            "link": "/com/example/new_game_app/Images/Ficha-U.png",
-            "value": 1,
+            "letter": "b",
+            "link": "/com/example/new_game_app/Images/Ficha-B.png",
+            "value": 4,
             "joker": false
           },
           {
-            "letter": "o",
-            "link": "/com/example/new_game_app/Images/Ficha-O.png",
-            "value": 1,
+            "letter": "d",
+            "link": "/com/example/new_game_app/Images/Ficha-D.png",
+            "value": 3,
             "joker": false
           },
           {
-            "letter": "a",
-            "link": "/com/example/new_game_app/Images/Ficha-A.png",
-            "value": 1,
+            "letter": "c",
+            "link": "/com/example/new_game_app/Images/Ficha-C.png",
+            "value": 3,
             "joker": false
           },
           {
-            "letter": "i",
-            "link": "/com/example/new_game_app/Images/Ficha-I.png",
+            "letter": "r",
+            "link": "/com/example/new_game_app/Images/Ficha-R.png",
+            "value": 2,
+            "joker": false
+          },
+          {
+            "letter": "q",
+            "link": "/com/example/new_game_app/Images/Ficha-Q.png",
+            "value": 8,
+            "joker": false
+          },
+          {
+            "letter": "s",
+            "link": "/com/example/new_game_app/Images/Ficha-S.png",
             "value": 1,
             "joker": false
           }
@@ -3118,65 +3133,13 @@
       "players": [
         {
           "alias": "fernando",
-          "score": 0,
+          "score": 42,
           "holder": {
             "hold": [
               {
-                "letter": "s",
-                "link": "/com/example/new_game_app/Images/Ficha-S.png",
-                "value": 1,
-                "joker": false
-              },
-              {
-                "letter": "o",
-                "link": "/com/example/new_game_app/Images/Ficha-O.png",
-                "value": 1,
-                "joker": false
-              },
-              {
-                "letter": "n",
-                "link": "/com/example/new_game_app/Images/Ficha-N.png",
-                "value": 2,
-                "joker": false
-              },
-              {
-                "letter": "u",
-                "link": "/com/example/new_game_app/Images/Ficha-U.png",
-                "value": 1,
-                "joker": false
-              },
-              {
-                "letter": "o",
-                "link": "/com/example/new_game_app/Images/Ficha-O.png",
-                "value": 1,
-                "joker": false
-              },
-              {
-                "letter": "a",
-                "link": "/com/example/new_game_app/Images/Ficha-A.png",
-                "value": 1,
-                "joker": false
-              },
-              {
-                "letter": "i",
-                "link": "/com/example/new_game_app/Images/Ficha-I.png",
-                "value": 1,
-                "joker": false
-              }
-            ]
-          },
-          "winner": false,
-          "wordsPut": 0
-        },
-        {
-          "alias": "asier",
-          "score": 56,
-          "holder": {
-            "hold": [
-              {
-                "letter": "g",
-                "link": "/com/example/new_game_app/Images/Ficha-G.png",
-                "value": 3,
+                "letter": "h",
+                "link": "/com/example/new_game_app/Images/Ficha-H.png",
+                "value": 5,
                 "joker": false
               },
               {
@@ -3186,27 +3149,21 @@
                 "joker": false
               },
               {
-                "letter": "☻",
-                "link": "/com/example/new_game_app/Images/Ficha-☻.png",
-                "value": 0,
+                "letter": "e",
+                "link": "/com/example/new_game_app/Images/Ficha-E.png",
+                "value": 1,
                 "joker": false
               },
               {
-                "letter": "r",
-                "link": "/com/example/new_game_app/Images/Ficha-R.png",
-                "value": 2,
-                "joker": false
-              },
-              {
-                "letter": "r",
-                "link": "/com/example/new_game_app/Images/Ficha-R.png",
-                "value": 2,
-                "joker": false
-              },
-              {
-                "letter": "m",
-                "link": "/com/example/new_game_app/Images/Ficha-M.png",
+                "letter": "c",
+                "link": "/com/example/new_game_app/Images/Ficha-C.png",
                 "value": 3,
+                "joker": false
+              },
+              {
+                "letter": "j",
+                "link": "/com/example/new_game_app/Images/Ficha-J.png",
+                "value": 10,
                 "joker": false
               },
               {
@@ -3214,45 +3171,72 @@
                 "link": "/com/example/new_game_app/Images/Ficha-A.png",
                 "value": 1,
                 "joker": false
+              },
+              {
+                "letter": "m",
+                "link": "/com/example/new_game_app/Images/Ficha-M.png",
+                "value": 3,
+                "joker": false
               }
             ]
           },
           "winner": false,
-          "wordsPut": 1
+          "wordsPut": 2
+        },
+        {
+          "alias": "asier",
+          "score": 0,
+          "holder": {
+            "hold": [
+              {
+                "letter": "r",
+                "link": "/com/example/new_game_app/Images/Ficha-R.png",
+                "value": 2,
+                "joker": false
+              },
+              {
+                "letter": "b",
+                "link": "/com/example/new_game_app/Images/Ficha-B.png",
+                "value": 4,
+                "joker": false
+              },
+              {
+                "letter": "d",
+                "link": "/com/example/new_game_app/Images/Ficha-D.png",
+                "value": 3,
+                "joker": false
+              },
+              {
+                "letter": "c",
+                "link": "/com/example/new_game_app/Images/Ficha-C.png",
+                "value": 3,
+                "joker": false
+              },
+              {
+                "letter": "r",
+                "link": "/com/example/new_game_app/Images/Ficha-R.png",
+                "value": 2,
+                "joker": false
+              },
+              {
+                "letter": "q",
+                "link": "/com/example/new_game_app/Images/Ficha-Q.png",
+                "value": 8,
+                "joker": false
+              },
+              {
+                "letter": "s",
+                "link": "/com/example/new_game_app/Images/Ficha-S.png",
+                "value": 1,
+                "joker": false
+              }
+            ]
+          },
+          "winner": false,
+          "wordsPut": 0
         }
       ]
     },
-    "gameTimePlayed": 14,
-    "gameAmount": [
-      12,
-      2,
-      4,
-      1,
-      5,
-      12,
-      1,
-      2,
-      2,
-      6,
-      1,
-      4,
-      1,
-      2,
-      5,
-      1,
-      9,
-      2,
-      1,
-      5,
-      1,
-      6,
-      4,
-      5,
-      1,
-      1,
-      1,
-      1,
-      2
-    ]
+    "gameTimePlayed": 41
   }
 ]

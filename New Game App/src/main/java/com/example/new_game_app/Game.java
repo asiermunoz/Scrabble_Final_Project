@@ -21,7 +21,6 @@ public class Game {
     private LettersToPut tokensSelected = new LettersToPut();
     private final ChangeSceneStrategy strategy = new ChangeSceneryToWinnerScreen();
     private final ChangeSceneryToContext context = new ChangeSceneryToContext();
-    private Amount amount = new Amount();
 
 
 
@@ -48,7 +47,7 @@ public class Game {
         turn = order.getFirstPlayer();
         board = gameInProgress.getGameBoard();
         bag = gameInProgress.getGameBag();
-        amount.setAmounts(gameInProgress.getGameAmount());
+        bag.chargeBag();
     }
 
     public String returnTimer(Boolean update){
@@ -131,7 +130,7 @@ public class Game {
             JsonGamesHandler.writeToJson(JsonManager.games);
         }
         //Crear nueva partida con los datos
-        GameInformation gameInformation = new GameInformation(bag, true, player1, player2, board, order, secondsElapsed, amount.getAmounts());
+        GameInformation gameInformation = new GameInformation(bag, true, player1, player2, board, order, secondsElapsed);
         //Agregar nueva partida y escribir json
         JsonManager.finishedGames.add(gameInformation);
         //Colocar gameInProgress
@@ -200,14 +199,6 @@ public class Game {
 
     public LettersToPut getTokensSelected() {
         return tokensSelected;
-    }
-
-    public Amount getAmount() {
-        return amount;
-    }
-
-    public void setAmount(Amount amount) {
-        this.amount = amount;
     }
 
     public void addLetterToTokensSelected(int i){

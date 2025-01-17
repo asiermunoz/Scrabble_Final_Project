@@ -13,15 +13,15 @@ public class LoginMenuModel {
     }
 
     public boolean validateUser(LinkedList<User> usersLinkedList, User newUser) {
-//        if(usersLinkedList == null) {
-//            usersLinkedList = new LinkedList<>();
-//        }
-//        for (User user : usersLinkedList) {
-//            if (newUser.equals(user)) {
-//                return true;
-//            }
-//        }
-        return true;
+        if(usersLinkedList == null) {
+            usersLinkedList = new LinkedList<>();
+        }
+        for (User user : usersLinkedList) {
+            if (newUser.equals(user)) {
+                return true;
+            }
+        }
+        return false;
     }
 
     public Player userToPlayer(User user) {

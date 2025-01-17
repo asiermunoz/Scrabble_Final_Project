@@ -13,7 +13,7 @@ public class Game {
     private Player player2;
     private Player turn;
     private Order order = new Order();
-    private Bag bag = new Bag();
+    private Bag bag;
     private int skippedTurns;
     private int secondsElapsed;
     private int wordsPut;
@@ -29,6 +29,7 @@ public class Game {
         board  = new Board();
         skippedTurns = 0;
         wordsPut = 0;
+        bag  = new Bag();
         player1 = PlayerManager.player1;
         player1.setHolder(bag.fillNewHolder(initialLettersNeeded));
         player2 = PlayerManager.player2;
@@ -64,6 +65,11 @@ public class Game {
         if(verify.check()){
             board.setMarkersFalse();
             turn.sumScore(verify.getScore());
+            if(player1.equalsName(turn.getAlias())) {
+                player1.sumScore(verify.getScore());
+            } else {
+                player2.sumScore(verify.getScore());
+            }
             exception.setText(verify.getMessage());
             turn.setWordsPut(turn.getWordsPut() + verify.getWordsFound());
             wordsPut = wordsPut + verify.getWordsFound();

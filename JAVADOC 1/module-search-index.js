@@ -1,0 +1,1 @@
+moduleSearchIndex = [{"l":"com.example.register_aplication"}];updateSearchResults();

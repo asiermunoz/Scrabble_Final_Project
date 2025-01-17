@@ -1,0 +1,1 @@
+moduleSearchIndex = [{"l":"com.example.new_game_app"}];updateSearchResults();

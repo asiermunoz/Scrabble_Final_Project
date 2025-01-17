@@ -34,6 +34,7 @@ public class StadisticsController implements Initializable {
         // Add data to the series
         series.getData().add(new XYChart.Data<>(player1.getScore(), player1.getAlias()));
         series.getData().add(new XYChart.Data<>(player2.getScore(), player2.getAlias()));
+        series.getData().add(new XYChart.Data<>(player2.getScore() + player1.getScore(), "Total"));
 
         // Set the axes
         NumberAxis xAxis = new NumberAxis();

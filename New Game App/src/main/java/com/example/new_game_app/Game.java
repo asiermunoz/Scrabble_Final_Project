@@ -1,5 +1,8 @@
 package com.example.new_game_app;
 
+import com.example.new_game_app.objects.jsonHandlers.JsonFinishedGamesHandler;
+import com.example.new_game_app.objects.jsonHandlers.JsonGamesHandler;
+import com.example.new_game_app.objects.jsonHandlers.JsonManager;
 import javafx.scene.control.Label;
 import javafx.scene.image.ImageView;
 import java.util.ArrayList;
@@ -93,10 +96,45 @@ public class Game {
         }
         else if(order.getFirstPlayer().getHolder().getHoldSize() == 0){
             EndGameInfo.motive = "El jugador " + order.getFirstPlayer().getAlias() + " se quedó sin fichas";
+            if(order.getFirstPlayer().getAlias().equals(player1.getAlias())){
+                player1.setWinner(false);
+                player2.setWinner(true);
+            } else {
+                player2.setWinner(false);
+                player1.setWinner(true);
+            }
         }
         else{
             EndGameInfo.motive = "El jugador " + order.getLastPlayer().getAlias() + " se quedó sin fichas";
+            if(order.getFirstPlayer().getAlias().equals(player1.getAlias())){
+                player1.setWinner(false);
+                player2.setWinner(true);
+            } else {
+                player2.setWinner(false);
+                player1.setWinner(true);
+            }
         }
+        if (JsonManager.gameInProgress != null) {
+            JsonManager.games.remove(JsonManager.gameInProgress);
+        }
+
+        //Eliminar partida anterior
+        if (JsonManager.gameInProgress != null) {
+            JsonManager.games.remove(JsonManager.gameInProgress);
+            JsonGamesHandler.writeToJson(JsonManager.games);
+        }
+
+        //Crear nueva partida con los datos
+        GameInformation gameInformation = new GameInformation(bag, true, player1, player2, board, order, secondsElapsed);
+
+        //Agregar nueva partida y escribir json
+        JsonManager.finishedGames.add(gameInformation);
+
+        //Colocar gameInProgress
+        JsonManager.gameInProgress = gameInformation;
+
+        JsonFinishedGamesHandler.writeToJson(JsonManager.finishedGames);
+
         context.setStrategy(strategy);
         context.change(actionEvent);
     }

@@ -12,7 +12,7 @@ public class Game {
     private Player player1;
     private Player player2;
     private Player turn;
-    private Order order = new Order();
+    private Order order;
     private Bag bag;
     private int skippedTurns;
     private int secondsElapsed;
@@ -28,13 +28,16 @@ public class Game {
         secondsElapsed = 0;
         board  = new Board();
         bag = new Bag();
+        order = new Order();
         skippedTurns = 0;
         wordsPut = 0;
         player1 = PlayerManager.player1;
         player1.setScore(0);
+        player1.setWordsPut(0);
         player1.setHolder(bag.fillNewHolder(initialLettersNeeded));
         player2 = PlayerManager.player2;
         player2.setScore(0);
+        player2.setWordsPut(0);
         player2.setHolder(bag.fillNewHolder(initialLettersNeeded));
         order.setNewOrder(player1, player2);
         turn = order.getFirstPlayer();

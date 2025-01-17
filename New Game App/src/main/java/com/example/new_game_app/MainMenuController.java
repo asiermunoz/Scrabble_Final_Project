@@ -108,11 +108,15 @@ public class MainMenuController {
     }
 
     public void onShowStadisticsButtonClick(javafx.event.ActionEvent actionEvent) {
-        if(!gameAlreadyCreated){
+        if(!gameAlreadyCreated) {
             //se va al pop up
             PopUpCommand command = new PopUpNoExistingGame();
             popUpselected.setCommand(command);
             StageManager.noExistingGames = popUpselected.buttonPressed();
+        }else if(JsonManager.overWritedGame) {
+                PopUpCommand command = new PopUpNoExistingGame();
+                popUpselected.setCommand(command);
+                StageManager.noExistingGames = popUpselected.buttonPressed();
         } else {
             PopUpCommand command = new PopUpStadisticsInMenu();
             popUpselected.setCommand(command);

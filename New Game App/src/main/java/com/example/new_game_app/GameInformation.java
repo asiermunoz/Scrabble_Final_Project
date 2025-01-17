@@ -1,5 +1,7 @@
 package com.example.new_game_app;
 
+import java.util.ArrayList;
+
 public class GameInformation {
     private Bag gameBag;
     private Board gameBoard;
@@ -8,8 +10,9 @@ public class GameInformation {
     private boolean gameFinished;
     private Order gameOrder;
     private int gameTimePlayed;
+    private ArrayList<Integer> gameAmount;
 
-    public GameInformation(Bag gameBag, boolean gameFinished, Player gamePlayer2, Player gamePlayer1, Board gameBoard, Order gameOrder, int gameTimePlayed) {
+    public GameInformation(Bag gameBag, boolean gameFinished, Player gamePlayer2, Player gamePlayer1, Board gameBoard, Order gameOrder, int gameTimePlayed, ArrayList<Integer> gameAmount) {
         this.gameBag = gameBag;
         this.gameFinished = gameFinished;
         this.gamePlayer2 = gamePlayer2;
@@ -17,6 +20,7 @@ public class GameInformation {
         this.gameBoard = gameBoard;
         this.gameOrder = gameOrder;
         this.gameTimePlayed = gameTimePlayed;
+        this.gameAmount = gameAmount;
     }
 
     public Bag getGameBag() {
@@ -71,5 +75,13 @@ public class GameInformation {
 
     public String getPlayer2Alias() {
         return gamePlayer2.getAlias();
+    }
+
+    public ArrayList<Integer> getGameAmount() {
+        return gameAmount;
+    }
+
+    public void setGameAmount(ArrayList<Integer> gameAmount) {
+        this.gameAmount = gameAmount;
     }
 }

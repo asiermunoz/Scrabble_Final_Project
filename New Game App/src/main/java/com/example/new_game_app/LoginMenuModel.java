@@ -25,6 +25,6 @@ public class LoginMenuModel {
     }
 
     public Player userToPlayer(User user) {
-        return new Player(user.getAlias(), 0, null, false);
+        return new Player(user.getAlias(), 0, null, false,0);
     }
 }

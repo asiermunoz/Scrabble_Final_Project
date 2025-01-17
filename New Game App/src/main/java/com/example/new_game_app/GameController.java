@@ -252,7 +252,7 @@ public class GameController implements Initializable {
         }
 
         //Crear nueva partida con los datos
-        GameInformation gameInformation = new GameInformation(game.getBag(), false, game.getPlayer1(), game.getPlayer2(), game.getBoard(), game.getOrder(), game.getSecondsElapsed());
+        GameInformation gameInformation = new GameInformation(game.getBag(), false, game.getPlayer1(), game.getPlayer2(), game.getBoard(), game.getOrder(), game.getSecondsElapsed(), game.getAmount().getAmounts());
 
         //Agregar nueva partida y escribir json
         JsonManager.games.add(gameInformation);

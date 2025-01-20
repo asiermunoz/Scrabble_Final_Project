@@ -22,7 +22,8 @@ public class MainMenuModel {
                 }
 
                 //Si no se encuentra se busca el user pero como jugador 2
-            } else if (user1.equalsName(gamesInProgress.get(i).getPlayer2Alias())) {
+            }
+            else if (user1.equalsName(gamesInProgress.get(i).getPlayer2Alias())) {
 
                 //Si se encuentra se busca al jugador 2
                 for (int j = 0; j < gamesInProgress.size(); j++) {
@@ -33,9 +34,8 @@ public class MainMenuModel {
                 }
 
                 //No se consiguio ninguno
-            } else {
-                return null;
             }
+
         }
         return null;
     }

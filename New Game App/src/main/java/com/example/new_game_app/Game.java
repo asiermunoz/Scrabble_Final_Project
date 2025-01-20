@@ -70,7 +70,6 @@ public class Game {
         CheckBoard verify = new CheckBoard(board);
         if(verify.check()){
             board.setMarkersFalse();
-            turn.sumScore(verify.getScore());
             if(player1.equalsName(turn.getAlias())) {
                 player1.sumScore(verify.getScore());
             } else {

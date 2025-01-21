@@ -12,6 +12,10 @@ public class CheckBoard {
     private String message;
     private boolean scrabble;
     private boolean completeWord;
+    //ejercicio 2
+    private int longestWordLength = 0;
+    //ejercicio 1
+    private boolean isFirstMove = true;
 
     public CheckBoard(Board board) {
         bonus = new Bonus();
@@ -23,6 +27,8 @@ public class CheckBoard {
         this.lettersMarked = 0;
     }
 
+
+
     public int getScore() {
         return score;
     }
@@ -33,6 +39,17 @@ public class CheckBoard {
 
     public String getMessage() {
         return message;
+    }
+
+    private void applyFirstMoveBonus() {
+        for (int i = 0; i < board.getLength(); i++) {
+            for (int j = 0; j < board.getLength(); j++) {
+                if (board.getTable()[i][j].marked) {
+                    int letterValue = board.getTable()[i][j].letter.getValue();
+                    score += letterValue * (letterValue - 1); // Multiplica el valor de la letra por sí mismo y resta el valor original ya sumado
+                }
+            }
+        }
     }
 
     public boolean check(){
@@ -88,6 +105,14 @@ public class CheckBoard {
             if(tripleWordBoost != 0){
                 score = bonus.tripleWordBonus(score, tripleWordBoost);
             }
+
+
+            if (isFirstMove) {
+                applyFirstMoveBonus();
+                isFirstMove = false;
+            }
+
+
             this.board.setMarkersFalse();
             message = bonus.getMessage();
             return true;
@@ -197,6 +222,26 @@ public class CheckBoard {
     }
 
     public boolean readWord(ArrayList<Letter> letters){
+        /*PopUpSelected popUpselected = new PopUpSelected();
+        PopUpCommand command = new PopUpJoker();
+        popUpselected.setCommand(command);
+
+        StringBuilder word = new StringBuilder();
+        for (Letter letter : letters) {
+            this.score = score + letter.getValue();
+            if(Objects.equals(letter.getLetter(), "☻")){
+                popUpselected.buttonPressed();
+                word.append(JokerController.joker.toLowerCase());
+            }
+            else {
+                word.append(letter.getLetter().toLowerCase());
+            }
+        }
+        wordsFound++;
+        return new WordChecker().checkWord(String.valueOf(word));*/
+
+        //EJERCICIO 2 DEFENSA INDIVIDUAL 1
+
         PopUpSelected popUpselected = new PopUpSelected();
         PopUpCommand command = new PopUpJoker();
         popUpselected.setCommand(command);
@@ -213,7 +258,18 @@ public class CheckBoard {
             }
         }
         wordsFound++;
-        return new WordChecker().checkWord(String.valueOf(word));
+        String wordStr = word.toString();
+        /*System.out.println("Current word: " + wordStr);
+        System.out.println("Current score before bonus: " + score);
+        System.out.println(wordStr.length());*/
+
+        if (wordStr.length() > longestWordLength) {
+            longestWordLength = wordStr.length();
+            score += 0; // Sumar 10 puntos al score
+            System.out.println("Bonus applied. New score: " + score);
+        }
+        return new WordChecker().checkWord(wordStr);
+
     }
 
     public boolean reviseCollision(int y, int x){

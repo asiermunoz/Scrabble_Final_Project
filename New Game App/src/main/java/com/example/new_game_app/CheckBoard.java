@@ -1,5 +1,8 @@
 package com.example.new_game_app;
 
+import com.example.new_game_app.Exceptions.InexistentWord;
+import com.example.new_game_app.Exceptions.LackOfCollisionException;
+
 import java.util.ArrayList;
 import java.util.Objects;
 
@@ -106,11 +109,13 @@ public class CheckBoard {
                 score = bonus.tripleWordBonus(score, tripleWordBoost);
             }
 
-
+            /*
             if (isFirstMove) {
                 applyFirstMoveBonus();
                 isFirstMove = false;
             }
+
+             */
 
 
             this.board.setMarkersFalse();

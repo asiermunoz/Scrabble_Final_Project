@@ -1,6 +1,6 @@
 package com.example.new_game_app;
 
-import javafx.scene.control.Label;
+import com.example.new_game_app.Exceptions.EmptyBagException;
 
 import java.util.ArrayList;
 

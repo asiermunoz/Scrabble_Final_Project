@@ -1,5 +1,7 @@
 package com.example.new_game_app;
 
+import com.example.new_game_app.Exceptions.NoGamesInProgressException;
+
 import java.util.LinkedList;
 
 public class MainMenuModel {

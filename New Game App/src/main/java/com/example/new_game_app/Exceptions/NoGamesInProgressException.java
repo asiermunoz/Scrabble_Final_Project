@@ -1,4 +1,4 @@
-package com.example.new_game_app;
+package com.example.new_game_app.Exceptions;
 
 public class NoGamesInProgressException extends RuntimeException {
     public NoGamesInProgressException() {

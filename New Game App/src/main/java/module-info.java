@@ -11,4 +11,7 @@ module com.example.new_game_app {
     opens com.example.new_game_app to javafx.fxml, com.google.gson;
     opens com.example.new_game_app.objects.users to com.google.gson;
     exports com.example.new_game_app;
+    exports com.example.new_game_app.Exceptions;
+    opens com.example.new_game_app.Exceptions to com.google.gson, javafx.fxml;
+
 }

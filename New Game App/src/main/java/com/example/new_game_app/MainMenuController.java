@@ -1,5 +1,6 @@
 package com.example.new_game_app;
 
+import com.example.new_game_app.Exceptions.NoGamesInProgressException;
 import com.example.new_game_app.objects.jsonHandlers.JsonGamesHandler;
 import com.example.new_game_app.objects.jsonHandlers.JsonManager;
 import javafx.fxml.FXML;
